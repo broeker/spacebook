@@ -1,0 +1,28 @@
+<div class="fixed w-full top-0 left-0 z-10 "> 
+    <nav class="flex h-16 md:h-20 items-center bg-white dark:bg-gray-900 dark:text-gray-50 z-20 fixed top-0 left-0 right-0 border-b px-0 py-2 dark:bg-dark dark:border-gray-800 transition-colors duration-200">
+      <div class="hidden md:block space-y-4 w-full p-4">
+        <a class="no-underline text-gray-500  items-center hover:opacity-75" href="/">
+          <span class="text-xl  mr-2 block font-extrabold block">{{ site.emoji }} {{ site.name }}</span>
+          {% if site.subtitle %}
+          <span class="text-gray-500 font-normal text-xs sm:text-xs md:text-sm lg:text-base w-full block"> {{ site.subtitle }}</span>
+          {% endif %}
+         </a>
+      </div>
+       {% if site.enableSearch == 1 %}
+      <div class="relative w-full md:w-64">
+        <input  aria-label="Search" x-data="{ isOpen: true }" x-bind:class="{ 'hidden': !isOpen }" type="search" placeholder="Search..." class="ml-2 w-60 bg-gray-50 dark:bg-gray-800 appearance-none border dark:border-gray-700 rounded py-2 px-3 mr-2 placeholder-gray-400 leading-tight focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-700 ring-opacity-50 border-gray-200" id="searchField">
+        <ul tabindex="0" class="shadow-md p-0 w-full list-none m-0 absolute left-0 md:right-0 bg-white rounded mt-1 top-100 z-2" id="searchResults"></ul>
+        <div class="hidden shadow-md list-none p-4 m-0 absolute left-0 md:right-0 bg-white rounded mt-1 border top-100 divide-y divide-gray-300 z-2" id="noResultsFound" >
+          <p>No results found.</p>
+        </div>
+      </div>
+      {% endif %}
+       {% if site.enableDarkMode == 1 %}
+      <a aria-label="dark mode" rel="noopener noreferrer" class="mr-2 switch text-current cursor-pointer" onclick="activateDarkMode()"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="24" xmlns="http://www.w3.org/2000/svg"><path class="text-gray-400 hover:text-yellow-400 dark:text-yellow-400" fill-rule="evenodd" clip-rule="evenodd" d="M11.67 8.658a3.661 3.661 0 0 0-.781 1.114 3.28 3.28 0 0 0-.268 1.329v1.6a1.304 1.304 0 0 1-.794 1.197 1.282 1.282 0 0 1-.509.102H7.712a1.285 1.285 0 0 1-.922-.379 1.303 1.303 0 0 1-.38-.92v-1.6c0-.479-.092-.921-.274-1.329a3.556 3.556 0 0 0-.776-1.114 4.689 4.689 0 0 1-1.006-1.437A4.187 4.187 0 0 1 4 5.5a4.432 4.432 0 0 1 .616-2.27c.197-.336.432-.64.705-.914a4.6 4.6 0 0 1 .911-.702c.338-.196.7-.348 1.084-.454a4.45 4.45 0 0 1 1.2-.16 4.476 4.476 0 0 1 2.276.614 4.475 4.475 0 0 1 1.622 1.616 4.438 4.438 0 0 1 .616 2.27c0 .617-.117 1.191-.353 1.721a4.69 4.69 0 0 1-1.006 1.437zM9.623 10.5H7.409v2.201c0 .081.028.15.09.212a.29.29 0 0 0 .213.09h1.606a.289.289 0 0 0 .213-.09.286.286 0 0 0 .09-.212V10.5z"></path></svg></a>
+       {% endif %}
+       <button  aria-label="Show navigation" onclick="showNavigation()" class="block md:hidden  mr-2"><svg fill="none" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+    </nav>  
+ </div>
+
+
+  

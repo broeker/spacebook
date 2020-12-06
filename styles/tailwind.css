@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  blockquote {
+    @apply rounded p-4 bg-gray-100;
+
+  }
+
+  body .prose {
+    @apply dark:text-pink-400
+  }
+
+  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 .prose hr, .prose strong {
+    @apply dark:text-gray-400
+  }
+
+  .prose pre code {
+    @apply overflow-x-auto !important 
+  }
+
+  .prose-lg pre code {
+    @apply overflow-x-auto !important 
+  }
+
+  .prose-xl pre code {
+    @apply overflow-x-auto !important 
+  }
+
+  .prose pre  {
+    @apply max-w-full overflow-x-auto !important 
+  }
+
+  .prose-lg pre  {
+    @apply overflow-x-auto !important 
+  }
+
+  .prose-xl pre {
+    @apply overflow-x-auto !important 
+  }
+  pre {
+    @apply overflow-x-auto !important 
+  }
+
+  .prose a {
+    @apply dark:text-gray-400
+  }
+
+  .prose a:hover {
+    @apply dark:text-gray-500
+  }
+
+  footer a:hover {
+    @apply text-blue-700
+  }
+
+  .callout {
+    @apply px-8 py-4 mb-4 rounded-lg bg-yellow-100;
+  }
+  .callout, .callout strong, .callout em {
+    @apply dark:bg-gray-400 dark:text-gray-900;
+  }
+
+  .alert {
+    @apply px-8 py-4 mb-4 rounded-lg bg-red-700 text-gray-50;
+  }
+  .alert, .alert strong, .alert em {
+    @apply text-gray-50 dark:bg-gray-400  dark:text-gray-900;
+  }
+
+
+  ul.contains-task-list,
+  .prose ul.contains-task-list,
+  .prose-xl ul.contains-task-list,
+  .prose-lg ul.contains-task-list,
+  .prose-sm ul.contains-task-list {
+    @apply list-none !important;
+  }
+
+  .prose ul.contains-task-list .task-list-item {
+    ::before {
+      @apply hidden !important;
+    }
+  }
+
+  nav ul ul {
+   @apply ml-6 text-gray-100;
+  }
+
+  nav ul li a {
+    @apply mb-1 pt-2 pr-4 pb-2 pl-2 rounded w-full block;
+  }
+  nav ul li a {
+    @apply text-gray-500 dark:text-gray-500;
+  }
+
+  nav ul li a:hover {
+    @apply bg-gray-200 dark:bg-gray-600  dark:text-gray-400; 
+  }
+
+  .text-align-center {
+    @apply flex justify-center; 
+  }
+
+  .prose ul {
+    @apply list-none;
+  }
+  nav ul li a.active {
+    @apply bg-gray-200 dark:bg-gray-600 dark:text-gray-400;
+  }
+
+  .adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet {
+    @apply ml-auto mr-auto bg-gray-100 dark:bg-gray-700 p-2 rounded text-center
+  }
+
+  .adjust  p img:hover, .adjust img:hover {
+    @apply bg-gray-300 dark:bg-pink-600
+  }
+
+
+}
