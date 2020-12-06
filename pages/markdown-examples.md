@@ -5,7 +5,7 @@ permalink: /markdown-examples/index.html
 eleventyNavigation:
   order: 55 
   key: Markdown examples 
-  parent: Spacebook markdown
+  parent: Learning markdown
 ---
 This page shows the available Markdown-it formatters available to you with examples. For a few more bits of syntax or plugins that are not covered here see the official [markdown-it demo](https://markdown-it.github.io/).
 
