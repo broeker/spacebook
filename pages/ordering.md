@@ -34,33 +34,33 @@ If you do not have a hierarchical structure and are simply showing a list of top
 ```
 title: Home
 key: Home
-order: 0
+order: 0 👈
 
 title: Page one
 key: Page one
-order: 5 
+order: 5 👈
 
   title: Subpage one
   key: Subpage one
   parent: Page one
-  order: 10
+  order: 10 👈
 
   title: Subpage two
   key: Subpage two
   parent: Page one
-  order: 15
+  order: 15 👈
 
 title: Page two
 key: Page two
-order: 20
+order: 20 👈
 
 title: Page three
 key: Page three
-order: 25
+order: 25 👈
 ```
 
 This structure will result in the correct menu ordering and provide the proper in-page navigation. 
 
 ::: callout
-**Tip:** For this reason, it is wise to leave some space between your ordering as you set up your initial page structure as per the example above. This will help you avoid having to changing all of your order settings whenever you want to add a new page. For larger sites, you could start interval of 10 to be safe.
+**Tip:** For this reason, it is wise to leave some space between your ordering as you set up your initial page structure as per the example above. This will help you avoid having to changing all of your order settings whenever you want to add a new page. For larger sites, you could even start with an interval of 10 to be safe.
 :::
