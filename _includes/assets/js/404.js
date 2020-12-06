@@ -1,3 +1,21 @@
+(function (window, document) {
+    "use strict";
+    window.addEventListener('load', function () {
+        const cordCanvas = document.getElementById('cord');
+        const ctx = cordCanvas.getContext('2d');
+        
+        let y1 = 160;
+        let y2 = 100;
+        let y3 = 100;
+        
+        let y1Forward = true;
+        let y2Forward = false;
+        let y3Forward = true;
+        drawVisor()
+        //animate()
+    });
+  })(window, document);
+
 function drawVisor() {
     const canvas = document.getElementById('visor');
     const ctx = canvas.getContext('2d');
@@ -20,16 +38,7 @@ function drawVisor() {
     ctx.stroke();
   }
   
-  const cordCanvas = document.getElementById('cord');
-  const ctx = cordCanvas.getContext('2d');
-  
-  let y1 = 160;
-  let y2 = 100;
-  let y3 = 100;
-  
-  let y1Forward = true;
-  let y2Forward = false;
-  let y3Forward = true;
+
   
   function animate() {
     requestAnimationFrame(animate);
@@ -73,5 +82,3 @@ function drawVisor() {
     y3Forward ? y3 += 1 : y3 -= 1;
   }
   
-  drawVisor();
-  animate();
