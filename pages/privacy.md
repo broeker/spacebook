@@ -8,6 +8,8 @@ eleventyNavigation:
 ---
 By default, spacebook sites are set up so they will NOT get indexed by search engines or send referrer links to outside sites. There are no ad trackers, tracking cookies, or other nonsense installed. Many use cases for spacebook are semiprivate and not necessarily intended for a larger audience.
 
+## Encryption with Staticrypt
+
 ## Security through obscurity
 
 By default your site is hidden from search engines and won't send referrer links but it is not truly secure. Anybody who discovers the link will be able to view the site. You can use the default Netlify site URL for added obscurity (which typically includes gibberish word and number combos.)
