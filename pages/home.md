@@ -44,7 +44,11 @@ What even is this? Spacebooks are created using:
 * [Netlify](https://www.netlify.com/) for one-click installs, easy form support, free hosting, and an automated [Github](https://github.com/) deployment pipepline 🤖
 * [Netlify CMS](https://www.netlify.com/) (optional) to provide an easy Markdown editor for creating and changing content with optional [Cloudinary support](https://cloudinary.com/) for advanced image management. 💻
 
-If you wish, you may customize your spacebook or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](https://www.11ty.dev/docs/starter/). 
+All of this results in a speedy website that scores 100s across the board on Google Lighthouse: 
+
+![Performance](/static/img/spacebook.gif)
+
+Note: If you enable the optional Netlify CMS you will lose 2-3 performance points due to the required loading of the Netlify identity script but this is a pretty swell starting point. If you wish, you may customize your spacebook or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](https://www.11ty.dev/docs/starter/). 
 
 - - -
 
