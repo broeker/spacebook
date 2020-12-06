@@ -22,7 +22,7 @@ Communicators and learners from [Da Vinci](https://en.wikipedia.org/wiki/Leonard
 
 ##  Launch a new spacebook now 🙋
 
-You can launch your own spacebook and deploy it to the cloud on Netlify with the click of a button. You'll need a existing [Github account](https://github.com/) and a [Netlify account](https://www.netlify.com/) (which you  can create during this process if you wish):
+You can launch your own spacebook and deploy it to the cloud on Netlify with the click of a button. You'll need an existing [Github account](https://github.com/) and a [Netlify account](https://www.netlify.com/) (which you  can create during this process if you wish):
 
 <div class="flex width-full  justify-center">
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/spacebook"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
@@ -34,7 +34,7 @@ Once complete, your new spacebook will be available immediately on Netlify and r
 
 ## 🤠 Whoa, slow down Tex! 
 
-What even is this? Spacebooks are created using: 
+What even is this? Spacebooks is a simple website generator that will help you create your own project just like this one using:
 
 * [Eleventy](https://www.11ty.io) a super fast Node-based static site generator that stays out of your way and lets you ship only what you want to ship 🚀
 * [Tailwind 2.0](https://tailwindcss.com/) a brilliant and tiny utility-first CSS framework ([Tailwind Typography](https://tailwindcss.com/docs/typography-plugin) included) 🎨
