@@ -1,10 +1,13 @@
 # Spacebook
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/707f50ae-80e6-4681-823e-669b69068bae/deploy-status)](https://app.netlify.com/sites/laughing-swartz-36ce3d/deploys)
+
  Create your own spacebook exactly like this one and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source. 🔥 
 
 * **Easy to use** 😀 -- add a new page and it appears magically in your navigation 
 * **Writing focused** ❤️ -- beautiful typography and a minimalist design managed with easy-to-use Markdown
 * **Speedy and accessible** 🚀 -- static files, system fonts, minimal JavaScript, purge and minify All the Things, fully responsive, accessible to all
+* **Private** 🔒 -- User-agent: * Disallow: / is set by default with noreferrer links; encrypt your full site with a password if desired
 * **Flexible** 💪 -- disable features you don't need, add advanced features with serverless functions or Alpine.js
 
 Communicators and learners from [Da Vinci](https://en.wikipedia.org/wiki/Leonardo_da_Vinci) and [Darwin](https://en.wikipedia.org/wiki/Charles_Darwin) to [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper) and [Ida Tarbell](https://en.wikipedia.org/wiki/Ida_Tarbell) are famous for their use of notebooks, illustrations, and the written word to explain complex ideas. Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy.
@@ -26,7 +29,7 @@ Once complete, your new spacebook will be available immediately on Netlify and r
 
 ## 🤠 Whoa, slow down Tex! 
 
-What even is this? Spacebooks are created using: 
+What even is this? Spacebooks is a simple website generator that will help you create your own project just like this one using:
 
 * [Eleventy](https://www.11ty.io) a super fast Node-based static site generator that stays out of your way and lets you ship only what you want to ship 🚀
 * [Tailwind 2.0](https://tailwindcss.com/) a brilliant and tiny utility-first CSS framework ([Tailwind Typography](https://tailwindcss.com/docs/typography-plugin) included) 🎨
@@ -35,6 +38,12 @@ What even is this? Spacebooks are created using:
 * [Advanced Markdown-it support](https://github.com/markdown-it/markdown-it) with footnotes, custom containers, emoji support, tables, task lists, and auto-linked images ✏️ 
 * [Netlify](https://www.netlify.com/) for one-click installs, easy form support, free hosting, and an automated [Github](https://github.com/) deployment pipepline 🤖
 * [Netlify CMS](https://www.netlify.com/) (optional) to provide an easy Markdown editor for creating and changing content with optional [Cloudinary support](https://cloudinary.com/) for advanced image management. 💻
+
+All of this results in a speedy and accessible website that scores 100s across the board on Google Lighthouse metrics for mobile and desktop: 
+
+![Performance](/static/img/spacebook.png)
+
+Note: If you enable the optional Netlify CMS you will lose 2-3 performance points due to the required loading of the Netlify identity script but this is a pretty swell starting point. 👍
 
 If you wish, you may customize your spacebook or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](https://www.11ty.dev/docs/starter/). 
 
@@ -78,6 +87,8 @@ npm install
 
 npn run build (only necessary the first time!)
 ```
+
+*If you get errors here, doublel check your node version!*
 
 ### Step three
 

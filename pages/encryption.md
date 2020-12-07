@@ -4,8 +4,7 @@ date: 2020-11-20
 permalink: /tips-and-tricks/encryption/index.html
 eleventyNavigation:
   key: Password protection
-  order: 48 
-  parent: Tips & Tricks
+  order: 50 
 ---
 Netlify does not allow for basic authentication on their free tier. By default, your spacebook is setup to be [non-discoverable](/privacy) but if you wish to protect your site behind a password you can easily enable encryption for your spacebook powered by [Staticrypt](https://github.com/robinmoisson/staticrypt).
 
