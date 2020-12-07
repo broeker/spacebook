@@ -42,3 +42,16 @@ Edit the **mdIterator** plugin settings in your .eleventy.js configuration file 
 :::
 
 
+```
+.eleventy.js 
+
+  eleventyConfig.setLibrary("md", markdownIt(options)
+    .use(mdIterator, 'url_new_win', 'link_open', function (tokens, idx) {
+      const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === 'href')
+      if (href && (!href.includes('franknoirot.co') && !href.startsWith('/') && !href.startsWith('#'))) {
+        tokens[idx].attrPush([ 'target', '_blank' ])
+        // tokens[idx].attrPush([ 'rel', 'noopener noreferrer' ]) 👈 remove or comment this line!
+      }
+    })
+```
+
