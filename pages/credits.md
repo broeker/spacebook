@@ -16,5 +16,5 @@ Spacebook was inspired by my search for the simplest possible way to spin up the
 * [Nextra](https://github.com/shuding/nextra) by Shu Ding -- this is a Next.js project that also uses Tailwind and heavily inspired the overall design of spacebook. 
 * [Add Search to an Eleventy website with Elasticlunr](https://www.belter.io/eleventy-search/) by Duncan McDougall -- this gave me the basics for integrating Elasticlunr
 
-Overall I investigated and researched more than a dozen additional [Eleventy starter projects](https://www.11ty.dev/docs/starter/) for inspiration, code snippets, and to learn more about how Eleventy works. Thanks to all -- there is no one "right way" to build an Eleventy site an this is just one small attempt.
+Overall I investigated and researched more than a dozen additional [Eleventy starter projects](https://www.11ty.dev/docs/starter/) for inspiration, code snippets, and to learn more about how Eleventy works. Thanks to all -- there is no one "right way" to build an Eleventy site and this is just one small attempt.
 

@@ -4,7 +4,7 @@ date: 2020-11-20
 permalink: /privacy/index.html
 eleventyNavigation:
   key: Privacy settings
-  order: 48 
+  order: 60 
 ---
 By default, spacebook sites are set up so they will NOT get indexed by search engines or send referrer links to outside sites. There are no ad trackers, tracking cookies, or other nonsense installed. Many use cases for spacebook are semiprivate and not necessarily intended for a larger audience.
 
