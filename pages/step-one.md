@@ -13,7 +13,7 @@ Once you have your spacebook running, your first step is to do some basic config
 ```
 {
   "name": "Spacebook",
-  "subtitle": "Create fast and simple documentation to explain almost anything.",
+  "subtitle": "Create fast and simple documentation to explain almost anything",
   "description": "A simple document generator based on Eleventy, Tailwind 2.0, and Alpine.js",
   "footer": "Made with ❤️️ in Minneapolis",
   "emoji": "💥️️",
