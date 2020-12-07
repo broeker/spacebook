@@ -33,7 +33,7 @@ Once complete, your new spacebook will be available immediately on Netlify and r
 
 ---
 
-## 🤠 Whoa, slow down Tex! 
+## 🤠 Whoa, slow down Tex 
 
 What even is this? Spacebooks is a simple website generator that will help you create your own project just like this one using:
 
