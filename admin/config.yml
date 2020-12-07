@@ -69,4 +69,5 @@ collections:
           - {label: "Enable darkmode", name: "enableDarkMode", widget: "boolean"}
           - {label: "Enable search", name: "enableSearch", widget: "boolean"}
           - {label: "Enable contact form", name: "enableContact", widget: "boolean"}
+          - {label: "Enable encryption", name: "enableEncryption", widget: "boolean", , default: false}
     

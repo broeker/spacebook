@@ -31,7 +31,7 @@ Once you have your spacebook running, your first step is to do some basic config
 ```
 
 ::: callout
-Note: If you enable the optional Netlify CMS integration, all of these settings can also be changed via the CMS.
+**Note!** If you enable the optional Netlify CMS integration, all of these settings can also be changed via the CMS.
 :::
 
 ## Basic settings
