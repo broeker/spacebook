@@ -42,7 +42,7 @@ What even is this? A spacebook is a simple website generator that will help you 
 * [Alpine.js](https://github.com/alpinejs/alpine) a minimal utility-first framework for simple or advanced JavaScript 🕹️
 * [Elasticlunr](http://elasticlunr.com/) a lightweight full-text search engine 🔍
 * [Advanced Markdown-it support](https://github.com/markdown-it/markdown-it) with footnotes, custom containers, emoji support, tables, task lists, and auto-linked images ✏️ 
-* [Netlify](https://www.netlify.com/) for one-click installs, easy form support, free hosting, and an automated [Github](https://github.com/) deployment pipepline 🤖
+* [Netlify](https://www.netlify.com/) for cloud hosting and one-click installs, easy form support, and an automated [Github](https://github.com/) deployment pipepline 🤖
 * [Netlify CMS](https://www.netlify.com/) (optional) to provide an easy Markdown editor for creating and changing content with optional [Cloudinary support](https://cloudinary.com/) for advanced image management. 💻
 
 All of this results in a speedy and accessible website that scores 100s across the board on Google Lighthouse metrics for mobile and desktop: 
