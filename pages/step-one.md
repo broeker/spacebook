@@ -65,6 +65,6 @@ There are probably also a few settings you may wish to change on Netlify:
 * You can change your site name and URL to something more personal under **General > Site settings > Site details > Site name** 
 * If you leave your contact form enabled, you may wish to set up notifications under **Forms > Form notifications** 
 * You may wish to change your deploy settings under **Build & deploy > deploy contexts**
-* You may wish to explore other Netlify settings, including deploy notifications, 
+* You may wish to explore other Netlify settings!
 
 Now that you've got your site configured to your wishes you can move on the next step and start working with your content 👍
