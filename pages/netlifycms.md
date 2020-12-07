@@ -25,7 +25,7 @@ Once enabled, you will see a small gear icon in the lower right corner of your s
 
 ## Step 2: Enable Netlify identity
 
-* From your Netlify dashboard, enabled Identity via **Site settings > Identity > Enable Identity
+* From your Netlify dashboard, enabled Identity via **Site settings > Identity > Enable Identity**
 * Once enabled, click on **Identity > Services** and then **Enable Git Gateway**
 
 ## Step 3: Enable Netlify External providers
