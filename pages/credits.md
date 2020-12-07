@@ -12,6 +12,7 @@ Spacebook was inspired by my search for the simplest possible way to spin up the
 * [Eleventy Netlify Boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate) by Dan Urbanowiczi -- I used this as the basis for Netlify CMS integration and for overall code structure
 * [Eleventy-Tailwind-AlpineJS Starter](https://github.com/gregwolanski/eleventy-tailwindcss-alpinejs-starter) by Greg Wolanski -- this was the method I followed for integrating Tailwind CSS and Alpine.js
 * [Eleventy Base Blog](https://github.com/philhawksworth/eleventyone) by Zach Leatherman and the Eleventy team -- I used this as an "official" reference even though spacebooks do not contain blog functionality
+* [Staticrypt implementation](https://gist.github.com/epicfaace/c1a4452401af14d35b60fe211f2c1559) by various, including this Gist linked from the Staticrypt issue queue
 * [Nextra](https://github.com/shuding/nextra) by Shu Ding -- this is a Next.js project that also uses Tailwind and heavily inspired the overall design of spacebook. 
 * [Add Search to an Eleventy website with Elasticlunr](https://www.belter.io/eleventy-search/) by Duncan McDougall -- this gave me the basics for integrating Elasticlunr
 
