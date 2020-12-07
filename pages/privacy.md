@@ -35,10 +35,10 @@ If privacy is a priority and you wish to you put your site behind a password, yo
 If you want to open up your site to Google and other search engines, simply remove or rename the **robots.md** file from the root of your project. 
 :::
 
-## Remove noreferrer and/or nofollow attributes!
+## Remove noreferrer attributes!
 
 ::: callout 
-Edit the **mdIterator** plugin settings in your .eleventy.js configuration file to change these settings for external links.
+Edit the **mdIterator** plugin settings in your .eleventy.js configuration file to change these settings for external links. Simply remove the reference to "noreferrer" as shown below:
 :::
 
 
@@ -50,8 +50,10 @@ Edit the **mdIterator** plugin settings in your .eleventy.js configuration file 
       const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === 'href')
       if (href && (!href.includes('franknoirot.co') && !href.startsWith('/') && !href.startsWith('#'))) {
         tokens[idx].attrPush([ 'target', '_blank' ])
-        // tokens[idx].attrPush([ 'rel', 'noopener noreferrer' ]) 👈 remove or comment this line!
+        tokens[idx].attrPush([ 'rel', 'noopener' ]) 👈 remove noreferrer from this line!
       }
     })
 ```
+
+You should leave the **noopener** in place unless you also remove the call to **target _blank**, in which case you can probably just remove this whole plugin!
 
