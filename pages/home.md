@@ -55,7 +55,21 @@ If you wish, you may customize your spacebook or use it as the basis for your cr
 
 - - -
 
-## Install spacebook 
+## Who needs a spacebook? 🤔 
+
+A spacebook is for anybody who believes in the [#indieweb](https://indieweb.org/) and wants a simple, modern, and free way to put something on the web that they own and control:
+
+* Writers and thinkers
+* Planners and dreamers
+* Technical doc writers
+* Project managers
+* Teachers and students
+
+Anybody who is willing to learn a few simple things can create as many spacebooks as they'd like for any reason in the world. 
+
+---
+
+## Install spacebook 👩‍🚀 
 
 In theory, you can launch  a spacebook without ever downloading the code or running your site locally. But if you want to customize your codebase or write your Markdown files in a local editor, you'll want to download and install your site locally. 
 
