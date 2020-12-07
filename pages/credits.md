@@ -7,7 +7,9 @@ eleventyNavigation:
   key: Credits
   title: Credits
 ---
-Spacebook was inspired by my search for the simplest possible way to spin up the simplest possible website in the least amount of time, with the freedom to extend as needed, zero cost, no maintenance burden, and virtually zero effort. Eleventy was a perfect fit, and I spent many hours researching these and other starter projects for ideas and inspiration: 
+Spacebook was inspired by my search for the simplest possible way to spin up a modern website in the least amount of time, with the freedom to extend as needed, zero cost, no maintenance burden, and virtually zero effort. 
+
+Eleventy was a perfect fit, and I spent many hours researching these and other starter projects for ideas and inspiration: 
 
 * [Eleventy Netlify Boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate) by Dan Urbanowiczi -- I used this as the basis for Netlify CMS integration and for overall code structure
 * [Eleventy-Tailwind-AlpineJS Starter](https://github.com/gregwolanski/eleventy-tailwindcss-alpinejs-starter) by Greg Wolanski -- this was the method I followed for integrating Tailwind CSS and Alpine.js
