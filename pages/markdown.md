@@ -14,6 +14,10 @@ Once you have your own spacebook site you can delete or replace this lovely page
 
 Use headers and subheaders to structure your text, along with lists, blockquotes, images, and embeds. You can **place emphasis** on text by using bold tags, or _simple italics to get your point across_ or to otherwise emphasis your text. Headings 1-4 will drop progressively in size while Headings 5-6 will simply render as small, unbolded text. 
 
+::: callout
+**Did you know?** You should always start your headers at level two (##). The H1 header is reserved for your page title. Also be sure to nest your headers in order, without skipping a level. If you skip a level your site will show accessibility errors in Google Lighthouse.
+:::
+
 
 ### A picture is worth a thousand words 
 
