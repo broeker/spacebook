@@ -10,7 +10,9 @@ eleventyNavigation:
 ---
 All of your content pages are stored in a single top-level directory called **pages** and if you look inside this folder you will see this page and all of the other pages that are part of your spacebook.
 
-You can edit and change any of the sample files, or remove them and create your own. The trick to managing a spacebook is a basic understanding of Markdown and how it is used. Use your editor or the Github UI to examine any one of the files in your pages folder to get the lay of the land. 
+You can edit and change any of the sample files, or remove them and create your own. 
+
+The trick to managing a spacebook is a basic understanding of Markdown and how it is used. Use your editor or the Github UI to examine any one of the files in your pages folder to get the lay of the land. 
 
 ## Understanding Frontmatter
 
