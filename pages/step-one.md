@@ -54,8 +54,9 @@ When you make changes to this file and deploy them your site will automically up
 * **enableDarkMode** -- enable or disable darkmode functionality
 * **enableEditButton** -- enable or disable the "edit on Github button"
 * **enableGithubLink** -- enable or disable the link to your Github repo in the footer
-* **enableNetlifyCMS** -- enable or disable Netlify CMS (set to false by default)
-* **enableEncryption** -- enable the logout button if you are using encryption
+* **enableNetlifyCMS** -- enable or disable Netlify CMS (false by default)
+* **enableEncryption** -- enable the logout button if you are using encryption (false by default)
+
 
 ## Basic Netlify configuration
 
@@ -63,7 +64,7 @@ There are probably also a few settings you may wish to change on Netlify:
 
 * You can change your site name and URL to something more personal under **General > Site settings > Site details > Site name** 
 * If you leave your contact form enabled, you may wish to set up notifications under **Forms > Form notifications** 
-* You may wish to change your deploy settings under **Build & deploy > deploy contexts"
+* You may wish to change your deploy settings under **Build & deploy > deploy contexts**
 * You may wish to explore other Netlify settings, including deploy notifications, 
 
 Now that you've got your site configured to your wishes you can move on the next step and start working with your content 👍
