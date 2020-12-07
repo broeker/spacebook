@@ -1,9 +1,10 @@
 ---
-title: Tips and tricks 
+title: Tips and tricks 💡
 date: 2020-11-20
 permalink: /tips-and-tricks/index.html
 eleventyNavigation:
   key: Tips & Tricks
+  title: Tips & Tricks
   order: 20 
 ---
 

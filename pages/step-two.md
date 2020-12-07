@@ -1,5 +1,5 @@
 ---
-title: 'Step 2: Set up your content' 
+title: 'Step 2: Set up your content ✍️' 
 date: 2020-11-20
 permalink: /getting-started/step-two/index.html
 eleventyNavigation:
@@ -8,7 +8,7 @@ eleventyNavigation:
   key: Step two 
   title: 'Step 2: Set up your content'
 ---
-All of your content pages are stored in a single top-level directory called **pages** and if you look inside this folder you will see this page and all of the other pages that are part of your spacebook.
+All of your content pages are stored in a single top-level directory called **pages** and if you look inside this folder, you will see this page and all of the other pages that are part of your spacebook.
 
 You can edit and change any of the sample files, or remove them and create your own. 
 
@@ -57,19 +57,19 @@ eleventyNavigation:
 
 * **metaDescription:** -- this can be used to create a custom description metatag on a page-by-page basis. If not present, the global metatag description from **sites.json** is used.
 * **title** -- you add a custom title to change the menu label (useful if you want a short key but a longer menu label) 
-* **parent** -- this is used to set up a hierarchy of parent and child pages for your menu system. If you set the "parent" of a given page to match the "key" of another page, it will show up as a child page within the menu system.
+* **parent** -- this is used to set up a hierarchy of parent and child pages for your menu system. If you set the **parent** of a given page to match the **key** of another page, it will show up as a child page within the menu system.
 
 ::: callout
 **Mind your spaces!** Be sure to add one space after each entry in your frontmatter or it will cause an error in your build.
 :::
 
 ::: callout
-**Netlify CMS:** If you enable the optional [Netlify CMS integration](/netlifycms), all of these settings can also be changed via the CMS.
+**Did you know?:** If you enable the optional [Netlify CMS integration](/netlifycms), all of these frontmatter settings can be changed via the CMS.
 :::
 
 ## Add your content! 
 
-Once you've got your frontmatter sorted out, you can begin adding or editing your content using simple markdown. Anything that appears directly below your frontmatter will appear as the main body of your page, like so:
+Once you understand frontmatter, you can begin adding or editing your content using simple markdown. Anything that appears directly below your frontmatter will appear as the main body of your page, like so:
 
 ```
 ---
@@ -84,11 +84,6 @@ This is my content! 👈
 
 ```
 
-Your content can include all sorts of [markdown tags](/markdown) and organized however it makes the most sense to you. It is best to use consistent formatting techniques throughout your pages to keep them looking good. 
+Your content can include all sorts of [markdown tags](/markdown) and  you can organize and structure it however it makes the most sense to you. It is best to use consistent formatting techniques throughout your pages to keep them looking good. 
 
-If you are working locally, you should be seeing all of your changes as you work and if you are editing your Github files directly or using Netlify CMS your changes will appear as soon as the site builds and finishes its deploy.
-
-
-
-
-Now that you've got your site configured to your wishes you can move on the next step and start adding some new pages 👍
+If you are working locally, you should be seeing all of your changes as you work and if you are editing your Github files directly or using Netlify CMS your changes will appear as soon as the site builds and finishes its deploy. 👍

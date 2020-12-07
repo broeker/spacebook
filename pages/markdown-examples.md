@@ -1,5 +1,5 @@
 ---
-title: Markdown Examples
+title: Markdown examples ✍️
 date: 2020-11-20
 permalink: /markdown-examples/index.html
 eleventyNavigation:
@@ -10,10 +10,8 @@ eleventyNavigation:
 This page shows the available Markdown-it formatters available to you with examples. For a few more bits of syntax or plugins that are not covered here see the official [markdown-it demo](https://markdown-it.github.io/).
 
 ::: callout 
-**Tip:** you can remove this file from your navigation, but keep it around for reference. 
+**Did you know?** You can remove this or any file from your navigation, but keep it around for reference if you find it handy. 
 :::
-
-Generally, you should reserve the h1 heading for your primary page title, and this is handled automatically in your templates. In most cases, start your content headings at level h2 (##).
 
 # h1 Heading 8-)
 ## h2 Heading
@@ -26,7 +24,7 @@ Generally, you should reserve the h1 heading for your primary page title, and th
 
 ```
 # h1 heading
-## h2 heading
+## h2 heading 👈 this should be the top-level heading in your content!
 ### h3 heading
 #### h4 heading
 ##### h5 heading

@@ -1,5 +1,5 @@
 ---
-title: Working with images 
+title: Working with images 💡 
 date: 2020-11-20
 permalink: /tips-and-tricks/images/index.html
 eleventyNavigation:
@@ -18,7 +18,7 @@ You can drop images, diagrams, or illustrations anywhere in your content. Images
 
 ![My image](/static/img/space.jpg)
 
-You can also refer to any external image via URL including size Unsplashed images or anywhere you can source an image online:
+You can also refer to any external image via URL including sized Unsplashed images, transformed images from Cloudinary, or anywhere you can source an image online:
 
 ```
 ![Space](https://source.unsplash.com/random/300x300)
@@ -37,7 +37,7 @@ The matching arrows will center your caption, and the underscores will italicize
 
 
 ## Important!
-You are responsible for your image sizing and optimization, and should upload the smallest useful version of your image. Future version of spacebook will take better advantage of the [Eleventy image plugin](https://github.com/11ty/eleventy-img)
+You are responsible for your image sizing and optimization, and should upload the smallest useful version of your image. Future version of spacebook will take better advantage of the [Eleventy image plugin](https://github.com/11ty/eleventy-img).
 
 
 

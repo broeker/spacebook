@@ -1,12 +1,12 @@
 ---
-title: Enabling Netlify CMS 
+title: Enabling Netlify CMS 😎 
 date: 2020-11-20
 permalink: /netlifycms/index.html
 eleventyNavigation:
   key: Enabling Netlify CMS 
   order: 70 
 ---
-[Netlify CMS](https://www.netlifycms.org/) is a very simple user interface that lets you edit and preview your markdown files via a browser-based editor. It is very useful for beginners or anybody who wants an easy interface for managing content.
+[Netlify CMS](https://www.netlifycms.org/) is a simple user interface that lets you add, edit, and preview your markdown files via a browser-based editor. It is very useful for beginners or anybody who wants an easy interface for managing content.
 
 ## Step 1: Enable Netlify CMS in your configuration
 
@@ -30,13 +30,13 @@ Once enabled, you will see a small gear icon in the lower right corner of your s
 
 ## Step 3: Enable Netlify External providers
 
-* Now go to **Identity > Registration > External providers** and then **Add provide**
+* Now go to **Identity > Registration > External providers** and then **Add provider**
 * Enable Github and/or Google (typically both)
-* This will enable both yourself and any collaborators to login directly using their existing accounts
+* This will enable both yourself and any collaborators to login directly using existing accounts
 
 ## Step 4: Set your Netlify site to invite only
 
-Unless you want to open access to the work you will want to set your site to invite only. Go to **Site settings > Registration > Registration preferences** and click "Edit settings" to change to invite only
+Unless you want to open access (not advised), you will want to set your CMS to invite only. Go to **Site settings > Registration > Registration preferences** and click "Edit settings" to change to invite only
 
 ## Step 5: Login and edit content
 
@@ -44,4 +44,4 @@ You should now be able to login into your Netlify CMS by clicking the gear link 
 
 ## Step 6: Invite other users
 
-You can invite other users to your CMS by visting **Identity > Invite users** from the top navigation bar. 
+You can invite other users to your CMS by visting **Identity > Invite users** from the top navigation bar 

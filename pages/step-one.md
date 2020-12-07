@@ -1,5 +1,5 @@
 ---
-title: 'Step 1: Configure your spacebook' 
+title: 'Step 1: Configure your spacebook ⚙️' 
 date: 2020-11-20
 permalink: /getting-started/step-one/index.html
 eleventyNavigation:
@@ -8,7 +8,9 @@ eleventyNavigation:
   key: Step one 
   title: 'Step 1: Configure your site'
 ---
-Once you have your spacebook running, your first step is to do some basic configuration to make it your own. All site configuration is stored in a single file located at **_data/site.json**. If you have a local copy of your site installed you can edit this file directly, or you can edit and commit the file using the Github UI. The default site.json file looks like so: 
+Once you have your spacebook running, your first step is to do some basic configuration to make it your own. All site configuration is stored in a single file located at **_data/site.json**. 
+
+If you have a local copy of your site installed you can edit this file directly, or you can edit and commit the file using the Github UI. The default **site.json** file looks like so: 
 
 ```
 {
@@ -31,12 +33,12 @@ Once you have your spacebook running, your first step is to do some basic config
 ```
 
 ::: callout
-**Note!** If you enable the optional Netlify CMS integration, all of these settings can also be changed via the CMS.
+**Did you know?** If you enable the optional Netlify CMS integration, all of these settings can also be changed via the CMS.
 :::
 
 ## Basic settings
 
-When you make changes to this file and deploy them your site will automically update to reflect your new settings:
+When you make changes to this file and deploy them, your site will automically update to reflect your new settings:
 
 * **Name** -- this is the name or title of your site as it appears in the header
 * **Subtitle** -- this is the short subtitle that appears directly below your site name (optional)

@@ -1,5 +1,5 @@
 ---
-title: 'Step 3: Deploy your changes' 
+title: 'Step 3: Deploy your changes 🤖' 
 date: 2020-11-20
 permalink: /getting-started/step-three/index.html
 eleventyNavigation:
@@ -8,7 +8,7 @@ eleventyNavigation:
   key: Step 3 
   title: 'Step 3: Deploy your changes'
 ---
-Deploying changes to your site could not be any easier. 
+Deploying changes to your site could not be any easier: 
 
 * **If you are editing your files directly on Github** your site is building each time you save a commit to your main branch. Depending on the amount of pages your site has it usually takes 60 seconds or less to complete a deploy. 
 * **If you are editing your files locally** your site will automatically build every time you push changes or accept a pull request into your main Github branch. Again it usually takes around 60 seconds or less unless your site is very large. 

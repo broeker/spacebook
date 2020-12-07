@@ -1,5 +1,5 @@
 ---
-title: Working with embeds 
+title: Working with embeds 💡 
 date: 2020-11-20
 permalink: /tips-and-tricks/embeds/index.html
 eleventyNavigation:
@@ -7,12 +7,15 @@ eleventyNavigation:
   order: 40 
   parent: Tips & Tricks
 ---
-Spacebook comes preconfigured with the [Eleventy Embed Everything](https://github.com/gfscott/eleventy-plugin-embed-everything) which makes it very easy to embed responsive content.
+Spacebook comes preconfigured with the [Eleventy Embed Everything](https://github.com/gfscott/eleventy-plugin-embed-everything) which makes it very easy to embed responsive content:
 
 ## Youtube
 
 ```
 https://www.youtube.com/watch?v=21X5lGlDOfg
+
+or 
+
 https://youtu.be/21X5lGlDOfg
 
 ```

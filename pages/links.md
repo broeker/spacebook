@@ -1,5 +1,5 @@
 ---
-title: Working with links 
+title: Working with links 💡 
 date: 2020-11-20
 permalink: /tips-and-tricks/links/index.html
 eleventyNavigation:
@@ -38,7 +38,5 @@ Use the same syntax to link to an external URL with title:
 [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
 
 ::: callout 
-All external links are configured to automatically open in a tab or window. If you want to disable this setting, you can remove the plugin from your .eleventy.js configuratioon file.
+**Did you know?** All external links are configured to automatically open in a tab or window. If you want to disable this setting, you can remove the plugin from your .eleventy.js configuratioon file.
 :::
-
-https://www.youtube.com/watch?v=21X5lGlDOfg

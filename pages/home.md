@@ -49,9 +49,7 @@ All of this results in a speedy and accessible website that scores 100s across t
 
 ![Performance](/static/img/spacebook.png)
 
-::: callout
-**Did you know?** If you enable the optional Netlify CMS you will typically lose 2-3 performance points due to the required loading of the Netlify identity script but this is a pretty swell starting point. 👍
-:::
+If you enable the optional Netlify CMS you will lose 2-3 performance points due to the required loading of the Netlify identity script but this is a pretty swell starting point. 👍
 
 If you wish, you may customize your spacebook or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](/credits). 
 
@@ -67,7 +65,7 @@ A spacebook is for anybody who believes in the [#indieweb](https://indieweb.org/
 * Project managers
 * Teachers and students
 
-Anybody who is willing to learn a few simple things can create as many spacebooks as they'd like for any reason in the world. 
+Anybody who is willing to learn a few simple things can create as many spacebooks as they'd like for any reason in the world. You and only you have full control and ownership of your content and how it is consumed. 
 
 ---
 

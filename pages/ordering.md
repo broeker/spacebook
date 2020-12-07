@@ -1,5 +1,5 @@
 ---
-title: Understanding ordering 
+title: Understanding ordering 💡 
 date: 2020-11-20
 permalink: /tips-and-tricks/ordering/index.html
 eleventyNavigation:
@@ -15,7 +15,7 @@ title: Home
 date: 2020-11-20
 permalink: /
 eleventyNavigation:
-  order: 0 👈
+  order: 0 👈 this determines your menu structure!
   key: Home 
 ---
 ```
@@ -23,7 +23,7 @@ eleventyNavigation:
 Your spacebook homepage is set to **order: 0** which puts at the top of the list. The page with the next highest order will appear next in menu and as the "next page" in the inline navigation. 
 
 ::: callout
-**Tip:** If you want to create a page that does NOT appear anywhere in your menu navigation, simply remove the entire *eleventyNavigation* from your frontmatter. The page will be available for direct links but will not appear in your menu.
+**Did you know?** If you want to create a page that does NOT appear anywhere in your menu navigation, simply remove the entire *eleventyNavigation* from your frontmatter. The page will be available for direct links but will not appear in your menu.
 :::
 
 
@@ -38,29 +38,29 @@ order: 0 👈
 
 title: Page one
 key: Page one
-order: 5 👈
+order: 10 👈
 
   title: Subpage one
   key: Subpage one
   parent: Page one
-  order: 10 👈
+  order: 20 👈
 
   title: Subpage two
   key: Subpage two
   parent: Page one
-  order: 15 👈
+  order: 30 👈
 
 title: Page two
 key: Page two
-order: 20 👈
+order: 40 👈
 
 title: Page three
 key: Page three
-order: 25 👈
+order: 50 👈
 ```
 
 This structure will result in the correct menu ordering and provide the proper in-page navigation. 
 
 ::: callout
-**Tip:** For this reason, it is wise to leave some space between your ordering as you set up your initial page structure as per the example above. This will help you avoid having to changing all of your order settings whenever you want to add a new page. For larger sites, you could even start with an interval of 10 to be safe.
+**Did you know?** It is wise to leave some space between your ordering as you set up your initial page structure as per the example above. This will help you avoid having to changing all of your order settings whenever you want to add a new page!
 :::
