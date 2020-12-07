@@ -94,7 +94,7 @@ npm install
 npn run build (only necessary the first time!)
 ```
 
-*If you get errors here, doublel check your node version!*
+*If you get errors here, double check your node version!*
 
 ### Step three
 
