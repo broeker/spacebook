@@ -42,6 +42,10 @@ Unless you want to open access (not advised), you will want to set your CMS to i
 
 You should now be able to login into your Netlify CMS by clicking the gear link in the footer, or by visting https://yoursite.netlify.app/_admin_
 
+::: callout
+**Did you know?** In my experience, when you login via Netlify Identity it will confirm your login but will **also show the login button again** as if you did not just authenticate. Click it again and you should see your CMS. Sometimes Netlify identity is a little wonky to set up but once in place works fine.
+:::
+
 ## Step 6: Invite other users
 
 You can invite other users to your CMS by visting **Identity > Invite users** from the top navigation bar 
