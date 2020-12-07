@@ -1,5 +1,5 @@
 ---
-title: 'Step 1: Configure your spacebook ⚙️' 
+title: 'Step 1: Configure your site ⚙️' 
 date: 2020-11-20
 permalink: /getting-started/step-one/index.html
 eleventyNavigation:
