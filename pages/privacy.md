@@ -8,9 +8,17 @@ eleventyNavigation:
 ---
 By default, spacebook sites are set up so they will NOT get indexed by Google or other search engines or send referrer links to outside sites. (You can change this if wish.) There are no ad trackers, tracking cookies, or other nonsense installed. 
 
+Keep reading for easy instructions on how to share your spacebook with Google and the rest of the world if privacy is not a concern and you wish to spread your work far and wide.
+
+## Don't forget Github!
+
+::: callout 
+If privacy is a top priority, don't forget to set your Github repository to private also!
+:::
+
 ## Level one: Security through obscurity
 
-By default, your site is hidden from search engines and won't send referrer links but it is not truly secure. Anybody who discovers the link will be able to view the site. You can use an obscured Netlify site URL for added protection against accidental discovery. This is the default setting and safe for many use cases. 
+By default, your site is hidden from search engines and won't send referrer links but it is not truly secure. Anybody who discovers the link will be able to view the site. This is similar to the "Anyone with the link" permissions commonly set on Google Docs. You can use an obscured Netlify site URL for added protection against accidental discovery. This is the default setting and safe for many use cases. 
 
 ## Level two: Encryption
 
@@ -24,7 +32,7 @@ If privacy is a priority and you wish to you put your site behind a password, yo
 ## Make your site searchable!
 
 ::: callout
-If you want to open up your site to Google and other search engines, simply remove the **robots.txt** file from the root of your project. 
+If you want to open up your site to Google and other search engines, simply remove or rename the **robots.md** file from the root of your project. 
 :::
 
 ## Remove noreferrer and/or nofollow attributes!
@@ -33,8 +41,4 @@ If you want to open up your site to Google and other search engines, simply remo
 Edit the **mdIterator** plugin settings in your .eleventy.js configuration file to change these settings for external links.
 :::
 
-## Don't forget Github!
 
-::: alert 
-If privacy is a top priority don't forget to set your Github repository to private also!
-:::
