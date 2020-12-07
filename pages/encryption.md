@@ -55,6 +55,8 @@ That's it! 👍
 
 When you deploy your site all of your pages will be encrypted at build time and require a password to access. The passphrase is stored in local storage and users remain logged in for future visits until they click the logout button  (<svg  width="24" height="24"  xmlns='http://www.w3.org/2000/svg' class='ionicon inline text-gray-400 hover:text-red-800' viewBox='0 0 512 512'><title>Close Circle</title><path d='M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z' fill='none' stroke='currentColor' stroke-miterlimit='10' stroke-width='32'/><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M320 320L192 192M192 320l128-128'/></svg>), or an administrator changes the password. 
 
+If you ever want to remove password protection, simply reverse this process and your site will no longer be encrypted at build time.
+
 ::: callout
 **Did you know?** Because all of your pages are being decrypted on the fly at the time of access, there is a small "flash of unstyled HTML" that occurs between each page load. *I will happily accept a pull request to smooth this out, perhaps with a loading spinner or some other mechanism that looks a bit better* 😊
 :::
