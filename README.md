@@ -7,7 +7,7 @@
 * **Easy to use** 😀 -- add a new page and it appears magically in your navigation 
 * **Writing focused** ❤️ -- beautiful typography and a minimalist design managed with easy-to-use Markdown
 * **Speedy and accessible** 🚀 -- static files, system fonts, minimal JavaScript, purge and minify All the Things, fully responsive, accessible to all
-* **Private** 🔒 -- User-agent: * Disallow: / is set by default with noreferrer links; encrypt your full site with a password if desired
+* **Privacy first** 🔒 -- User-agent: * Disallow: / is set by default with noreferrer links; encrypt your full site with a password if desired
 * **Flexible** 💪 -- disable features you don't need, add advanced features with serverless functions or Alpine.js
 
 Communicators and learners from [Da Vinci](https://en.wikipedia.org/wiki/Leonardo_da_Vinci) and [Darwin](https://en.wikipedia.org/wiki/Charles_Darwin) to [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper) and [Ida Tarbell](https://en.wikipedia.org/wiki/Ida_Tarbell) are famous for their use of notebooks, illustrations, and the written word to explain complex ideas. Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy.
