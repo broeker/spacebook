@@ -6,11 +6,11 @@ eleventyNavigation:
   key: Privacy settings 
   order: 60 
 ---
-By default, spacebook sites are set up so they will NOT get indexed by Google or other search engines or send referrer links to outside sites. There are no ad trackers, tracking cookies, or other nonsense installed. 
+By default, spacebook sites are set up so they will NOT get indexed by Google or other search engines or send referrer links to outside sites. (You can change this if wish.) There are no ad trackers, tracking cookies, or other nonsense installed. 
 
 ## Level one: Security through obscurity
 
-By default, your site is hidden from search engines and won't send referrer links but it is not truly secure. Anybody who discovers the link will be able to view the site. You can use an obscured Netlify site URL for added protection against accidental discovery. This is the default settings and safe for many use cases. 
+By default, your site is hidden from search engines and won't send referrer links but it is not truly secure. Anybody who discovers the link will be able to view the site. You can use an obscured Netlify site URL for added protection against accidental discovery. This is the default setting and safe for many use cases. 
 
 ## Level two: Encryption
 
