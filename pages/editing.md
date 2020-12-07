@@ -14,7 +14,7 @@ There are three basic ways you can edit and update your spacebook content. They 
 📝 You can edit your markdown files in the **pages** folder directly on Github using their edit tools. When you add or commit a file change to your main branch it will automatically deploy to Netlify. This is a very fast and easy way to make changes from anywhere with only your browser. 
 
 ::: callout
-By default there is an "edit" button that appears on each page linked directly the edit screen on Github. This means that external or internal collaborators can submit pull requests or make edits to any page depending on your permissions. You can disable this button in **site.json** by setting **enableEditButton** to false.
+**Did you know?** By default there is an "edit" button that appears on each page linked directly the edit screen on Github. This means that external or internal collaborators can submit pull requests or make edits to any page depending on your permissions. You can disable this button in **site.json** by setting **enableEditButton** to false.
 :::
 
 ## Edit locally and deploy to Github
