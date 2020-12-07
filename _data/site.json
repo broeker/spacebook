@@ -12,5 +12,6 @@
   "enableDarkMode": true,
   "enableNetlifyCMS": false,
   "enableEditButton": true,
-  "enableGithubLink": true
+  "enableGithubLink": true,
+  "enableEncryption": false
 }

@@ -26,6 +26,7 @@ Once you have your spacebook running, your first step is to do some basic config
   "enableEditButton": true,
   "enableGithubLink": true,
   "enableNetlifyCMS": false,
+  "enableEncryption": false
 }
 ```
 
@@ -54,6 +55,7 @@ When you make changes to this file and deploy them your site will automically up
 * **enableEditButton** -- enable or disable the "edit on Github button"
 * **enableGithubLink** -- enable or disable the link to your Github repo in the footer
 * **enableNetlifyCMS** -- enable or disable Netlify CMS (set to false by default)
+* **enableEncryption** -- enable the logout button if you are using encryption
 
 ## Basic Netlify configuration
 
