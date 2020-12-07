@@ -7,7 +7,11 @@ eleventyNavigation:
   order: 35
   parent: Tips & Tricks
 ---
-Working with links in markdown is simple once you get the hang of it. For the simplest use case you can paste a link directly into your markdown and it will transform into an active hyperlink:
+Working with links in markdown is simple once you get the hang of it. 
+
+## Pasted links
+
+For the simplest use case you can paste a link directly into your markdown and it will transform into an active hyperlink:
 
 ```
 https://en.wikipedia.org/wiki/Main_Page

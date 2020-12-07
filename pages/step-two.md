@@ -36,9 +36,13 @@ eleventyNavigation:
   * **order** -- this determines where your menu appears relative to other menu items (0=first) 
   * **key** -- this is the menu "label" for your and also serves a simple slug or key used to track parent and child pages
 
+::: callout
+**Mind your spaces!** Be sure to add one space after each entry in your frontmatter or it will cause an error in your build. The nested options under **eleventyNavigation** are indented with exactly two spaces. 
+:::
+
 **Additional frontmatter options**
 
-There are three additional frontmatter items you can add that will affect how your page behaves:
+There are three additional frontmatter items you can add that will affect how your page behaves, including the ability to create a hierarchy of parent and child pages:
 
 ```
 ---
@@ -58,10 +62,6 @@ eleventyNavigation:
 * **metaDescription:** -- this can be used to create a custom description metatag on a page-by-page basis. If not present, the global metatag description from **sites.json** is used.
 * **title** -- you add a custom title to change the menu label (useful if you want a short key but a longer menu label) 
 * **parent** -- this is used to set up a hierarchy of parent and child pages for your menu system. If you set the **parent** of a given page to match the **key** of another page, it will show up as a child page within the menu system.
-
-::: callout
-**Mind your spaces!** Be sure to add one space after each entry in your frontmatter or it will cause an error in your build.
-:::
 
 ::: callout
 **Did you know?:** If you enable the optional [Netlify CMS integration](/netlifycms), all of these frontmatter settings can be changed via the CMS.
@@ -84,6 +84,6 @@ This is my content! 👈
 
 ```
 
-Your content can include all sorts of [markdown tags](/markdown) and  you can organize and structure it however it makes the most sense to you. It is best to use consistent formatting techniques throughout your pages to keep them looking good. 
+Your content can include all sorts of [markdown tags](/markdown) and you can organize and structure it however it makes the most sense to you. It is best to use consistent formatting techniques throughout your pages to keep them looking good. 
 
 If you are working locally, you should be seeing all of your changes as you work and if you are editing your Github files directly or using Netlify CMS your changes will appear as soon as the site builds and finishes its deploy. 👍

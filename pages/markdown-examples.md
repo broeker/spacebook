@@ -7,7 +7,7 @@ eleventyNavigation:
   key: Markdown examples 
   parent: Learning markdown
 ---
-This page shows the available Markdown-it formatters available to you with examples. For a few more bits of syntax or plugins that are not covered here see the official [markdown-it demo](https://markdown-it.github.io/).
+This page demonstrates most the available Markdown-it formatters available to you with examples. For a few more bits of syntax or plugins that are not covered here, see the official [markdown-it demo](https://markdown-it.github.io/).
 
 ::: callout 
 **Did you know?** You can remove this or any file from your navigation, but keep it around for reference if you find it handy. 

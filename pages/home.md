@@ -50,7 +50,7 @@ All of this results in a speedy and accessible website that scores 100s across t
 ![Performance](/static/img/spacebook.png)
 
 ::: callout
-If you enable the optional Netlify CMS you will lose 2-3 performance points due to the required loading of the Netlify identity script but this is a pretty swell starting point. 👍
+**Did you know?** If you enable the optional Netlify CMS, you will typically lose 2-3 performance points due to the required loading of the Netlify identity script but this is a pretty swell starting point. 👍
 :::
 
 If you wish, you may customize your spacebook or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](/credits). 
@@ -67,13 +67,13 @@ A spacebook is for anybody who believes in the [#indieweb](https://indieweb.org/
 * Project managers
 * Teachers and students
 
-Anybody who is willing to learn a few simple things can create as many spacebooks as they'd like for any reason in the world. You and only you have full control and ownership of your content and how it is consumed. 
+Anybody who is willing to learn a few simple things can create as many spacebooks as they'd like for any reason in the world.
 
 ---
 
 ## 👩‍🚀 Install spacebook
 
-In theory, you can launch  a spacebook without ever downloading the code or running your site locally. But if you want to customize your codebase or write your Markdown files in a local editor, you'll want to download and install your site locally. 
+In theory, you can launch a spacebook without ever downloading the code or running your site locally. Just click that big green button and edit your files directly on Github! But if you want to customize your codebase or write your Markdown files in a local editor, you'll want to download and install your site locally. 
 
 ### Requirements
 
@@ -90,20 +90,26 @@ node --version
 
 ### Step one
 
-Clone a copy of the spacebook repository and name it as you wish:
+If already have a Github repository from a Netlify install, simply clone a copy of your new repository:
 
 ```
-git clone https://github.com/broeker/spacebook my-spacebook
+git clone https://github.com/<your-username>/<your-repository>
 ```
 
-*Note: If you've already deployed a spacebook to Netlify, replace the repository URL above to point to your own Github repo that was created when you deployed the site.* 
+If you just want to try this out locally, you can clone the Spacebook repository directly:
+
+```
+git clone https://github.com/broeker/spacebook
+```
+
+*Note: You'll need to remove the existing .git file and add your own upstream repository if you want to use this as a basis for moving forward. You can also simply [fork the repository](https://github.com/broeker/spacebook) directly from Github.* 
 
 ### Step two
 
 Install the site and run an initial build command:
 
 ```
-cd my-spacebook 
+cd spacebook 
 
 npm install
 
@@ -120,5 +126,5 @@ Now spin up your local server to see your site!
 npm run start
 ```
 
-This command will start a local server and you'll be able to work on your site with hot reloads and some nice Browsersync features. If you install your site locally without connecting it to Netlify, you can easily do so later by creating a new Netlify site and connecting it to your Github repository. 💥
+This command will start a local server and you'll be able to work on your site with hot reloads and some nice Browsersync features. If you install your site locally without connecting it to Netlify, you can easily do so later by moving your code into its own Github repository, and then creating a new Netlify site connect to that repository. 💥
 

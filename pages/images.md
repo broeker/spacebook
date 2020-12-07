@@ -27,17 +27,19 @@ You can also refer to any external image via URL including sized Unsplashed imag
 
 ## Image captions
 
-Your images are centered by default, and there is a special syntax to add a caption directly below your image with centered text:
+Your images are centered by default, and there is a special syntax to add a caption directly below your image with centered text.The matching arrows will center your caption, and the underscores will italicize the caption.:
 
 ```
 ->_Carl Sagan, 1987_<-
 ```
 
-The matching arrows will center your caption, and the underscores will italicize the caption.
+![Space](https://source.unsplash.com/random/300x300)
+
+->_A random Unsplashed image at 300x300_<-
 
 
-## Important!
-You are responsible for your image sizing and optimization, and should upload the smallest useful version of your image. Future version of spacebook will take better advantage of the [Eleventy image plugin](https://github.com/11ty/eleventy-img).
+## Important! Be a good web citizen!
+You are responsible for your image sizing and optimization, and should upload the smallest useful version of your image. Future version of spacebook will take better advantage of the [Eleventy image plugin](https://github.com/11ty/eleventy-img) to make this a bit easier.
 
 
 

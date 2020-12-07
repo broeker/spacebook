@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 40 
   parent: Tips & Tricks
 ---
-Spacebook comes preconfigured with the [Eleventy Embed Everything](https://github.com/gfscott/eleventy-plugin-embed-everything) which makes it very easy to embed responsive content:
+Spacebook comes preconfigured with the [Eleventy Embed Everything](https://github.com/gfscott/eleventy-plugin-embed-everything) which makes it very easy to embed responsive content simply by pasting the URL to your embedded content:
 
 ## Youtube
 

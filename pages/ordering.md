@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 45 
   parent: Tips & Tricks
 ---
-Both the primary menu and the in-page navigation rely on the "order" setting in the frontmatter for each of your pages: 
+Both the primary menu and the in-page navigation rely on the **order** setting in the frontmatter for each of your pages: 
 
 ```
 ---
@@ -62,5 +62,5 @@ order: 50 👈
 This structure will result in the correct menu ordering and provide the proper in-page navigation. 
 
 ::: callout
-**Did you know?** It is wise to leave some space between your ordering as you set up your initial page structure as per the example above. This will help you avoid having to changing all of your order settings whenever you want to add a new page!
+**Did you know?** It is wise to leave some space between your ordering as you set up your initial page structure as per the example above. This will help you avoid having to changing all of your order settings whenever you want to add a new page into your existing structure!
 :::
