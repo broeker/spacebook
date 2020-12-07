@@ -6,7 +6,7 @@ eleventyNavigation:
   key: Privacy settings 
   order: 60 
 ---
-By default, spacebook sites are set up so they will NOT get indexed by Google or other search engines or send referrer links to outside sites. (You can change this if wish.) There are no ad trackers, tracking cookies, or other nonsense installed. 
+By default, spacebook sites are set up so they will NOT get indexed by Google or other search engines, and they do not send referrer links to outside sites and therefore cannot be tracked in analytics. There are no ad trackers, tracking cookies, or other nonsense installed. 
 
 Keep reading for easy instructions on how to share your spacebook with Google and the rest of the world if privacy is not a concern and you wish to spread your work far and wide.
 
