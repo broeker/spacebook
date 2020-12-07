@@ -34,7 +34,7 @@ eleventyNavigation:
 * **permalink** -- the permalink is used to define the URL for the page. It must follow this format and end with *index.html*
 * **eleventyNavigation** -- this is used to define the menu item for your page, and to tell it where it will appear in the menu hierarchy.
   * **order** -- this determines where your menu appears relative to other menu items (0=first) 
-  * **key** -- this is the "label" for your and also serves a simple slug or key used to track parent and child pages
+  * **key** -- this is the menu "label" for your and also serves a simple slug or key used to track parent and child pages
 
 **Additional frontmatter options**
 
