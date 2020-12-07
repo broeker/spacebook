@@ -12,6 +12,15 @@ eleventyNavigation:
 
 Edit your site configuration in **_data/sites.json** and set **enableNetlifyCMS** to true
 
+```
+{
+  ...
+  "enableNetlifyCMS": true 👈 set this to true!
+  ...
+}
+
+```
+
 Once enabled, you will see a small gear icon in the lower right corner of your site that you can use to access your CMS once it is configured.
 
 ## Step 2: Enable Netlify identity
@@ -31,8 +40,8 @@ Unless you want to open access to the work you will want to set your site to inv
 
 ## Step 5: Login and edit content
 
-You should now be able to login into your Netlify CMS by clicking the gear link in the footer or by visting https://yoursite.netlify.app/_admin_
+You should now be able to login into your Netlify CMS by clicking the gear link in the footer, or by visting https://yoursite.netlify.app/_admin_
 
 ## Step 6: Invite other users
 
-You can invite other users to your CMS by visting **Identity > Invite users" from the top navigation bar. 
+You can invite other users to your CMS by visting **Identity > Invite users** from the top navigation bar. 
