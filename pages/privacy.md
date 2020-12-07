@@ -32,3 +32,9 @@ If you want to open up your site to Google and other search engines, simply remo
 ::: callout 
 Edit the **mdIterator** plugin settings in your .eleventy.js configuration file to change these settings for external links.
 :::
+
+## Don't forget Github!
+
+::: alert 
+If privacy is a top priority don't forget to set your Github repository to private also!
+:::
