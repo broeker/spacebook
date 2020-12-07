@@ -69,7 +69,7 @@ Anybody who is willing to learn a few simple things can create as many spacebook
 
 ---
 
-## Install spacebook 👩‍🚀 
+## 👩‍🚀 Install spacebook
 
 In theory, you can launch  a spacebook without ever downloading the code or running your site locally. But if you want to customize your codebase or write your Markdown files in a local editor, you'll want to download and install your site locally. 
 
