@@ -51,7 +51,7 @@ All of this results in a speedy and accessible website that scores 100s across t
 
 Note: If you enable the optional Netlify CMS you will lose 2-3 performance points due to the required loading of the Netlify identity script but this is a pretty swell starting point. 👍
 
-If you wish, you may customize your spacebook or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](https://www.11ty.dev/docs/starter/). 
+If you wish, you may customize your spacebook or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](/credits). 
 
 - - -
 
