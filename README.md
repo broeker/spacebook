@@ -7,7 +7,7 @@
 * **Easy to use** 😀 -- add a new page and it appears magically in your navigation 
 * **Writing focused** ❤️ -- beautiful typography and a minimalist design managed with easy-to-use Markdown
 * **Speedy and accessible** 🚀 -- static files, system fonts, minimal JavaScript, purge and minify All the Things, fully responsive, accessible to all
-* **Private** 🔒 -- User-agent: * Disallow: / is set by default with noreferrer links; encrypt your full site with a password if desired
+* **Privacy first** 🔒 -- User-agent: * Disallow: / is set by default with noreferrer links; encrypt your full site with a password if desired
 * **Flexible** 💪 -- disable features you don't need, add advanced features with serverless functions or Alpine.js
 
 Communicators and learners from [Da Vinci](https://en.wikipedia.org/wiki/Leonardo_da_Vinci) and [Darwin](https://en.wikipedia.org/wiki/Charles_Darwin) to [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper) and [Ida Tarbell](https://en.wikipedia.org/wiki/Ida_Tarbell) are famous for their use of notebooks, illustrations, and the written word to explain complex ideas. Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy.
@@ -29,7 +29,7 @@ Once complete, your new spacebook will be available immediately on Netlify and r
 
 ## 🤠 Whoa, slow down Tex! 
 
-What even is this? Spacebooks is a simple website generator that will help you create your own project just like this one using:
+What even is this? A spacebook is a simple website generator that will help you create your own project just like this one using:
 
 * [Eleventy](https://www.11ty.io) a super fast Node-based static site generator that stays out of your way and lets you ship only what you want to ship 🚀
 * [Tailwind 2.0](https://tailwindcss.com/) a brilliant and tiny utility-first CSS framework ([Tailwind Typography](https://tailwindcss.com/docs/typography-plugin) included) 🎨
