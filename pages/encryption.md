@@ -58,5 +58,5 @@ When you deploy your site all of your pages will be encrypted at build time and 
 If you ever want to remove password protection, simply reverse this process and your site will no longer be encrypted at build time.
 
 ::: callout
-**Did you know?** Because all of your pages are being decrypted on the fly at the time of access, there is a small "flash of unstyled HTML" that occurs between each page load. *I will happily accept a pull request to smooth this out, perhaps with a loading spinner or some other mechanism that looks a bit better* 😊
+**Did you know?** Because all of your pages are being decrypted on the fly at the time of access, there is a small delay between page loads so you will see a small loading spinner that you won't otherwise see on a spacebook site. 😊
 :::
