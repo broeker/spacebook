@@ -4,6 +4,12 @@
   #command = "npm run build && set -e && find ./_site -type f -name '*.html' -exec staticrypt -f password_template.html {} $PASSWORD -o {} \\;"
   functions = "functions"
 
+[[plugins]]
+ package = "netlify-plugin-form-submissions"
+ [plugins.inputs]
+ formNames = "approved-comments"
+ dataDirectory = "_data" 
+
 # REDIRECT and HEADERS examples
 
 # Redirect rule example

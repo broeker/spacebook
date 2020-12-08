@@ -25,6 +25,18 @@
       <div class="px-6 flex-1 mt-20 md:mt-24 items-center w-full overflow-y-auto">
         <!-- Your content -->
        {{ layoutContent | safe }}  
+       {% if commentsClosed != true %}
+  {% include "comment-form.njk" %}
+  {% else %}
+    <div class="footnote">
+      <p>
+        comments on this page are now closed. Perhaps express your opinions about this <a href="https://twitter.com/intent/tweet?text=I%20need%20to%20tell%20the%20world%20about%20this!&url={{ init.rootURL }}{{ page.url }}">on twitter</a> instead?
+      </p>
+    </div>
+  {% endif %}
+  <div class="comments">
+  {% include "comments.njk" -%}
+  </div>
       </div>
     </div>
   </div>

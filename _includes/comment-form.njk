@@ -1,0 +1,21 @@
+<form name="approved-comments" netlify-honeypot="full-name" action="/thanks" netlify>
+<h2>Leave a comment</h2>
+  <p class="honey">
+    <input name="path" type="hidden" value="{{ page.url }}">
+    <label>Your full name: <input name="full-name"></label>
+  </p>
+  <p>
+    <input type="text" name="name" id="name" placeholder="Your name">
+  </p>
+  <p>
+    <label for="email"><small>I'll never spam you. I promise.</small></label>
+    <input type="email" name="email" id="email" placeholder="Your email">
+  </p>
+  <p>
+    <label for="comment">Your comment</label>
+    <textarea name="comment" id="comment"></textarea>
+  </p>
+  <p>
+    <button type="submit" class="btn">Comment</button>
+  </p>
+</form>
