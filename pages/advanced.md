@@ -1,5 +1,5 @@
 ---
-title: Configured advanced settings 🥼
+title: Advanced settings 🥼
 date: 2020-11-20
 permalink: /advanced/index.html
 eleventyNavigation:
@@ -7,9 +7,9 @@ eleventyNavigation:
   order: 50 
 ---
 
-The following sections outline some of the things you can do with your spacebook that take a bit more work to set up but never fear:
+The following sections outline some of the things you can do with your spacebook that take a bit more work to set up, but never fear:
 
-* [Enabling Netlify CMS](/netlifycms/
+* [Enabling Netlify CMS](/netlifycms/)
 * [Enabling comments](/comments) (coming soon)
 * [Password protection](/encryption/)
 
