@@ -10,6 +10,7 @@ eleventyNavigation:
 ---
 Once you have your spacebook running, your first step is to do some basic configuration to make it your own. All site configuration is stored in a single file located at **_data/site.json**. 
 
+
 If you have a local copy of your site installed you can edit this file directly, or you can edit and commit the file using the Github UI. The default **site.json** file looks like so: 
 
 ```
