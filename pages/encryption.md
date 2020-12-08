@@ -2,7 +2,7 @@
 title: Password protect your spacebook 🔒 
 
 date: 2020-11-20
-permalink: /tips-and-tricks/encryption/index.html
+permalink: /advanced/encryption/index.html
 eleventyNavigation:
   key: Password protection
   order: 70 

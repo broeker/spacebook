@@ -1,7 +1,7 @@
 ---
 title: Enabling Netlify CMS 😎 
 date: 2020-11-20
-permalink: /netlifycms/index.html
+permalink: /advanced/netlifycms/index.html
 eleventyNavigation:
   key: Enabling Netlify CMS 
   order: 60

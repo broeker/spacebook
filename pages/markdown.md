@@ -1,7 +1,7 @@
 ---
 title: Learning markdown ✍️
 date: 2020-11-20
-permalink: /markdown/index.html
+permalink: /tips-and-tricks/markdown/index.html
 eleventyNavigation:
   key: Learning markdown 
   order: 48 
