@@ -9,7 +9,8 @@ eleventyNavigation:
 
 The following sections outline some of the things you can do with your spacebook that take a bit more work to set up but never fear:
 
-* [Password protection](/encryption/)
+* [Enabling Netlify CMS](/netlifycms/
 * [Enabling comments](/comments) (coming soon)
-* [Enabling Netlify CMS](/netlifycms/)
+* [Password protection](/encryption/)
+
 
