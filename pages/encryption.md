@@ -5,7 +5,8 @@ date: 2020-11-20
 permalink: /tips-and-tricks/encryption/index.html
 eleventyNavigation:
   key: Password protection
-  order: 65 
+  order: 70 
+  parent: Advanced settings
 ---
 By default, your spacebook is set up to be [non-discoverable](/privacy) but you can also protect your entire site behind a password. When you enable, your entire site will be encrypted by [Staticrypt](https://github.com/robinmoisson/staticrypt) and all users will need to enter a password to decrypt and view. 
 

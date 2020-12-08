@@ -3,7 +3,7 @@ title: Markdown examples ✍️
 date: 2020-11-20
 permalink: /markdown-examples/index.html
 eleventyNavigation:
-  order: 55 
+  order: 80 
   key: Markdown examples 
   parent: Learning markdown
 ---
