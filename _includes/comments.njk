@@ -1,0 +1,12 @@
+{% if comments[page.url].length > 0 %}
+  <h2>{{comments[page.url].length}} comments on this page</h2>
+  <ul>
+  {%- for comment in (comments[page.url] ) -%}
+    <li class="comment">
+      <img class="avatar" src="{{ comment.avatar }}">
+      <h3>{{ comment.name }}</h3>
+      <div class="comment-text">{{ comment.comment | markdown | safe}}</div>
+    </li>
+  {%- endfor -%}
+  </ul>
+{% endif %}
