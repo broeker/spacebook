@@ -6,7 +6,7 @@ eleventyNavigation:
   order: 18
   parent: Home
   key: Step 4 
-  title: 'Step 4: Privacy settings'
+  title: 'Step 4: Configure access'
 ---
 By default, spacebook sites are set up so they will **NOT** get indexed by Google or other search engines. They do not send referrer links to outside sites and cannot be tracked in analytics. There are no ad trackers, tracking cookies, or other nonsense installed. 
 
