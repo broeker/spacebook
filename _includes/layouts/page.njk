@@ -20,10 +20,12 @@ section: page
         <script src="https://cdn.fastcomments.com/js/embed.min.js" defer></script>
             <div id="fastcomments-widget"></div>
             <script>
-            window.FastCommentsUI(document.getElementById('fastcomments-widget'), {
-            tenantId: 'hs8uHseLO'
-            });
-        </script>
+            window.onload = function() {
+                window.FastCommentsUI(document.getElementById('fastcomments-widget'), {
+                tenantId: 'hs8uHseLO'
+                });
+             };
+            </script>
         {% endif %}
      </div>
  </div>
