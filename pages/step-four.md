@@ -26,10 +26,10 @@ If privacy is a priority and you wish to you put your site behind a password, yo
  You can upgrade your Netlify account for basic site wide authentication if necessary. It is similar to the level two encryption but is less rough around the edges, it does not use encryption, and there is no page slow down once you have authenticated. It will cost you $20 a month or thereabouts.
 
 
-## Make your site searchable!
+## Remove robots.txt! 
 
 ::: callout
-If you want to open up your site to Google and other search engines, simply remove or rename the **robots.md** file from the root of your project.  (Or change the template to reflect the robots file of your liking.)
+If you want to open up your site to Google and other search engines, simply remove or rename the **robots.md** file from the root of your project.  (Or, change the **_includes/layouts/robots.njk" template to reflect the robots file of your liking!)
 :::
 
 ## Remove noreferrer attributes!
