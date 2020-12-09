@@ -10,9 +10,10 @@ eleventyNavigation:
 ---
 By default, your spacebook is set up to be [non-discoverable](/privacy) but you can also protect your entire site behind a password. When you enable, your entire site will be encrypted by [Staticrypt](https://github.com/robinmoisson/staticrypt) and all users will need to enter a password to decrypt and view. 
 
+**Demo:** [Spacebook](https://deploy-preview-10--spacebook-app.netlify.app/tips-and-tricks/ordering/) (Password = *spacebook*)
+
 ::: callout
 **Did you know?** Netlify does not allow for basic authentication on their free tier. If you are already on a paid plan or are willing to do so, then it is better to simply set up basic authentication via your dashboard instead of using the instructions below.
-
 :::
 
 ## Step 1: Set a password in Netlify
