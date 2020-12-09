@@ -59,7 +59,7 @@ If you wish, you may customize your spacebook or use it as the basis for your cr
 
 ## Who needs a spacebook? 🤔 
 
-A spacebook is for anybody who believes in the [#indieweb](https://indieweb.org/) and wants a simple, modern, and free way to put something on the web that they own and control:
+A spacebook is for anybody who believes in the [#indieweb](https://indieweb.org/) and wants a simple, modern, and free way to put a notebook-like thing on the web that they own and control:
 
 * Writers and thinkers
 * Planners and dreamers
