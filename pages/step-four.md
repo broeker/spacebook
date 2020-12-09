@@ -29,7 +29,7 @@ If privacy is a priority and you wish to you put your site behind a password, yo
 ## Remove robots.txt! 
 
 ::: callout
-If you want to open up your site to Google and other search engines, simply remove or rename the **robots.md** file from the root of your project.  (Or, change the **_includes/layouts/robots.njk" template to reflect the robots file of your liking!)
+If you want to open up your site to Google and other search engines, simply remove or rename the **robots.md** file from the root of your project.  (Or, change the **_includes/layouts/robots.njk** template to reflect the robots file of your liking!)
 :::
 
 ## Remove noreferrer attributes!
