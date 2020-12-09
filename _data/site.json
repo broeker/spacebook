@@ -14,5 +14,5 @@
   "enableGithubLink": true,
   "enableNetlifyCMS": false,
   "enableComments": true,
-  "enableEncryption": false
+  "enableEncryption": true 
 }
