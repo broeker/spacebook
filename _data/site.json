@@ -13,6 +13,6 @@
   "enableEditButton": true,
   "enableGithubLink": true,
   "enableNetlifyCMS": false,
-  "enableComments": false,
+  "enableComments": true,
   "enableEncryption": false
 }
