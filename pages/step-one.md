@@ -17,7 +17,7 @@ If you have a local copy of your site installed you can edit this file directly,
   "name": "Spacebook",
   "subtitle": "Create fast and simple documentation to explain almost anything",
   "description": "A simple document generator based on Eleventy, Tailwind 2.0, and Alpine.js",
-  "footer": "Made with ❤️️ by Electric Citizen",
+  "footer": "Made with ❤️️ by <a href=\"https://electriccitizen.com\">Electric Citizen</a>",
   "emoji": "💥️️",
   "url": "https://spacebook.app",
   "githubUrl": "https://github.com/broeker/spacebook",
@@ -28,7 +28,8 @@ If you have a local copy of your site installed you can edit this file directly,
   "enableEditButton": true,
   "enableGithubLink": true,
   "enableNetlifyCMS": false,
-  "enableEncryption": false 
+  "enableComments": false,
+  "enableEncryption": false
 }
 ```
 
