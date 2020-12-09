@@ -111,11 +111,11 @@
   }
 
   .adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet {
-    @apply ml-auto mr-auto bg-gray-100 dark:bg-gray-700 p-2 rounded text-center
+    @apply ml-auto mr-auto bg-gray-200 dark:bg-gray-600 p-2 rounded text-center
   }
 
   .adjust  p img:hover, .adjust img:hover {
-    @apply bg-gray-300 dark:bg-pink-600
+    @apply bg-gray-400 dark:bg-gray-600
   }
 
 
