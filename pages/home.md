@@ -45,7 +45,8 @@ What even is this? A spacebook is a simple website generator that will help you 
 - [Netlify](https://www.netlify.com/) for cloud hosting and one-click installs, easy form support, and an automated [Github](https://github.com/) deployment pipepline 🤖
 - [Netlify CMS](https://www.netlify.com/) (optional) to provide an easy Markdown editor for creating and changing content with optional [Cloudinary support](https://cloudinary.com/) for advanced image management. 💻
 
-Don't worry; you don't need to know or understand any of this to launch a spacebook. It all of this results in a speedy and accessible website that scores 100s across the board on Google Lighthouse metrics for mobile and desktop:
+Don't worry; you don't need to know or understand any of this to launch a spacebook but it results in a speedy, easy-to-use, and accessible website that scores 100s across the board on Google Lighthouse metrics for mobile and desktop:
+ 
 
 ![Performance](/static/img/spacebook.png)
 
