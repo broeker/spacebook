@@ -19,4 +19,6 @@ This is a small page to track known errors, todos, and other small things I wish
 
 * [ ] **Eleventy Images** I'd like to integrate this plugin for more advanced image handling (currently the burden is on you to serve the best/smallest image you can)
 * [ ] **Streamlined starter content** Currently when you install spacebook, you get ALL of the content as it currently exists on spacebook.app. It only takes a hot minute to delete all of these pages, but it may be better to ship with a smaller set of starter content.
+* [ ] **Alpine.js** An earlier version of spacebook used some Alpine.js code for various interactions. The current version does not use ANY but since it adds such a minimal performance impact it is still in the codebase in hopes of adding some additional sugar.
+* [ ] **Netlify Functions and other data** Spacebook is all set up to run Netlify functions (AWS Lambda) or to pull in data from other sources such as an API, Google Sheets, or an Airtable. Would like to provide some demos :)
 
