@@ -10,6 +10,6 @@ eleventyNavigation:
 The following sections outline some of the things you can do with your spacebook that take a bit more work to set up, but never fear:
 
 * [Enabling Netlify CMS](/advanced/netlifycms/)
-* [Enabling comments](/advanced/comments))
+* [Enabling comments](/advanced/comments)
 * [Enabling Analytics](/advanced/analytics)
 * [Password protection](/advanced/encryption/)
