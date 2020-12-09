@@ -2,6 +2,7 @@
 title: Tips and tricks 💡
 date: 2020-11-20
 permalink: /tips-and-tricks/index.html
+comments: 0
 eleventyNavigation:
   key: Tips & Tricks
   title: Tips & Tricks
@@ -15,3 +16,4 @@ The following sections outline some basic tips and tricks along with best practi
 * [Working with links](/tips-and-tricks/links/)
 * [Working with embeds](/tips-and-tricks/embeds/)
 * [Understanding ordering](/tips-and-tricks/ordering/)
+* [Learning markdown](/tips-and-tricks/markdown/
