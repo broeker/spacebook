@@ -6,7 +6,7 @@ eleventyNavigation:
   order: 95 
   key: Errata and To-dos
 ---
-This is a small page to track known errors, todos, and other small things I wish worked differently. Pull requests welcome 😇
+This is a small page to track known errors, todos, and other small things I wish worked differently. Pull requests are welcome 😇
 
 ## Errata 
 
