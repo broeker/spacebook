@@ -2,10 +2,11 @@
 title: Password protect your spacebook 🔒 
 
 date: 2020-11-20
-permalink: /tips-and-tricks/encryption/index.html
+permalink: /advanced/encryption/index.html
 eleventyNavigation:
   key: Password protection
-  order: 65 
+  order: 70 
+  parent: Advanced settings
 ---
 By default, your spacebook is set up to be [non-discoverable](/privacy) but you can also protect your entire site behind a password. When you enable, your entire site will be encrypted by [Staticrypt](https://github.com/robinmoisson/staticrypt) and all users will need to enter a password to decrypt and view. 
 
@@ -58,5 +59,5 @@ When you deploy your site all of your pages will be encrypted at build time and 
 If you ever want to remove password protection, simply reverse this process and your site will no longer be encrypted at build time.
 
 ::: callout
-**Did you know?** Because all of your pages are being decrypted on the fly at the time of access, there is a small "flash of unstyled HTML" that occurs between each page load. *I will happily accept a pull request to smooth this out, perhaps with a loading spinner or some other mechanism that looks a bit better* 😊
+**Did you know?** Because all of your pages are being decrypted on the fly at the time of access, there is a small delay between page loads so you will see a small loading spinner that you won't otherwise see on a spacebook site. 😊
 :::

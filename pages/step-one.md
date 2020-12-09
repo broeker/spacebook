@@ -3,7 +3,7 @@ title: 'Step 1: Configure your site ⚙️'
 date: 2020-11-20
 permalink: /getting-started/step-one/index.html
 eleventyNavigation:
-  order: 5
+  order: 5 
   parent: Home
   key: Step one 
   title: 'Step 1: Configure your site'
@@ -17,10 +17,10 @@ If you have a local copy of your site installed you can edit this file directly,
   "name": "Spacebook",
   "subtitle": "Create fast and simple documentation to explain almost anything",
   "description": "A simple document generator based on Eleventy, Tailwind 2.0, and Alpine.js",
-  "footer": "Made with ❤️️ in Minneapolis",
+  "footer": "Made with ❤️️ by <a href=\"https://electriccitizen.com\">Electric Citizen</a>",
   "emoji": "💥️️",
-  "url": "https://spacebook.netlify.app",
-  "githubUrl": "https://github.com/broeker/spacebook/",
+  "url": "https://spacebook.app",
+  "githubUrl": "https://github.com/broeker/spacebook",
   "githubBranch": "main",
   "enableSearch": true,
   "enableContact": true,
@@ -28,6 +28,7 @@ If you have a local copy of your site installed you can edit this file directly,
   "enableEditButton": true,
   "enableGithubLink": true,
   "enableNetlifyCMS": false,
+  "enableComments": false,
   "enableEncryption": false
 }
 ```

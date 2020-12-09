@@ -12,7 +12,11 @@ section: page
  <div class="mt-4 px-4 lg:px-6 prose w-full max-w-6xl sm:prose lg:prose-lg xl:prose-xl">
     <h1 class="dark:text-gray-500">{{ title }}</h1>
     <div class="adjust dark:text-gray-400">
-     {{ layoutContent | safe }}
+        {{ layoutContent | safe }}
+
+        {% if (site.enableComments) and (comments !== 0) %}
+        <!-- Paste your comment code here! -->
+        {% endif %}
      </div>
  </div>
  </div>

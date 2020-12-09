@@ -1,10 +1,11 @@
 ---
 title: Learning markdown ✍️
 date: 2020-11-20
-permalink: /markdown/index.html
+permalink: /tips-and-tricks/markdown/index.html
 eleventyNavigation:
   key: Learning markdown 
-  order: 50 
+  order: 48 
+  parent: Tips & Tricks
 ---
 Spacebook uses Markdown (specifically [Markdown-it](https://github.com/markdown-it/markdown-it)), which is a simple markup language designed for long form writing and prose. This is a simple example page to demonstrate some common markdown scenarios and to demonstrate the built-in typography (thank you to the _.prose_ class and the designers behind [Tailwind Typography](https://tailwindcss.com/docs/typography-plugin)). 
 
@@ -13,6 +14,10 @@ Once you have your own spacebook site you can delete or replace this lovely page
 ## Structured text and headers
 
 Use headers and subheaders to structure your text, along with lists, blockquotes, images, and embeds. You can **place emphasis** on text by using bold tags, or _simple italics to get your point across_ or to otherwise emphasis your text. Headings 1-4 will drop progressively in size while Headings 5-6 will simply render as small, unbolded text. 
+
+::: callout
+**Did you know?** You should always start your headers at level two (##). The H1 header is reserved for your page title. Also be sure to nest your headers in order, without skipping a level. If you skip a level your site will show accessibility errors in Google Lighthouse.
+:::
 
 
 ### A picture is worth a thousand words 
