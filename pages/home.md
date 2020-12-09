@@ -13,7 +13,7 @@ Create your own spacebook exactly like this one and customize it to your needs. 
 
 - **Easy to use** 😀 -- add a new page and it appears magically in your navigation
 - **Writing focused** ❤️ -- beautiful typography and a minimalist design managed with easy-to-use Markdown
-- **Speedy and accessible** 🚀 -- static files, system fonts, minimal JavaScript, purge and minify All the Things, fully responsive, accessible to all
+- **Speedy and accessible** 🚀 -- static files, responsive system fonts, minimal JavaScript, purge and minify All the Things, accessible to all people and devices
 - **Privacy first** 🔒 -- User-agent: \* Disallow: / is set by default with noreferrer links; encrypt your full site with a password if desired
 - **Flexible** 💪 -- disable features you don't need, add advanced features with serverless functions or Alpine.js
 
