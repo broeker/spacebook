@@ -50,7 +50,7 @@ All of this results in a speedy and accessible website that scores 100s across t
 ![Performance](/static/img/spacebook.png)
 
 ::: callout
-**Did you know?** If you enable the optional Netlify CMS, you will typically lose 2-3 performance points due to the required loading of the Netlify identity script but this is a pretty swell starting point. 👍
+**Did you know?** If you enable the optional Netlify CMS or add an analytics script, you may lose 1-3 performance points but this is a pretty swell starting point. 👍
 :::
 
 If you wish, you may customize your spacebook or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](/credits). 
