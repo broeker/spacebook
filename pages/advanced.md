@@ -12,5 +12,5 @@ The following sections outline some of the things you can do with your spacebook
 
 * [Enabling Netlify CMS](/advanced/netlifycms/)
 * [Enabling comments](/advanced/comments)
-* [Enabling Analytics](/advanced/analytics)
+* [Enabling analytics](/advanced/analytics)
 * [Password protection](/advanced/encryption/)
