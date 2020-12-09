@@ -8,7 +8,7 @@ eleventyNavigation:
   title: Getting started 
   order: 0
 ---
- Create your own spacebook exactly like this one and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source. 🔥 
+ Create your own spacebook exactly like this one and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source. 
 
 * **Easy to use** 😀 -- add a new page and it appears magically in your navigation 
 * **Writing focused** ❤️ -- beautiful typography and a minimalist design managed with easy-to-use Markdown
