@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 73 
   parent: Advanced settings
 ---
-If you have a public spacebook, sometimes it can useful (or fun) to get an idea of how many people are visiting. This is easy, free (or paid), respects your user's privacy, and has minimal impact on site performance. 
+If you have a public spacebook, sometimes it can useful (or fun) to get an idea of how many people are visiting. This is easy, free (or paid), respects your user's privacy, and has almost zero impact on site performance. 
 
 ## Cloudflare Analytics (free)
 
