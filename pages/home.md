@@ -74,7 +74,9 @@ Anybody who is willing to learn a few simple things can create as many spacebook
 
 ## 👩‍🚀 Install spacebook
 
-In theory, you can launch a spacebook without ever downloading the code or running your site locally. Just click that big green button and edit your files directly on Github! But if you want to customize your codebase or write your Markdown files in a local editor, you'll want to download and install your site locally.
+In theory, you can launch a spacebook without ever downloading the code or running your site locally. Just click that big green button and edit your files directly on Github! (The Github UI is fairly mobile friendly, and it is entirely possible to launch and manage a spacebook entirely via your phone :))  
+
+But if you want to customize your codebase or write your Markdown files in a local editor, you'll want to download and install your site locally.
 
 ### Requirements
 
