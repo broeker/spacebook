@@ -103,7 +103,7 @@ If you just want to try this out locally, you can clone the Spacebook repository
 git clone https://github.com/broeker/spacebook
 ```
 
-_Note: You'll need to remove the existing .git file and add your own upstream repository if you want to use this as a basis for moving forward. You can also simply [fork the repository](https://github.com/broeker/spacebook) directly from Github._
+_Note: You'll need to remove the existing .git file and add your own upstream repository if you want to use this as a basis for moving forward. You can also simply copy or [fork the repository](https://github.com/broeker/spacebook) directly from Github._
 
 ### Step two
 
@@ -127,4 +127,4 @@ Now spin up your local server to see your site!
 npm run start
 ```
 
-This command will start a local server and you'll be able to work on your site with hot reloads and some nice Browsersync features. If you install your site locally without connecting it to Netlify, you can easily do so later by moving your code into its own Github repository, and then creating a new Netlify site connect to that repository. 💥
+This command will start a local server and you'll be able to work on your site with hot reloads and some nice Browsersync features. If you install your site locally without connecting it to Netlify, you can easily do so later by moving your code into its own Github repository, and then creating a new Netlify site connected to that repository. 💥
