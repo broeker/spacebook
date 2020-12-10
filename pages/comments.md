@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 70 
   parent: Advanced settings
 ---
-There are a variety of use cases where you may wish to enable commenting on some or all of your spacebook pages. There are a variety of free and paid solutions, and your spacebook is set up to accommodate whichever comment engine makes the most sense for you. 
+There are a variety of use cases where you may wish to enable commenting on some or all of your spacebook pages. There are numerous free and paid solutions, and your spacebook is set up to accommodate whichever comment engine makes the most sense for you. 
 
 ## Choosing a comment engine
 
