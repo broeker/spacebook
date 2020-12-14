@@ -8,10 +8,6 @@
 
   }
 
-  body .prose {
-    @apply dark:text-pink-400
-  }
-
   .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 .prose hr, .prose strong {
     @apply dark:text-gray-400
   }
@@ -120,7 +116,7 @@
     @apply mb-1 pt-2 pr-4 pb-2 pl-2 rounded w-full block;
   }
   nav ul li a {
-    @apply text-gray-400 dark:text-gray-500;
+    @apply text-gray-500 dark:text-gray-500;
   }
 
   nav ul li a:hover {
