@@ -1,5 +1,5 @@
 ---
-title: Errata and To-dos 🚨
+title: Errata and To-do
 date: 2020-11-20
 permalink: /errata/index.html
 eleventyNavigation:

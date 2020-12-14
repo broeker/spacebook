@@ -1,7 +1,8 @@
 ---
-title: Working with embeds 💡 
+title: Working with embeds 
 date: 2020-11-20
 permalink: /tips-and-tricks/embeds/index.html
+toc: true
 eleventyNavigation:
   key: Working with embeds
   order: 40 
@@ -28,6 +29,8 @@ https://youtu.be/21X5lGlDOfg
 https://twitter.com/NASA/status/1335413968299458560
 ```
 https://twitter.com/NASA/status/1335413968299458560
+
+## Other embeds 
 
 See the Embed Everything docs for a full list of supported emdeds (Spotify, TikTok, Soundcloud, Vimeo, etc.)
 

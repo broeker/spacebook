@@ -1,7 +1,8 @@
 ---
-title: Working with links 💡 
+title: Working with links
 date: 2020-11-20
 permalink: /tips-and-tricks/links/index.html
+toc: true
 comments: 0
 eleventyNavigation:
   key: Working with links
