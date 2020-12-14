@@ -10,12 +10,12 @@ section: page
  </div>
  
 <div class="flex w-full justify-center">
-    <div class="mt-4 px-4 lg:px-6 w-full max-w-6xl">
+    <div class="mt-4 px-2 lg:px-0 w-full max-w-6xl">
         <div class="wrapper flex justify-between">
             {% if site.enableTOC and toc %} 
-            <div class="main flex flex-col pr-0 xl:pr-64 prose sm:prose lg:prose-lg xl:prose-md">
+            <div class="main md:bg-yellow-50 lg:bg-blue-50 xl:bg-pink-50 flex flex-col pr-0 xl:pr-64 prose sm:prose lg:prose-lg xl:prose-md">
             {% else %}
-             <div class="main flex flex-col pr-0 prose sm:prose lg:prose-lg xl:prose-md">
+             <div class="main  flex flex-col pr-0 prose sm:prose lg:prose-lg xl:prose-md">
             {% endif %}    
                 <article>
                     <h1 class="dark:text-gray-500">{{ title }}</h1>
