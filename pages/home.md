@@ -25,7 +25,9 @@ Communicators and learners from [Da Vinci](https://en.wikipedia.org/wiki/Leonard
 
 You can launch your own spacebook and deploy it to the cloud on Netlify with the click of a button. You'll need an existing [Github account](https://github.com/) and a [Netlify account](https://www.netlify.com/) (which you can create during this process if you wish): 
 
-<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />
+<div class="flex width-full  justify-center">
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/spacebook"><img class="netlify" src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
+</div>
 
 Once complete, your new spacebook will be available immediately on Netlify and ready for customization and automatic deploys from your shiny new Github repository 👍
 
