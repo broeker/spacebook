@@ -35,17 +35,17 @@ Once complete, your new spacebook will be available immediately on Netlify and r
 
 ## What is a spacebook? 
 
-What even is this? A spacebook is a simple website generator that will help you create your own project just like this one using:
+A spacebook is a simple website generator that will help you create your own project just like this one using a bunch of super cool, modern, and fast technology:
 
 - [Eleventy](https://www.11ty.io) a super fast Node-based static site generator that stays out of your way and lets you ship only what you want to ship 🚀
-- [Tailwind 2.0](https://tailwindcss.com/) a brilliant and tiny utility-first CSS framework ([Tailwind Typography](https://tailwindcss.com/docs/typography-plugin) included) 🎨
+- [Tailwind 2.0](https://tailwindcss.com/) a brilliant and tiny utility-first CSS framework 🎨
 - [Alpine.js](https://github.com/alpinejs/alpine) a minimal utility-first framework for simple or advanced JavaScript 🕹️
 - [Elasticlunr](http://elasticlunr.com/) a lightweight full-text search engine 🔍
 - [Advanced Markdown-it support](https://github.com/markdown-it/markdown-it) with footnotes, custom containers, emoji support, tables, task lists, and auto-linked images ✏️
 - [Netlify](https://www.netlify.com/) for cloud hosting and one-click installs, easy form support, and an automated [Github](https://github.com/) deployment pipepline 🤖
 - [Netlify CMS](https://www.netlify.com/) (optional) to provide an easy Markdown editor for creating and changing content with optional [Cloudinary support](https://cloudinary.com/) for advanced image management. 💻
 
-Don't worry; you don't need to know or understand any of this to launch a spacebook but it results in a speedy, easy-to-use, and accessible website that scores 100s across the board on Google Lighthouse metrics for mobile and desktop:
+Don't worry; you don't need to know or understand any of this to launch a spacebook but it results in a speedy, easy-to-use, and accessible website that typically scores 100s across the board on Google Lighthouse metrics for mobile and desktop:
  
 
 ![Performance](/static/img/spacebook.png)
