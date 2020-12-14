@@ -86,7 +86,7 @@
   }
 
   nav.toc ol li a {
-    @apply text-gray-400
+    @apply text-gray-500
   }
   
   nav.toc ol li a:hover {

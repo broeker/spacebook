@@ -12,7 +12,7 @@
   "enableDarkMode": true,
   "enableEditButton": true,
   "enableGithubLink": true,
-  "enableTOC": false,
+  "enableTOC": true,
   "enableNetlifyCMS": false,
   "enableComments": false,
   "enableEncryption": false
