@@ -1,6 +1,5 @@
 ---
-title: Adding analytics 📊️ 
-
+title: Adding analytics 
 date: 2020-11-20
 permalink: /advanced/analytics/index.html
 eleventyNavigation:

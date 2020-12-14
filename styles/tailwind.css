@@ -68,6 +68,34 @@
   .alert, .alert strong, .alert em {
     @apply text-gray-50 dark:bg-gray-400  dark:text-gray-900;
   }
+  
+  nav.toc {
+    @apply pt-1
+  }
+
+  nav.toc ol {
+    @apply  m-0 p-0 
+  }
+  
+  nav.toc ol ol {
+    @apply  m-0 p-0
+  }
+  
+  nav.toc ol li {
+    @apply pt-2 !important
+  }
+
+  nav.toc ol li li {
+    @apply pt-2 ml-4
+  }
+
+  nav.toc ol li a {
+    @apply text-gray-400
+  }
+  
+  nav.toc ol li a:hover {
+    @apply text-gray-900
+  }
 
 
   ul.contains-task-list,
@@ -92,20 +120,13 @@
     @apply mb-1 pt-2 pr-4 pb-2 pl-2 rounded w-full block;
   }
   nav ul li a {
-    @apply text-gray-500 dark:text-gray-500;
+    @apply text-gray-400 dark:text-gray-500;
   }
 
   nav ul li a:hover {
     @apply bg-gray-200 dark:bg-gray-600  dark:text-gray-400; 
   }
 
-  .text-align-center {
-    @apply flex justify-center; 
-  }
-
-  .prose ul {
-    @apply list-none;
-  }
   nav ul li a.active {
     @apply bg-gray-200 dark:bg-gray-600 dark:text-gray-400;
   }
@@ -116,6 +137,14 @@
 
   .adjust  p img:hover, .adjust img:hover {
     @apply bg-gray-400 dark:bg-gray-600
+  }
+
+  .text-align-center {
+    @apply flex justify-center; 
+  }
+
+  .prose h2, .prose h3, .prose h4 {
+    scroll-margin-top: 3.5em;
   }
 
 

@@ -1,8 +1,8 @@
 ---
-title: Password protect your spacebook 🔒 
-
+title: Password protect your spacebook 
 date: 2020-11-20
 permalink: /advanced/encryption/index.html
+toc: true
 eleventyNavigation:
   key: Password protection
   order: 75 
@@ -10,13 +10,15 @@ eleventyNavigation:
 ---
 By default, your spacebook is set up to be [non-discoverable](/privacy) but you can also protect your entire site behind a password. When you enable, your entire site will be encrypted by [Staticrypt](https://github.com/robinmoisson/staticrypt) and all users will need to enter a password to decrypt and view. 
 
+## Demo site
+ 
 **Demo:** [Spacebook](https://deploy-preview-10--spacebook-app.netlify.app/tips-and-tricks/ordering/) (Password = *spacebook*)
 
 ::: callout
 **Did you know?** Netlify does not allow for basic authentication on their free tier. If you are already on a paid plan or are willing to do so, then it is better to simply set up basic authentication via your dashboard instead of using the instructions below.
 :::
 
-## Step 1: Set a password in Netlify
+## Set a password in Netlify
 
 * Visit your Netlify dashboard and go to **Site settings > Build & deploy > Environment**
 
@@ -26,7 +28,7 @@ By default, your spacebook is set up to be [non-discoverable](/privacy) but you 
 
 If you ever change this password, all of your users will be prevented from accessing your content until they have the new password.
 
-## Step 2: Enable encryption
+## Enable encryption
 
 In your **_data/site.json** file, set encryption to true:
 
@@ -41,7 +43,7 @@ In your **_data/site.json** file, set encryption to true:
 
 This will enable a logout button that appears in your header whenever encryption is enabled. 
 
-## Step 3: Change your build command
+## Change your build command
 
 Now you need to change the build command in your **netlify.toml** file. Comment out the current **npm run build** command and enable the command directly below it like so:  
 

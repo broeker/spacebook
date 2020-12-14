@@ -1,5 +1,5 @@
 ---
-title: Tips and tricks 💡
+title: Tips and tricks
 date: 2020-11-20
 permalink: /tips-and-tricks/index.html
 comments: 0

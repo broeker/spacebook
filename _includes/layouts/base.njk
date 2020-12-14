@@ -1,46 +1,28 @@
 <!doctype html>
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
   {% include "components/head.njk" %}
-  <body class="min-h-screen bg-white">
-  <div id="app" class="h-screen flex flex-col overflow-hidden">
-  <!-- Fixed top nav -->
-   {% include "components/header.njk" %}
-  <!-- Main content -->
-  <div class="flex-1 flex overflow-hidden">
-    <!-- Fixed sidebar -->
-     <nav id="navigation" class="hidden w:64 lg:w-72 mt-20 md:block h-screen dark:bg-gray-900 overflow-y-auto flex-none top-0  p-4 w-64 md:border-r dark:border-gray-800 z-9">
-      <button  name="Close navigation" onclick="closeNavigation()" class="float-right justify-end block md:hidden -mr-4 p-2">	<svg xmlns="http://www.w3.org/2000/svg" class="dark:bg-gray-500" width="18" height="18" viewBox="0 0 18 18"><path class="bg-pink-400 text-gray-100" d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"/></svg></button>
-      <div class="clear-right">
-        <a href="/">
-        <div class="block md:hidden pt-4 font-semibold text-gray-500">{{site.emoji }}{{ site.name }}</div>
-        <div class="block md:hidden text-sm text-gray-500 mb-4">{{ site.subtitle }}</div>
-        </a>
+  <body class="bg-white">
+    <div id="app">
+      {% include "components/header.njk" %}
+      <nav id="navigation" class="pb-12 fixed inset-y-0 overflow-x-hidden overflow-y-auto  hidden w:64 lg:w-72 mt-20 md:block  dark:bg-gray-900  flex-none top-0  p-4 w-64 md:border-r border-gray-100 dark:border-gray-800">
+        <button  name="Close navigation" onclick="closeNavigation()" class="float-right justify-end block md:hidden -mr-4 p-2">	<svg xmlns="http://www.w3.org/2000/svg" class="dark:bg-gray-500" width="18" height="18" viewBox="0 0 18 18"><path class="bg-pink-400 text-gray-100" d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"/></svg></button>
+        <div class="clear-right">
+          <a href="/">
+          <div class="block md:hidden pt-4 font-semibold text-gray-500">{{site.emoji }}{{ site.name }}</div>
+          <div class="block md:hidden text-sm text-gray-500 mb-4">{{ site.subtitle }}</div>
+          </a>
+          {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({anchorClass: "item",activeAnchorClass: "active",activeListItemClass: "active",activeKey: eleventyNavigation.key, listClass: "nav", listItemClass: "item"}) | safe }}
+        </div>
+      </nav>
+        <main class="dark:bg-gray-900 pt-16 sm:pt-18 md:pt-20 md:pl-72">
+            <div class="px-6">
+              {{ layoutContent | safe }} 
+              {% include "components/footer.njk" %} 
+            </div>
+        </main>
 
-        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({anchorClass: "item",activeAnchorClass: "active",activeListItemClass: "active",activeKey: eleventyNavigation.key, listClass: "nav", listItemClass: "item"}) | safe }}
-      </div>
-    </nav>
-    <!-- Scroll wrapper -->
-    <div class="flex-1 min-w-0 flex h-full w-full m-auto dark:bg-gray-900">
-      <!-- Scrollable container -->
-      <div class="px-6 flex-1 mt-20 md:mt-24 items-center w-full overflow-y-auto">
-        <!-- Your content -->
-       {{ layoutContent | safe }}  
-      </div>
+        
+        
     </div>
-  </div>
-  {% include "components/footer.njk" %}
-</div>
-
-  <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
-  {% if site.enableSearch == 1 %}
-  <script type="text/javascript" src="/_includes/assets/js/search.js"></script>
-  <script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"
-></script>
-{% endif %}
-  </body>
+</body>
 </html>
-
-
-{# See: https://instant.page/ #}

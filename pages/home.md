@@ -1,8 +1,8 @@
 ---
-layout: layouts/page.njk
 title: Getting started
 date: 2020-11-20
 permalink: /
+toc: true
 eleventyNavigation:
   key: Home
   title: Getting started
@@ -21,9 +21,9 @@ Communicators and learners from [Da Vinci](https://en.wikipedia.org/wiki/Leonard
 
 ---
 
-## Launch a new spacebook now 🙋
+## Launch a new spacebook
 
-You can launch your own spacebook and deploy it to the cloud on Netlify with the click of a button. You'll need an existing [Github account](https://github.com/) and a [Netlify account](https://www.netlify.com/) (which you can create during this process if you wish):
+You can launch your own spacebook and deploy it to the cloud on Netlify with the click of a button. You'll need an existing [Github account](https://github.com/) and a [Netlify account](https://www.netlify.com/) (which you can create during this process if you wish): 
 
 <div class="flex width-full  justify-center">
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/spacebook"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
@@ -33,7 +33,7 @@ Once complete, your new spacebook will be available immediately on Netlify and r
 
 ---
 
-## 🤠 Whoa, slow down Tex
+## What is a spacebook? 
 
 What even is this? A spacebook is a simple website generator that will help you create your own project just like this one using:
 
@@ -58,7 +58,7 @@ If you wish, you may customize your spacebook or use it as the basis for your cr
 
 ---
 
-## Who needs a spacebook? 🤔
+## Who needs a spacebook?
 
 A spacebook is for anybody who believes in the [#indieweb](https://indieweb.org/) and wants a simple, modern, and free way to put a notebook-like thing on the web that they own and control:
 
@@ -72,7 +72,7 @@ Anybody who is willing to learn a few simple things can create as many spacebook
 
 ---
 
-## 👩‍🚀 Install spacebook
+## Install spacebook
 
 In theory, you can launch a spacebook without ever downloading the code or running your site locally. Just click that big green button and edit your files directly on Github! (The Github UI is fairly mobile friendly, and it is entirely possible to launch and manage a spacebook entirely via your phone :))  
 
@@ -85,7 +85,7 @@ You must be running **Node version 12 or higher** due to the Tailwind 2.0 releas
 - [Node](https://nodejs.org/)
 - [NVM](https://github.com/nvm-sh/nvm) (optional)
 
-#### To find your current node version:
+**To find your current node version:**
 
 ```
 node --version

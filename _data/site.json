@@ -1,9 +1,9 @@
 {
   "name": "Spacebook",
-  "subtitle": "Create fast and simple documentation to explain almost anything",
+  "subtitle": "Fast and simple documentation to explain almost anything",
   "description": "A simple document generator based on Eleventy, Tailwind 2.0, and Alpine.js",
+  "emoji": "💥",
   "footer": "Made with ❤️️ by Electric Citizen",
-  "emoji": "💥️️",
   "url": "https://spacebook.app",
   "githubUrl": "https://github.com/broeker/spacebook",
   "githubBranch": "main",
@@ -12,6 +12,7 @@
   "enableDarkMode": true,
   "enableEditButton": true,
   "enableGithubLink": true,
+  "enableTOC": false,
   "enableNetlifyCMS": false,
   "enableComments": false,
   "enableEncryption": false

@@ -1,8 +1,8 @@
 ---
-title: Adding comments🎙
-
+title: Adding comments
 date: 2020-11-20
 permalink: /advanced/comments/index.html
+toc: true
 eleventyNavigation:
   key: Enabling comments 
   order: 70 
@@ -38,7 +38,7 @@ If you do not want to sell your soul or subject your users to ads and tracking s
 
 Once you've chosen your engine, it is easy to enable comments on your spacebook site on a per-page base. Just follow these simple steps:
 
-### Step 1: Enable comments in _data/sites.json
+### Enable comments in _data/sites.json
 
 ```
 "enableComments": true 👈 set this to true!
@@ -46,7 +46,7 @@ Once you've chosen your engine, it is easy to enable comments on your spacebook 
 
 This will enable the comment code block in your **page.njk** template (see below).
 
-### Step 2: Paste your comment block into page.njk 
+### Paste your comment block into page.njk 
 
 All of the solutions above rely on a code block that you can paste anywhere on your site to enable comments. In the case of spacebook, you can simply add your comment code to your **_includes/layouts/page.njk** template. Here is an example using Fastcomments:
 
@@ -64,7 +64,7 @@ tenantId: '<your-id>'
 </script>
 ```
 
-### Step 3: Disable comments where needed
+### Disable comments where needed
 
 When you enable comments, by default you will see a comment block on ALL of your pages. If you want to disable comments on certain pages, simply add a new line to your frontmatter for that page:
 
