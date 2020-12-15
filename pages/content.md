@@ -10,7 +10,9 @@ eleventyNavigation:
 ---
 All of your content pages are stored in a single top-level directory called **pages** and if you look inside this folder, you will see the sample pages that are part of your spacebook.
 
-You can edit and change any of the sample files, or remove them and create your own. 
+::: callout
+**A note about sample content 🤔** When you first install your spacebook, it will contain all of the sample pages you see here. You can edit and change any of the sample files, or simply remove them and create your own. 
+:::
 
 The trick to managing a spacebook is a basic understanding of Markdown and how it is used. Use your editor or the Github UI to examine any one of the files in your pages folder to get the lay of the land. 
 
@@ -36,9 +38,6 @@ eleventyNavigation:
   * **order** -- this determines where your menu appears relative to other menu items (0=first) 
   * **key** -- this is the menu "label" for your and also serves a simple slug or key used to track parent and child pages
 
- 
-:::
-
 ## Frontmatter options
 
 There are five additional frontmatter items you can add that will affect how your page behaves, including the ability to create a hierarchy of parent and child pages:
@@ -59,12 +58,11 @@ eleventyNavigation:
 ---
 
 ```
-
-* **metaDescription:** -- this can be used to create a custom description metatag on a page-by-page basis. If not present, the global metatag description from **sites.json** is used.
-* **toc** -- if you have set *enableTOC* to true in *site.json*, you can add **toc: true** to any page to display an inline Table of Contents on wide screens
-* **comments** -- if you have set *enableComments* to true in *site.json* comments will appear on all pages unless you opt out using **comments: false**
-* **title** -- you add a custom title to change the menu label (useful if you want a short key but a longer menu label) 
-* **parent** -- this is used to set up a hierarchy of parent and child pages for your menu system. If you set the **parent** of a given page to match the **key** of another page, it will show up as a child page within the menu system.
+* **parent** -- this is used to set up a hierarchy of parent and child pages for your menu system. If you set the **parent** of a given page to match the **key** of another page, it will show up as a child page within the menu system
+* **title** -- you add a custom title to change the menu label (useful if you want a short key but a longer menu label)
+* **toc** -- (opt in) if you have set *enableTOC* to true in *site.json*, you can add **toc: true** to any page to display an inline Table of Contents on wide screens
+* **comments** -- (opt out) if you have set *enableComments* to true in *site.json* comments will appear on all pages unless you opt out using **comments: false**
+ * **metaDescription:** -- this can be used to create a custom description metatag on a page-by-page basis. If not present, the global metatag description from **sites.json** is used.
 
 ::: callout
 **Did you know?:** If you enable the optional [Netlify CMS integration](/netlifycms), all of these frontmatter settings can be changed via the CMS.
