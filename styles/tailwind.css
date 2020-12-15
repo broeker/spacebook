@@ -47,6 +47,10 @@
     @apply dark:text-gray-500
   }
 
+  footer ad {
+    @apply no-underline
+  }
+
   footer a:hover {
     @apply text-blue-700
   }
@@ -108,23 +112,28 @@
     }
   }
 
+  nav ul {
+    @apply ml-0 text-gray-500;
+   }
+
+   
   nav ul ul {
-   @apply ml-6 text-gray-100;
+   @apply ml-6 text-gray-500;
   }
 
   nav ul li a {
-    @apply mb-1 pt-2 pr-4 pb-2 pl-2 rounded w-full block;
+    @apply mb-1 pt-2 pr-4 pb-1 pl-2 rounded w-full block;
   }
   nav ul li a {
     @apply text-gray-500 dark:text-gray-500;
   }
 
   nav ul li a:hover {
-    @apply bg-gray-200 dark:bg-gray-600  dark:text-gray-400; 
+    @apply text-gray-900;
   }
 
   nav ul li a.active {
-    @apply bg-gray-200 dark:bg-gray-600 dark:text-gray-400;
+    @apply font-semibold text-gray-900;
   }
 
   .adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet {

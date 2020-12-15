@@ -45,6 +45,7 @@ module.exports = {
             'ul.footer-nav': {
               '::before': {
                 display: 'none',
+                'text-decoration': 'none',
 
               }
             },

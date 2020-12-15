@@ -17,7 +17,7 @@ Create your own spacebook exactly like this one and customize it to your needs. 
 - **Privacy first** 🔒 -- User-agent: \* Disallow: / is set by default with noreferrer set on all links; encrypt your full site with a password if desired
 - **Flexible** 💪 -- disable features you don't need, add advanced features with serverless functions or Alpine.js
 
-Communicators and learners from [Da Vinci](https://en.wikipedia.org/wiki/Leonardo_da_Vinci) to [Darwin](https://en.wikipedia.org/wiki/Charles_Darwin) are famous for their use of notebooks, illustrations, and the written word to explain complex ideas. Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy.
+Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy.
 
 ---
 
@@ -29,7 +29,7 @@ You can launch your own spacebook and deploy it to the cloud on Netlify with the
 <a class="bg-green-700 hover:bg-blue-600 text-white no-underline px-4 py-2 rounded" href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/spacebook">Deploy to Netlify!</a>
 </div>
 
-Once complete, your new spacebook will be available immediately on Netlify and ready for customization and automatic deploys from your shiny new Github repository 👍
+This process will automatically copy the spacebook repository to your own personal Github account. Once complete, your new spacebook will be automatically deployed on Netlify and ready for customization. 👍
 
 ---
 

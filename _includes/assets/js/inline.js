@@ -34,7 +34,6 @@ function closeNavigation() {
 }
 
 function activateDarkMode() {
-  
   if (localStorage.getItem('darkmode') === 'true') {
     localStorage.setItem('darkmode', 'false')
     document.body.classList.remove("dark");
@@ -43,5 +42,3 @@ function activateDarkMode() {
     document.body.classList.add("dark");
   }
 }
-
-

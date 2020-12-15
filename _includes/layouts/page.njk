@@ -5,12 +5,12 @@ section: page
 <div class="flex mt-4 justify-end">
     <div class="inline-block w-auto text-xs text-gray-500 pt-1 pb-1 pl-3 mr-2 rounded ">Updated <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time></div>
     {% if site.enableEditButton == true %}
-    <div class="inline-block w-auto text-xs  text-gray-500 hover:bg-gray-200 pt-1 pr-3 pb-1 pl-3 rounded "><a href="{{ site.githubUrl }}/edit/{{ site.githubBranch }}/{{ page.inputPath }}">Edit</a></div>
+    <div class="inline-block w-auto text-xs  text-gray-500 hover:bg-gray-200 pt-1 pr-4 pb-1 pl-3 rounded "><a href="{{ site.githubUrl }}/edit/{{ site.githubBranch }}/{{ page.inputPath }}">Edit</a></div>
     {% endif %}
  </div>
  
 <div class="flex w-full justify-center">
-    <div class="mt-4 px-2 lg:px-0 w-full max-w-6xl">
+    <div class="mt-4 px-6 md:px-6 lg:px-8 xl:px-4 w-full max-w-5xl">
         <div class="wrapper flex justify-between">
             {% if site.enableTOC and toc %} 
             <div class="main flex flex-col pr-0 xl:pr-64 prose sm:prose lg:prose-lg xl:prose-md">
@@ -39,9 +39,9 @@ section: page
             </div>    
             
             {% if site.enableTOC and toc %}
-            <div class="text-gray-500 hidden xl:block sidebar sticky right-0 mt-12 -ml-56 w-56 h-full top-48">
-                <small><strong>ON THIS PAGE</strong></small><br />
-                    <aside>
+            <div class="text-gray-500 font-semibold hidden xl:block sidebar sticky right-0 mt-12 -ml-56 w-56 h-full top-48">
+                <small>ON THIS PAGE</small><br />
+                    <aside class="font-normal">
                     {{ content | toc | safe }}
                     </aside>
             </div>

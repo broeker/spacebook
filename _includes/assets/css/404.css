@@ -107,7 +107,7 @@ body {
     left: 100px;
     top: 400px;
     transform: translateY(-60%);
-    font-family: 'Righteous', cursive;
+    font-family: 'Righteous', cursive, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: #363e49;
 }
 
@@ -136,7 +136,7 @@ body {
     cursor: pointer;
     transition-duration: 0.2s;
     font-size: 0.75em;
-    font-family: 'Righteous', cursive;
+    font-family: 'Righteous', cursive,ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
 }
 
 .error__button:hover {

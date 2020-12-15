@@ -24,7 +24,6 @@
         }
       });
 
-      
     resEl.innerHTML = "";
       if (e.target.value != "") {
         if (results != "") {
