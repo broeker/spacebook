@@ -8,12 +8,11 @@ eleventyNavigation:
   order: 48 
   parent: Tips & Tricks
 ---
-Spacebook uses Markdown (specifically [Markdown-it](https://github.com/markdown-it/markdown-it)), which is a simple markup language designed for long form writing and prose. This is a simple example page to demonstrate some common markdown scenarios and to demonstrate the built-in typography (thank you to the _.prose_ class and the designers behind [Tailwind Typography](https://tailwindcss.com/docs/typography-plugin)). 
+Spacebook uses Markdown, which is a simple markup language designed for long form writing and prose. This is a simple example page to demonstrate some common markdown scenarios and to demonstrate the built-in typography.
 
 ## Reference
 
-See the official [markdown-it demo](https://markdown-it.github.io/) for the tags you can use to produce the examples below.
-
+See the official [markdown-it demo](https://markdown-it.github.io/) for more examples of the tags below, including advanced scenarios that are not covered here. 
 
 ## Text and headers
 
@@ -42,7 +41,7 @@ Use headers and subheaders to structure your text, along with lists, blockquotes
 ![External image](http://unsplash.com/my-image)
 ```
 
-You can drop images, diagrams, or illustrations anywhere in your content. Images are automatically set to 100% width and centered with a subtle border hover. We use the **markdown-it-linkify-images** plugin to automatically generate a link to a full-size version of the image for larger charts or graphs:
+You can drop images, diagrams, or illustrations anywhere in your content by adding them to your /static/img folder or referring to them externally. Images are automatically set to 100% width and centered with a subtle border hover. We use the **markdown-it-linkify-images** plugin to automatically generate a link to a full-size version of the image for larger charts or graphs:
 
 ![Sagan](https://res.cloudinary.com/broeker/image/upload/w_1000,c_scale/v1606111412/sagan_tczrlj.jpg)
 
@@ -74,14 +73,20 @@ If you don't want to worry about image resizing or optimization, youu can use a 
 2. Ordered item
 3. Orderer item
 ```
-* carbon in our apple pies
-* questions stirred by starlight
-* distant epochs and great turbulent clouds
-*  the only home we've ever known
 
-1. Ordered list item
-2. Ordered list item
-3. Ordered list item
+Lists are an effective way to present a wide variety of content:
+
+* list item
+* list item
+  * Sub item
+  * Sub item
+* list item
+
+1. Ordered item
+  a. foo
+  b. bar
+2. Ordered item
+3. Orderer itemm
 
 ## Code samples
 
@@ -146,19 +151,28 @@ You can easily embed Youtube videos, Tweets, and any other embeddable content. U
 ## Custom callouts
 
 ```
-::: callout
-A default callout
+::: callout 
+*callout: yellow is the default color for a callout*
 :::
 
-::: callout-pink
-A pink callout
+::: callout-blue
+*callout-blue: You can also create blue callouts*
 :::
 
-::: warning
-A warning callout
+::: callout-pink 
+*callout-pink: You can also create pink callouts*
 :::
+
+::: callout-green
+*callout-green: You can also create green callouts*
+:::
+
+::: warning 
+*warning: here be dragons*
+:::
+
 ```
-Use a special syntax to insert a callout box like this one within the flow of your text. Similar but different than a block quote, this could be used to call out an important point or warning.
+Use a special syntax to insert callout boxes like these within the flow of your text. Similar but different than a block quote, this can be used to call out or highlight a variety of things within your content.
 
 Default callout:
 
@@ -178,10 +192,10 @@ Pink callout
 *callout-pink: You can also create pink callouts*
 :::
 
-Purple callout
+Green callout
 
-::: callout-purple
-*callout-purple: You can also create purple callouts*
+::: callout-green
+*callout-green: You can also create green callouts*
 :::
 
 Warning callout: 

@@ -162,7 +162,7 @@ module.exports = function(eleventyConfig) {
     .use(markdownItContainer, 'callout')
     .use(markdownItContainer, 'callout-blue')
     .use(markdownItContainer, 'callout-pink')
-    .use(markdownItContainer, 'callout-purple')
+    .use(markdownItContainer, 'callout-green')
     .use(markdownItContainer, 'warning')
     .use(markdownItTasks)
     .use(markdownItCenterText)
