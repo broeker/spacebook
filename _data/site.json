@@ -11,7 +11,7 @@
   "enableDarkMode": true,
   "enableEditButton": true,
   "enableGithubLink": true,
-  "enableContact": true,
+  "enableContact": false,
   "enableTOC": false,
   "enableNetlifyCMS": false,
   "enableComments": false,
