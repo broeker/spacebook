@@ -133,7 +133,7 @@
   }
 
   nav ul li a.active {
-    @apply font-semibold text-gray-900;
+    @apply font-semibold;
   }
 
   .adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet {
