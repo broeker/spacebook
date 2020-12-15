@@ -17,6 +17,11 @@ module.exports = function(eleventyConfig) {
     return String(Date.now());
   });
 
+
+  eleventyConfig.addLiquidShortcode("button", function(title,url) {
+    return '<a class="button" href="'+url+'">'+title+'</a>';
+  });
+
   eleventyConfig.addPassthroughCopy({
     "./node_modules/alpinejs/dist/alpine.js": "./js/alpine.js",
   });

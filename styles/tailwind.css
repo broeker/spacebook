@@ -124,4 +124,8 @@
   .adjust  p img.netlify, .adjust img.netlify  {
     @apply ml-auto mr-auto bg-white dark:bg-gray-600 p-2 rounded text-center
   }
+
+  a.button {
+    @apply bg-green-500 text-gray-50 px-6 py-2
+  }
 }
