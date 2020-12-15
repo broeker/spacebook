@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 25
   parent: Tips & Tricks
 ---
-There are three basic ways you can edit and update your spacebook content. They can be used interchangeably. 
+All of the content in your spacebook is managed with [simple markdown files](/markdown) that are easy to create and customize. There are three basic ways you can edit and update your spacebook content. They can be used interchangeably. 
 
 ## Edit directly on Github 
 
