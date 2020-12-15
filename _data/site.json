@@ -12,7 +12,7 @@
   "enableEditButton": true,
   "enableGithubLink": true,
   "enableContact": false,
-  "enableTOC": true,
+  "enableTOC": false,
   "enableNetlifyCMS": false,
   "enableComments": false,
   "enableEncryption": false
