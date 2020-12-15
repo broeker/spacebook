@@ -1,43 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
-  blockquote {
-    @apply rounded p-4 bg-gray-100;
-
-  }
-
-  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 .prose hr, .prose strong {
-    @apply dark:text-gray-400
-  }
-
-  .prose pre code {
-    @apply overflow-x-auto !important 
-  }
-
-  .prose-lg pre code {
-    @apply overflow-x-auto !important 
-  }
-
-  .prose-xl pre code {
-    @apply overflow-x-auto !important 
-  }
-
-  .prose pre  {
-    @apply max-w-full overflow-x-auto !important 
-  }
-
-  .prose-lg pre  {
-    @apply overflow-x-auto !important 
-  }
-
-  .prose-xl pre {
-    @apply overflow-x-auto !important 
-  }
-  pre {
-    @apply overflow-x-auto !important 
-  }
 
   .prose a {
     @apply dark:text-gray-400
@@ -47,40 +11,61 @@
     @apply dark:text-gray-500
   }
 
-  footer ad {
-    @apply no-underline
+  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 .prose hr, .prose strong {
+    @apply dark:text-gray-400
   }
 
-  footer a:hover {
-    @apply text-blue-700
+  .prose h2, .prose h3, .prose h4 {
+    scroll-margin-top: 3.5em;
+  }
+
+  .prose pre code {
+    @apply overflow-x-auto !important 
+  }
+  
+  .prose .footer-nav a {
+    @apply no-underline !important
+  }
+
+  blockquote {
+    @apply rounded p-4 bg-gray-100;
   }
 
   .callout {
-    @apply px-8 py-4 mb-4 rounded-lg bg-yellow-100;
+    @apply px-8 py-4 mb-4 rounded-lg bg-yellow-50;
   }
   .callout, .callout strong, .callout em {
     @apply dark:bg-gray-400 dark:text-gray-900;
   }
 
-  .alert {
-    @apply px-8 py-4 mb-4 rounded-lg bg-red-700 text-gray-50;
+  .callout-blue {
+    @apply px-8 py-4 mb-4 rounded-lg bg-blue-50;
   }
-  .alert, .alert strong, .alert em {
-    @apply text-gray-50 dark:bg-gray-400  dark:text-gray-900;
-  }
-  
-  nav.toc {
-    @apply pt-1
+  .callout-blue, .callout-blue strong, .callout-blue em {
+    @apply dark:bg-gray-400 dark:text-gray-900;
   }
 
-  nav.toc ol {
-    @apply  m-0 p-0 
+  .callout-pink {
+    @apply px-8 py-4 mb-4 rounded-lg bg-pink-50;
   }
-  
-  nav.toc ol ol {
-    @apply  m-0 p-0
+  .callout-pink, .callout-pink strong, .callout-pink em {
+    @apply dark:bg-gray-400 dark:text-gray-900;
   }
-  
+
+  .callout-purple {
+    @apply px-8 py-4 mb-4 rounded-lg bg-purple-50;
+  }
+  .callout-purple, .callout-purple strong, .callout-purple em {
+    @apply dark:bg-gray-400 dark:text-gray-900;
+  }
+
+  .warning {
+    @apply px-8 py-4 mb-4 rounded-lg bg-red-800 text-gray-50;
+  }
+  .warning, .warning strong, .warning em {
+    @apply text-gray-50 dark:bg-gray-400  dark:text-gray-900;
+  }
+
   nav.toc ol li {
     @apply pt-2 !important
   }
@@ -97,13 +82,8 @@
     @apply text-gray-900
   }
 
-
-  ul.contains-task-list,
-  .prose ul.contains-task-list,
-  .prose-xl ul.contains-task-list,
-  .prose-lg ul.contains-task-list,
-  .prose-sm ul.contains-task-list {
-    @apply list-none !important;
+  .prose ul.contains-task-list {
+    @apply list-none -ml-6 !important;
   }
 
   .prose ul.contains-task-list .task-list-item {
@@ -115,17 +95,13 @@
   nav ul {
     @apply ml-0 text-gray-500;
    }
-
    
   nav ul ul {
    @apply ml-6 text-gray-500;
   }
 
   nav ul li a {
-    @apply mb-1 pt-2 pr-4 pb-1 pl-2 rounded w-full block;
-  }
-  nav ul li a {
-    @apply text-gray-500 dark:text-gray-500;
+    @apply mb-1 pt-2 pr-4 pb-1 pl-2 w-full block text-gray-500 dark:text-gray-500;
   }
 
   nav ul li a:hover {
@@ -147,15 +123,4 @@
   .adjust  p img.netlify, .adjust img.netlify  {
     @apply ml-auto mr-auto bg-white dark:bg-gray-600 p-2 rounded text-center
   }
-
-
-  .text-align-center {
-    @apply flex justify-center; 
-  }
-
-  .prose h2, .prose h3, .prose h4 {
-    scroll-margin-top: 3.5em;
-  }
-
-
 }

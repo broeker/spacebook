@@ -17,6 +17,16 @@ See the official [markdown-it demo](https://markdown-it.github.io/) for the tags
 
 ## Text and headers
 
+```
+## Level two header (h2)
+### Level three (h3)
+#### Level four (h4)
+
+**bold**
+*italicize* 
+
+```
+
 Use headers and subheaders to structure your text, along with lists, blockquotes, images, and embeds. You can **place emphasis** on text by using bold tags, or _simple italics to get your point across_ or to otherwise emphasis your text. Headings 1-4 will drop progressively in size while Headings 5-6 will simply render as small, unbolded text. 
 
 ::: callout
@@ -25,6 +35,12 @@ Use headers and subheaders to structure your text, along with lists, blockquotes
 
 
 ## Basic images 
+
+```
+![My image](/static/img/my-image.png)
+
+![External image](http://unsplash.com/my-image)
+```
 
 You can drop images, diagrams, or illustrations anywhere in your content. Images are automatically set to 100% width and centered with a subtle border hover. We use the **markdown-it-linkify-images** plugin to automatically generate a link to a full-size version of the image for larger charts or graphs:
 
@@ -45,8 +61,19 @@ If you don't want to worry about image resizing or optimization, youu can use a 
 
 ## Lists
 
-Hundreds of thousands hearts of the stars bits of moving fluff dispassionate extraterrestrial observer rich in mystery Drake Equation?
+```
+* list item
+* list item
+  * Sub item
+  * Sub item
+* list item
 
+1. Ordered item
+  a. foo
+  b. bar
+2. Ordered item
+3. Orderer item
+```
 * carbon in our apple pies
 * questions stirred by starlight
 * distant epochs and great turbulent clouds
@@ -56,9 +83,13 @@ Hundreds of thousands hearts of the stars bits of moving fluff dispassionate ext
 2. Ordered list item
 3. Ordered list item
 
- Tingling of the spine descended from astronomers courage of our questions stirred by starlight inconspicuous motes of rock and gas two ghostly white figures in coveralls and helmets are softly dancing.
-
 ## Code samples
+
+<pre>
+```
+your code...
+```
+</pre>
 
 Here is an example code block of silly code filled with that attempts to explain life, the universe, and everything:
 
@@ -82,9 +113,27 @@ zero lines of Javascript. 🕹️
 
 ## Footnotes
 
+Inline footnotes:
+
+```
+ number finite but unbounded.[^first]...of our 
+ questions Drake Equation.[^second]
+```
+
+link to the footnotes defined at the bottom of your page:
+
+```
+[^first]: First footnote
+[^second]: Second footnote
+```
+
 Gathered by gravity Flatland across the centuries made in the interiors of collapsing stars ship of the imagination circumnavigated. White dwarf emerged into consciousness venture citizens of distant epochs prime number finite but unbounded.[^first] Billions upon billions globular star cluster encyclopaedia galactica tingling of the spine citizens of distant epochs billions upon billions? The carbon in our apple pies with pretty stories for which there's little good evidence concept of the number one with pretty stories for which there's little good evidence courage of our questions Drake Equation.[^second]
 
 ## Blockquotes
+
+```
+> This is a blockquote
+```
 
 > The cosmos (UK: /ˈkɒzmɒs/, US: /-moʊs/) is the Universe. Using the word cosmos rather than the word universe implies viewing the universe as a complex and orderly system or entity; the opposite of chaos.
 
@@ -96,19 +145,64 @@ You can easily embed Youtube videos, Tweets, and any other embeddable content. U
 
 ## Custom callouts
 
-Use a special syntax to insert a callout box like this one within the flow of your text. Similar but different than a block quote, this could be used to call out an important point or warning.
-
-::: callout 
-*Callout: here be dragons*
+```
+::: callout
+A default callout
 :::
 
-An alert: 
+::: callout-pink
+A pink callout
+:::
 
-::: alert 
-*Alert: here be dragons*
+::: warning
+A warning callout
+:::
+```
+Use a special syntax to insert a callout box like this one within the flow of your text. Similar but different than a block quote, this could be used to call out an important point or warning.
+
+Default callout:
+
+::: callout 
+*callout: yellow is the default color for a callout*
+:::
+
+Blue callout
+
+::: callout-blue
+*callout-blue: You can also create blue callouts*
+:::
+
+Pink callout
+
+::: callout-pink 
+*callout-pink: You can also create pink callouts*
+:::
+
+Purple callout
+
+::: callout-purple
+*callout-purple: You can also create purple callouts*
+:::
+
+Warning callout: 
+
+::: warning 
+*warning: here be dragons*
 :::
 
 ## Checklists
+
+```
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [x] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Hale
+```
 
 - [ ] Mercury
 - [x] Venus
@@ -122,6 +216,14 @@ An alert:
 
 ## Tables
 
+```
+| Option | Description |
+| ------ | ----------- |
+| data   | descriptions |
+| data2  | description 2  |
+| data3  | description 3 
+```
+
 You can create simple table to layout data in columns will headers and rows.
 
 | Option | Description |
@@ -131,6 +233,23 @@ You can create simple table to layout data in columns will headers and rows.
 | ext    | extension to be used for dest files. 
 
 ## HTML and Tailwind
+
+```
+<div class="flex space-x-4">
+  <div class="flex-1 p-4 bg-blue-50 rounded">
+    <!-- Will grow and shrink as needed without taking initial size into account -->
+  Some
+  </div>
+  <div class="flex-1 p-4 bg-blue-100 rounded">
+  custom 
+    <!-- Will grow and shrink as needed without taking initial size into account -->
+  </div>
+  <div class="flex-1 p-4 bg-blue-200 rounded">
+  html
+    <!-- Will grow and shrink as needed without taking initial size into account -->
+  </div>
+</div>
+```
 
 With simple HTML and Tailwind (or Alpine.js) utility classes, you are free to embed basically any layout or custom design elements directly into your page or post. Requires basic HTML knowledge and learning how to apply Tailwind classes.
 

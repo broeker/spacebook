@@ -22,7 +22,6 @@ module.exports = {
         DEFAULT: {
           css: {
             maxWidth: '100%',
-            minWidth: 0, 
             a: {
               color: '#1D4ED8',
               '&:hover': {
@@ -33,41 +32,25 @@ module.exports = {
               color: '#333',
               'text-decoration': 'none',
             },
-            '.prose h1': {
-              'margin-bottom': 0,
-            },
-            '.prose-lg h1': {
-              'margin-bottom': 0,
-            },
-            '.prose-xl h1': {
-              'margin-bottom': 0,
-            },
             'ul.footer-nav': {
               '::before': {
                 display: 'none',
                 'text-decoration': 'none',
-
               }
             },
             'ul.contains-task-list': {
               '::before': {
                 display: 'none',
-
               }
             },
-           
-            
           },
         },
       }
     },
   }, 
   variants: {},
-  
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
-    // ...
   ],
 }
-
