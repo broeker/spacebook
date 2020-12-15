@@ -10,10 +10,10 @@
   "enableSearch": true,
   "enableDarkMode": true,
   "enableEditButton": true,
-  "enableGithubLink": false,
-  "enableContact": false,
-  "enableTOC": false,
+  "enableGithubLink": true,
+  "enableContact": true,
+  "enableTOC": true,
   "enableNetlifyCMS": false,
-  "enableComments": true,
+  "enableComments": false,
   "enableEncryption": false
 }
