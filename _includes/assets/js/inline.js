@@ -7,8 +7,13 @@ if (window.netlifyIdentity) {
     }
   });
 }
+;
 
 document.addEventListener("DOMContentLoaded", function() {
+  
+  const el = document.getElementById("main");
+  el.addEventListener("click", closeNavigation, false)
+
   if (localStorage.getItem('darkmode') === 'true') {
     document.body.classList.add("dark");
   } else {
