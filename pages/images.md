@@ -40,11 +40,11 @@ Your images are centered by default, and there is a special syntax to add a capt
 
 ![Space](https://source.unsplash.com/random/300x300)
 
-->_A random Unsplashed image at 300x300_<-
+-> _A random Unsplashed image at 300x300_ <-
 
 
 ## Sizing images 
-You are responsible for your image sizing and optimization, and should upload the smallest useful version of your image. Future version of spacebook will take better advantage of the [Eleventy image plugin](https://github.com/11ty/eleventy-img) to make this a bit easier.
+You are responsible for your image sizing and optimization, and should upload the smallest useful version of your image. Future versions of spacebook will take better advantage of the [Eleventy image plugin](https://github.com/11ty/eleventy-img) and/or third party plugins to make this a bit easier.
 
 
 

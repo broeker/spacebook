@@ -128,4 +128,9 @@
   a.button {
     @apply bg-green-500 text-gray-50 px-6 py-2
   }
+
+  .text-align-center {
+    @apply flex justify-center; 
+  }
+
 }
