@@ -19,7 +19,7 @@ By default, your site is hidden from search engines and won't send referrer link
 
 ## Password encryption
 
-If privacy is a priority and you wish to you put your site behind a password, you can do so by following the [password protection](/encryption) instructions. This will encrypt all of your files, and require all users to enter a password before viewing. 
+If privacy is a priority and you wish to you put your site behind a password, you can do so by following the [password protection](/encryption) instructions. This will encrypt all of your files, and require all users to enter a password before viewing. When you enable this option, you will see a small performance hit because each page is being decrypted on the fly as it loads.  
 
 ## Basic authentication
 
