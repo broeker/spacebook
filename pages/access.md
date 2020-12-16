@@ -17,7 +17,7 @@ If you want to open your site to the public eye, [jump down for easy instruction
 
 By default, your site is hidden from search engines and won't send referrer links but it is not truly secure. Anybody who discovers the link will be able to view the site. This is similar to the **Anyone with the link** permissions commonly set on Google Docs. You can use an obscured Netlify site URL for added protection against accidental discovery. This is the default setting and safe for many use cases. 
 
-## Encryption
+## Password encryption
 
 If privacy is a priority and you wish to you put your site behind a password, you can do so by following the [password protection](/encryption) instructions. This will encrypt all of your files, and require all users to enter a password before viewing. 
 
