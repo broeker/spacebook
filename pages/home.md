@@ -35,7 +35,7 @@ This process will automatically copy the spacebook repository to your own person
 
 ## What is a spacebook? 
 
-A spacebook is a simple website generator that will help you create your own project just like this one using a bunch of super cool, modern, and fast technology:
+A spacebook is a simple website generator that will help you create your own project just like this one using a bunch of cool, modern, and fast technology:
 
 - [Eleventy](https://www.11ty.io) a super fast Node-based static site generator that stays out of your way and lets you ship only what you want to ship 🚀
 - [Tailwind 2.0](https://tailwindcss.com/) a brilliant and tiny utility-first CSS framework 🎨
