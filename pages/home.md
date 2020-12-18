@@ -11,13 +11,13 @@ eleventyNavigation:
 
 Create your own spacebook exactly like this one and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source.
 
-- **Easy to use** 😀 -- add a new page and it appears magically in your navigation
+- **Easy to use** 😀 -- add a new page and it appears magically in your navigation, make instant edits right from your phone
 - **Writing focused** ❤️ -- beautiful typography and a minimalist design managed with easy-to-use Markdown
 - **Speedy and accessible** 🚀 -- static files, responsive system fonts, minimal JavaScript, purge and minify All the Things, accessible to all people and devices
 - **Privacy first** 🔒 -- User-agent: \* Disallow: / is set by default with noreferrer set on all links; encrypt your full site with a password if desired
 - **Flexible** 💪 -- disable features you don't need, add advanced features with serverless functions or Alpine.js
 
-Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy.
+Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy. Your spacebook belongs to you and you alone; all of your content and images and the code necessary to run your spacebook are stored in your own personal Github account ready for tinkering and customization. 
 
 ---
 
@@ -107,7 +107,7 @@ If you just want to try this out locally, you can clone the Spacebook repository
 git clone https://github.com/broeker/spacebook
 ```
 
-_Note: You'll need to remove the existing .git file and add your own upstream repository if you want to use this as a basis for moving forward. You can also simply copy or [fork the repository](https://github.com/broeker/spacebook) directly from Github._
+_Note: If you choose the second option, you'll need to remove the existing .git folder and add your own upstream repository if you want to use this as a basis for moving forward. You can also simply copy or [fork the repository](https://github.com/broeker/spacebook) directly from Github._
 
 ### Step two
 
