@@ -22,6 +22,10 @@ module.exports = function(eleventyConfig) {
     return '<a class="button" href="'+url+'">'+title+'</a>';
   });
 
+  eleventyConfig.addLiquidShortcode("icon", function(title,url) {
+    return '<img class="icon" src="'+url+'" alt="'+title+'" />';
+  });
+
   eleventyConfig.addPassthroughCopy({
     "./node_modules/alpinejs/dist/alpine.js": "./js/alpine.js",
   });
@@ -172,7 +176,7 @@ module.exports = function(eleventyConfig) {
     .use(markdownItTasks)
     .use(markdownItCenterText)
     .use(markdownLinkifyImages, {
-      imgClass: "p-8",
+      imgClass: "p-4",
     })
     .use(markdownItAttrs, {
       includeLevel: [2,3],
