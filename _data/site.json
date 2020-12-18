@@ -1,7 +1,7 @@
 {
   "name": "Spacebook",
-  "subtitle": "Fast and simple documentation to explain almost anything",
-  "description": "A simple document generator based on Eleventy, Tailwind 2.0, and Alpine.js",
+  "subtitle": "Create a modern notebook to document or explain almost anything.",
+  "description": "Create a modern notebook to document or explain almost anything with spacebook.app",
   "emoji": "💥",
   "footer": "Made with ❤️️ by Electric Citizen",
   "url": "https://spacebook.app",
