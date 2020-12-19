@@ -5,7 +5,7 @@
 Create your own spacebook and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source.
 
 <p align="center">
-<ul>
+<ul align="center">
  <li><strong>Demo:</strong> https://spacebook.app</li>
  <li><strong>Documentation:</strong> https://spacebook.app </li>
  <li><strong>All the things:</strong> https://spacebook.app </li>
