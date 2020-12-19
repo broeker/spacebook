@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/68791233-b2d6-4a86-8c42-e654e112a157/deploy-status)](https://app.netlify.com/sites/spacebook-app/deploys)
 
-Create your own spacebook and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source.
+Create your own spacebook and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source. Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy. 
 
 ---
 
@@ -15,5 +15,3 @@ Create your own spacebook and customize it to your needs. Spacebooks are speedy 
 - **Speedy and accessible** 🚀 -- static files, responsive system fonts, minimal JavaScript, purge and minify All the Things, accessible to all people and devices
 - **Privacy first** 🔒 -- User-agent: \* Disallow: / is set by default with noreferrer set on all links; encrypt your full site with a password if desired
 - **Flexible** 💪 -- disable features you don't need, add advanced features with serverless functions or Alpine.js
-
-Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy. 
