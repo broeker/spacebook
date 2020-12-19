@@ -11,13 +11,13 @@ eleventyNavigation:
 
 Create your own spacebook exactly like this one and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source.
 
-- **Easy to use** 😀 -- add a new page and it appears magically in your navigation, make instant edits right from your phone
+- **Easy to use** 😀 -- add a new page and it appears magically in your navigation, make edits right from your phone
 - **Writing focused** ❤️ -- beautiful typography and a minimalist design managed with easy-to-use Markdown
 - **Speedy and accessible** 🚀 -- static files, responsive system fonts, minimal JavaScript, purge and minify All the Things, accessible to all people and devices
 - **Privacy first** 🔒 -- User-agent: \* Disallow: / is set by default with noreferrer set on all links; encrypt your full site with a password if desired
 - **Flexible** 💪 -- disable features you don't need, add advanced features with serverless functions or Alpine.js
 
-Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy. Your spacebook belongs to you and you alone; all of your content and images and the code necessary to run your spacebook are stored in your own personal Github account ready for tinkering and customization. 
+Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy. 
 
 ---
 
@@ -25,8 +25,7 @@ Spacebooks are modern notebooks you can use to create documentation, sketch out 
 
 You can launch your own spacebook and deploy it to the cloud on Netlify with the click of a button. You'll need an existing [Github account](https://github.com/) and a [Netlify account](https://www.netlify.com/) (which you can create during this process if you wish): 
 
-<!-- ![Astronaut](/static/img/astro.svg) -->
-{% icon "Astronaut", "/static/img/astro.svg" %}
+
 <div class="flex width-full justify-center">
 <a class="bg-green-700 hover:bg-blue-600 text-white no-underline mb-4 px-4 py-2 rounded" href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/spacebook">Deploy to Netlify!</a>
 </div>
