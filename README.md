@@ -4,9 +4,9 @@
 
 Create your own spacebook and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source.
 
-> <strong>Demo:</strong> https://spacebook.app<br />
-> <strong>Documentation:</strong> https://spacebook.app<br />
-> <strong>All the things:</strong> https://spacebook.app<br />
+<strong>Demo and documenatation:</strong> https://spacebook.app<br />
+
+--- 
 
 - **Easy to use** 😀 -- add a new page and it appears magically in your navigation, make edits right from your phone
 - **Writing focused** ❤️ -- beautiful typography and a minimalist design managed with easy-to-use Markdown
