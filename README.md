@@ -5,7 +5,9 @@
 Create your own spacebook and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source. Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, build a simple website, or whatever suits your fancy. 
 
 ---
+
 <p align="center">
 <strong>Demo and documentation:</strong> https://spacebook.app 👈 👈 👈
 </p>
+
 --- 
