@@ -2,10 +2,14 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/68791233-b2d6-4a86-8c42-e654e112a157/deploy-status)](https://app.netlify.com/sites/spacebook-app/deploys)
 
-Create your own spacebook exactly like this one and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source.
+Create your own spacebook and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source.
 
 <p align="center">
- <big><strong>Demo and documentation:</strong> https://spacebook.app </big>
+<ul>
+ <li><strong>Demo:</strong> https://spacebook.app</li>
+ <li><strong>Documentation:</strong> https://spacebook.app </li>
+ <li><strong>All the things:</strong> https://spacebook.app </li>
+ </ul>
 </p>
 
 - **Easy to use** 😀 -- add a new page and it appears magically in your navigation, make edits right from your phone
