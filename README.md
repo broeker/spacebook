@@ -10,13 +10,15 @@ Create your own spacebook and customize it to your needs. Spacebooks are speedy 
 <strong>Demo and documentation:</strong> https://spacebook.app 👈 👈 👈
 </p>
 
+---
+
 ## Contributing
 
 If you want to contribute or make fixes to spacebook, it is best to fork this repository directly and submit pull requests against it. If you spot a typo on the demo/documentation site, you can also open a fork directly from the edit button on the top of each page.
 
 ## Install spacebook
 
-If you want to quickly install for local testing follow the instructions below.
+If you want to quickly install for local testing follow the instructions below:
 
 ### Requirements
 
