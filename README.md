@@ -7,8 +7,9 @@ Create your own spacebook and customize it to your needs. Spacebooks are speedy 
 ---
 
 <p align="center">
-<strong>Demo and documentation:</strong> https://spacebook.app 👈 👈 👈
-</p>
+<strong>Demo and documentation:</strong><br /> 
+👉 👉 👉 https://spacebook.app 👈 👈 👈
+</p>>
 
 ---
 
