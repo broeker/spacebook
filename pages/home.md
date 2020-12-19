@@ -8,15 +8,6 @@ eleventyNavigation:
   title: Getting started
   order: 0
 ---
-<<<<<<< HEAD
-
-<p align="center">
- <big><strong>Demo and documentation:</strong> https://spacebook.app </big>
-</p>
-
-
-=======
->>>>>>> main
 Create your own spacebook exactly like this one and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source.
 
 - **Easy to use** 😀 -- add a new page and it appears magically in your navigation, make edits right from your phone
