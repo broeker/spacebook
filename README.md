@@ -6,7 +6,7 @@ Create your own spacebook and customize it to your needs. Spacebooks are speedy 
 
 ---
 
-<strong>Demo and documenatation:</strong> https://spacebook.app<br /> 👈 👈 👈
+<strong>Demo and documenatation:</strong> https://spacebook.app 👈 👈 👈
 
 --- 
 
