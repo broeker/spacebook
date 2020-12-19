@@ -1,6 +1,6 @@
 ---
 title: Getting started
-date: 2020-11-20
+date: 2020-12-18
 permalink: /
 toc: true
 eleventyNavigation:
@@ -8,7 +8,6 @@ eleventyNavigation:
   title: Getting started
   order: 0
 ---
-
 Create your own spacebook exactly like this one and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source.
 
 - **Easy to use** 😀 -- add a new page and it appears magically in your navigation, make edits right from your phone
@@ -48,7 +47,6 @@ A spacebook is a simple website generator that will help you create your own pro
 
 Never fear 🤔 Uou don't need to know or understand any of this to launch a spacebook but it results in a speedy, easy-to-use, and accessible website that typically scores 100s across the board on Google Lighthouse metrics for mobile and desktop:
  
-
 ![Performance](/static/img/spacebook.png)
 
 ::: callout
