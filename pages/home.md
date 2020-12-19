@@ -44,9 +44,9 @@ A spacebook is a simple website generator that will help you create your own pro
 - [Elasticlunr](http://elasticlunr.com/) a lightweight full-text search engine 🔍
 - [Advanced Markdown-it support](https://github.com/markdown-it/markdown-it) with footnotes, custom containers, emoji support, tables, task lists, and auto-linked images ✏️
 - [Netlify](https://www.netlify.com/) for cloud hosting and one-click installs, easy form support, and an automated [Github](https://github.com/) deployment pipepline 🤖
-- [Netlify CMS](https://www.netlify.com/) (optional) to provide an easy Markdown editor for creating and changing content with optional [Cloudinary support](https://cloudinary.com/) for advanced image management. 💻
+- [Netlify CMS](https://www.netlify.com/) (optional) to provide an easy Markdown editor for creating and changing content. 💻
 
-Don't worry; you don't need to know or understand any of this to launch a spacebook but it results in a speedy, easy-to-use, and accessible website that typically scores 100s across the board on Google Lighthouse metrics for mobile and desktop:
+Never fear 🤔 Uou don't need to know or understand any of this to launch a spacebook but it results in a speedy, easy-to-use, and accessible website that typically scores 100s across the board on Google Lighthouse metrics for mobile and desktop:
  
 
 ![Performance](/static/img/spacebook.png)
