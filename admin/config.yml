@@ -45,7 +45,7 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 100 }
-          - { label: "Parent", name: "parent", widget: "string" }
+          - { label: "Parent", name: "parent", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Globals"
     name: "globals"
