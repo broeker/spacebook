@@ -29,7 +29,7 @@ If privacy is a priority and you wish to you put your site behind a password, yo
 
 At some point you may wish to open your site to Google and the general public. This is simple a matter of removing or changing your robots.txt file, and setting your site to send referrer links. 
 
-### Remove robots.txt 
+### Remove robots.md 
 
 ::: callout
 If you want to open up your site to Google and other search engines, simply remove or rename the **robots.md** file from the root of your project.  (Or, change the **_includes/layouts/robots.njk** template to reflect the robots file of your liking!)
