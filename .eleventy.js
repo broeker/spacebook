@@ -6,8 +6,6 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const svgContents = require("eleventy-plugin-svg-contents");
 const mdIterator = require('markdown-it-for-inline')
 const embedEverything = require("eleventy-plugin-embed-everything");
-//const pluginTOC = require('eleventy-plugin-nesting-toc');
-//const pluginTOC = require('eleventy-plugin-toc')
 const pluginTOC = require('eleventy-plugin-nesting-toc');
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginTOC);
@@ -50,31 +48,47 @@ module.exports = function(eleventyConfig) {
   // Add support for maintenance-free post authors
   // Adds an authors collection using the author key in our post frontmatter
   // Thanks to @pdehaan: https://github.com/pdehaan
-  // eleventyConfig.addCollection("authors", collection => {
-  //   const blogs = collection.getFilteredByGlob("posts/*.md");
-  //   return blogs.reduce((coll, post) => {
-  //     const author = post.data.author;
-  //     if (!author) {
-  //       return coll;
-  //     }
-  //     if (!coll.hasOwnProperty(author)) {
-  //       coll[author] = [];
-  //     }
-  //     coll[author].push(post.data);
-  //     return coll;
-  //   }, {});
-  // });
+  eleventyConfig.addCollection("authors", collection => {
+    const blogs = collection.getFilteredByGlob("posts/*.md");
+    return blogs.reduce((coll, post) => {
+      const author = post.data.author;
+      if (!author) {
+        return coll;
+      }
+      if (!coll.hasOwnProperty(author)) {
+        coll[author] = [];
+      }
+      coll[author].push(post.data);
+      return coll;
+    }, {});
+  });
 
    // Creates custom collection "pages"
    eleventyConfig.addCollection("pages", function(collection) {
     return collection.getFilteredByGlob("pages/*.md");
    });
 
+   // Creates custom collection "posts"
+   eleventyConfig.addCollection("posts", function(collection) {
+    const coll = collection.getFilteredByGlob("posts/*.md");
+  
+    for(let i = 0; i < coll.length ; i++) {
+      const prevPost = coll[i-1];
+      const nextPost = coll[i + 1];
+  
+      coll[i].data["prevPost"] = prevPost;
+      coll[i].data["nextPost"] = nextPost;
+    }
+  
+    return coll;
+  });
+    
+
    // Search collection
    const searchFilter = require("./filters/searchFilter");
    eleventyConfig.addFilter("search", searchFilter);
    eleventyConfig.addCollection("results", collection => {
-    return [...collection.getFilteredByGlob("pages/*.md")];
+    return [...collection.getFilteredByGlob("**/*.md")];
    });
   
    eleventyConfig.addCollection("menuItems", collection =>

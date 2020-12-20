@@ -18,6 +18,16 @@ section: page
              <div class="main  flex flex-col pr-0 prose sm:prose lg:prose-lg xl:prose-md">
             {% endif %}    
                 <article>
+                    {% if tags %}
+    <p>
+    {% for tag in tags %}
+      {%- if tag != "post" -%}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+      {%- endif -%}
+    {% endfor %}
+    </p>
+  {% endif %}
                     <h1 class="dark:text-gray-500">{{ title }}</h1>
                     <div class="adjust dark:text-gray-400">
                     {{ layoutContent | safe }}
@@ -35,6 +45,7 @@ section: page
                     </ul>
                     </div>
                 </article>
+                         
                
             </div>    
             
@@ -46,6 +57,7 @@ section: page
                     </aside>
             </div>
             {% endif %}
+
         </div>
     </div>
 </div>
