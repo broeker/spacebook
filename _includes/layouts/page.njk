@@ -2,12 +2,15 @@
 layout: layouts/base.njk
 section: page
 ---
+
+{% if site.layout == "default" %}
 <div class="flex mt-4 justify-end mr-1">
     <div class="inline-block w-auto text-xs text-gray-500 pt-1 pb-1 pl-3 mr-2 rounded ">Updated <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time></div>
     {% if site.enableEditButton == true %}
     <div class="inline-block w-auto text-xs  text-gray-500 hover:bg-gray-200 pt-1 pr-4 pb-1 pl-3 rounded "><a href="{{ site.githubUrl }}/edit/{{ site.githubBranch }}/{{ page.inputPath }}">Edit</a></div>
     {% endif %}
  </div>
+ {% endif %}
  
 <div class="flex w-full justify-center">
     <div class="mt-4 px-6 md:px-6 lg:px-8 xl:px-12 w-full max-w-5xl">
@@ -28,6 +31,7 @@ section: page
     {% endfor %}
     </p>
   {% endif %}
+
                     <h1 class="dark:text-gray-500">{{ title }}</h1>
                     <div class="adjust dark:text-gray-400">
                     {{ layoutContent | safe }}

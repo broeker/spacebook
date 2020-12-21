@@ -4,7 +4,7 @@ date: 2020-12-18
 permalink: /
 toc: true
 eleventyNavigation:
-  key: Home
+  key: Getting started 
   title: Getting started
   order: 0
 ---

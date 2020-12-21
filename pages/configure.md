@@ -5,7 +5,7 @@ permalink: /getting-started/configure/index.html
 toc: true
 eleventyNavigation:
   order: 5 
-  parent: Home
+  parent: Getting started 
   key: Configure your site 
   title: 'Configure your site'
 ---

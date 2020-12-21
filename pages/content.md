@@ -5,7 +5,7 @@ permalink: /getting-started/content/index.htm
 toc: true
 eleventyNavigation:
   order: 10
-  parent: Home
+  parent: Getting started 
   key: Set up your content 
 ---
 All of your content pages are stored in a single top-level directory called **pages** and if you look inside this folder, you will see the sample pages that are part of your spacebook.

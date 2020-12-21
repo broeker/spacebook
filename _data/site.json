@@ -15,5 +15,6 @@
   "enableTOC": false,
   "enableNetlifyCMS": false,
   "enableComments": false,
-  "enableEncryption": false
+  "enableEncryption": false,
+  "layout": "horizontal"
 }

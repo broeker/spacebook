@@ -5,7 +5,7 @@ permalink: /getting-started/step-four/index.html
 toc: true
 eleventyNavigation:
   order: 18  
-  parent: Home
+  parent: Getting started 
   key: Review privacy settings 
 tags:
   - page

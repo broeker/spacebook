@@ -4,7 +4,7 @@ date: 2020-11-20
 permalink: /getting-started/deploy/index.html
 eleventyNavigation:
   order: 20 
-  parent: Home
+  parent: Getting started 
   key: Deploy your changes
 ---
 Deploying changes to your site could not be any easier: 

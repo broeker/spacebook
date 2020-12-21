@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="foo" {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
   {% include "components/head.njk" %}
   <body>
     <div id="app" class="h-screen bg-white dark:bg-gray-900">
@@ -16,12 +16,12 @@
         </div>
       </nav> #}
 
-<div class="mt-48">
- {% include "components/nav.njk" %}
- </div>
 
-        <main id="main" class="dark:bg-gray-900 pt-16 sm:pt-18 md:pt-20 md:pl-64 lg:pl-72">
-             
+        {% if site.layout == 'horizontal' %}
+          <main id="main" class="dark:bg-gray-900 pt-16 sm:pt-18 md:pt-48">
+        {% else %}
+          <main id="main" class="dark:bg-gray-900 pt-16 sm:pt-18 md:pt-20 md:pl-64 lg:pl-72">
+        {% endif %}     
              {{ layoutContent | safe }} 
               {% include "components/footer.njk" %} 
         </main>
