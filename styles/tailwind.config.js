@@ -43,6 +43,11 @@ module.exports = {
                 display: 'none',
               }
             },
+            'ul.spacelog': {
+              '::before': {
+                display: 'none',
+              }
+            },
           },
         },
       }

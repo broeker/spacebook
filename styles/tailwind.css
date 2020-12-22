@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
 @layer base {
 
   .prose a {
@@ -83,11 +86,13 @@
     @apply text-gray-900
   }
 
-  .prose ul.contains-task-list {
+  .prose ul.contains-task-list,
+  .prose ul.spacelog  {
     @apply list-none -ml-6 !important;
   }
 
-  .prose ul.contains-task-list .task-list-item {
+  .prose ul.contains-task-list .task-list-item,
+  .prose ul.spacelog {
     ::before {
       @apply hidden !important;
     }
@@ -114,11 +119,11 @@
   }
 
   .adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet {
-    @apply ml-auto mr-auto text-center !important
+    @apply shadow-md ml-auto mr-auto text-center !important
   }
 
   .adjust  p img:hover, .adjust img:hover {
-    @apply shadow-lg 
+    @apply shadow-xl  
   }
 
   a.button {
@@ -127,6 +132,11 @@
 
   .text-align-center {
     @apply flex justify-center; 
+  }
+
+  .icon-spacer {
+    width: "24px";
+  
   }
 
 }

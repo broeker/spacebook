@@ -3,14 +3,18 @@ layout: layouts/base.njk
 section: page
 ---
 
-{% if site.layout == "default" %}
-<div class="flex mt-4 justify-end mr-1">
-    <div class="inline-block w-auto text-xs text-gray-500 pt-1 pb-1 pl-3 mr-2 rounded ">Updated <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time></div>
-    {% if site.enableEditButton == true %}
-    <div class="inline-block w-auto text-xs  text-gray-500 hover:bg-gray-200 pt-1 pr-4 pb-1 pl-3 rounded "><a href="{{ site.githubUrl }}/edit/{{ site.githubBranch }}/{{ page.inputPath }}">Edit</a></div>
+{% if site.navigationStyle == "vertical" %}
+    {% if site.enableEditButton == true or site.enableDatestamp == true %}
+    <div class="flex mt-4 justify-end mr-1">
+        {% if site.enableDatestamp == true %}
+        <div class="inline-block w-auto text-xs text-gray-500 pt-1 pb-1 pl-3 mr-2 rounded ">Updated <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time></div>
+        {% endif %}
+        {% if site.enableEditButton == true %}
+        <div class="inline-block w-auto text-xs  text-gray-500 hover:bg-gray-200 pt-1 pr-4 pb-1 pl-3 rounded "><a href="{{ site.githubUrl }}/edit/{{ site.githubBranch }}/{{ page.inputPath }}">Edit</a></div>
+        {% endif %}
+    </div>
     {% endif %}
- </div>
- {% endif %}
+{% endif %}
  
 <div class="flex w-full justify-center">
     <div class="mt-4 px-6 md:px-6 lg:px-8 xl:px-12 w-full max-w-5xl">
@@ -21,23 +25,26 @@ section: page
              <div class="main  flex flex-col pr-0 prose sm:prose lg:prose-lg xl:prose-md">
             {% endif %}    
                 <article>
-                    {% if tags %}
-    <p>
-    {% for tag in tags %}
-      {%- if tag != "post" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-    </p>
-  {% endif %}
-
-                    <h1 class="dark:text-gray-500">{{ title }}</h1>
-                    <div class="adjust dark:text-gray-400">
+                <h1 class="dark:text-gray-500">{{ title }}</h1>
+                {% if site.navigationStyle == "horizontal" %}
+                    {% if site.enableEditButton == true or site.enableDatestamp == true %}
+                        <div class="flex mt-4 justify-end mr-1">
+                        {% if site.enableDatestamp == true %}
+                            <div class="inline-block w-auto text-xs text-gray-500 pt-1 pb-1 pl-3 mr-2 rounded ">Updated <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time></div>
+                        {% endif %}
+                        {% if site.enableEditButton == true %}
+                            <div class="inline-block w-auto text-xs  text-gray-500 hover:bg-gray-200 pt-1 pr-4 pb-1 pl-3 rounded "><a class="text-gray-500 no-underline font-normal !important" href="{{ site.githubUrl }}/edit/{{ site.githubBranch }}/{{ page.inputPath }}">Edit</a></div>
+                        {% endif %}
+                        </div>
+                    {% endif %}
+                {% endif %}
+                <div class="adjust dark:text-gray-400">
                     {{ layoutContent | safe }}
                     {% if (site.enableComments) and (comments !== 0) %}
-                    <!-- Paste your comment code here! -->
+                        <!-- Paste your comment code here! -->
                     {% endif %}
+                    
+                    {% if site.enablePageNavigation == true %}
                      <ul class="footer-nav pt-4 mb-8  ml-0 pl-0 flex flex-wrap flex-row-reverse  justify-between mt-8 list-none">
                      {%- set nextPage = collections.menuItems | getNextCollectionItem(page) %}
                      {%- if nextPage %}<li class="ml-0 pl-0"><a class="font-semibold text-gray-500 hover:text-gray-900" href="{{ nextPage.url | url }}">{% if nextPage.data.eleventyNavigation.title %}{{  nextPage.data.eleventyNavigation.title }}{% else %}{{  nextPage.data.eleventyNavigation.key }}{% endif %}</a> <svg height="24" fill="none" viewBox="0 0 24 24" stroke="#6B7280" class="inline ml-1 flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>{% endif %}
@@ -47,21 +54,19 @@ section: page
                      <a class="font-semibold text-gray-500 hover:text-gray-900" href="{{ previousPage.url | url }}">
                     {% if previousPage.data.eleventyNavigation.title %}{{  previousPage.data.eleventyNavigation.title }}{% else %}{{  previousPage.data.eleventyNavigation.key }}{% endif %} </a> </li>{% endif %}
                     </ul>
-                    </div>
+                    {% endif %}
+                </div>
                 </article>
-                         
-               
             </div>    
             
             {% if site.enableTOC and toc %}
             <div class="text-gray-500 font-semibold hidden xl:block sidebar sticky right-0 mt-12 -ml-56 w-56 h-full top-48">
-                <small>ON THIS PAGE</small><br />
-                    <aside class="font-normal">
-                    {{ content | toc | safe }}
-                    </aside>
+            <small>ON THIS PAGE</small><br />
+                <aside class="font-normal">
+                {{ content | toc | safe }}
+                </aside>
             </div>
             {% endif %}
-
         </div>
     </div>
 </div>

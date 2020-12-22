@@ -7,7 +7,6 @@ if (window.netlifyIdentity) {
     }
   });
 }
-;
 
 document.addEventListener("DOMContentLoaded", function() {
   
@@ -45,5 +44,13 @@ function activateDarkMode() {
   } else {
     localStorage.setItem('darkmode', 'true')
     document.body.classList.add("dark");
+  }
+}
+
+function toggleLayout() {
+  if (localStorage.getItem('layout') === 'default') {
+    localStorage.setItem('layout', 'horizontal')
+  } else {
+    localStorage.setItem('layout', 'default')
   }
 }
