@@ -18,8 +18,6 @@ Create your own spacebook exactly like this one and customize it to your needs. 
 
 Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy. 
 
-{% image "space.jpg", "photo of my cat", "300px" %}
-
 ---
 
 ## Launch a new spacebook
@@ -48,7 +46,9 @@ A spacebook is a simple website generator that will help you create your own pro
 - [Netlify CMS](https://www.netlify.com/) (optional) to provide an easy Markdown editor for creating and changing content. 💻
 
 Never fear 🤔 Uou don't need to know or understand any of this to launch a spacebook but it results in a speedy, easy-to-use, and accessible website that typically scores 100s across the board on Google Lighthouse metrics for mobile and desktop:
-
+ 
+![Performance](/static/img/spacebook.png)
+<!-- {% image "spacebook.png", "performance"} -->
 ::: callout
 **Did you know?** If you enable the optional Netlify CMS or add an analytics script, you may lose 1-3 performance points but this is a pretty swell starting point. 👍
 :::
