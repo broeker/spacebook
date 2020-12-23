@@ -74,10 +74,10 @@
   {%- endif -%}
 {%- endmacro %}
 
-<div class="md:bg-white dark:bg-gray-900 z-20 p-0 mt-8 pb-8 mr-1  flex w-full justify-end">
+<div class="md:bg-white dark:bg-gray-900 p-0 mt-8 pb-8 mr-1  flex w-full justify-end">
   <div x-data="{ open: false }" class="flex flex-col justify-start md:items-center  md:flex-row ">
    
-    <nav x-ref="dropdown"  :class=" {'flex': open, 'hidden': !open}" class="hidden md:block z-50 mt-4 mr-2 justify-end flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:flex-row">
+    <nav x-ref="dropdown"  :class=" {'flex': open, 'hidden': !open}" class="hidden md:block mt-4 mr-2 justify-end flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:flex-row">
     {%- for entry in navPages %}
     {{ renderNavListItem(entry,'child') }}
     {%- endfor -%}
