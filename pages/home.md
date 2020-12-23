@@ -18,6 +18,8 @@ Create your own spacebook exactly like this one and customize it to your needs. 
 
 Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy. 
 
+{% image "space.jpg", "photo of my cat", "300px" %}
+
 ---
 
 ## Launch a new spacebook

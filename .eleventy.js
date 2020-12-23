@@ -3,6 +3,7 @@ const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const Image = require("@11ty/eleventy-img");
 const svgContents = require("eleventy-plugin-svg-contents");
 const mdIterator = require('markdown-it-for-inline')
 const embedEverything = require("eleventy-plugin-embed-everything");
@@ -15,6 +16,34 @@ module.exports = function(eleventyConfig) {
     return String(Date.now());
   });
 
+
+
+  eleventyConfig.addLiquidShortcode("image", async function(src, alt, sizes = "100vw") {
+    if(alt === undefined) {
+      // You bet we throw an error on missing alt (alt="" works okay)
+      throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+    }
+    src = './images/'+src
+    let metadata = await Image(src, {
+      widths: [300, 600, null],
+      formats: ['webp', 'jpeg', 'png'],
+      urlPath: "./images",
+      outputDir: "./_site/images"
+    });
+
+    let lowsrc = metadata.jpeg[0];
+
+    return `<picture>
+      ${Object.values(metadata).map(imageFormat => {
+        return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+      }).join("\n")}
+        <img
+          src="${lowsrc.url}"
+          width="${lowsrc.width}"
+          height="${lowsrc.height}"
+          alt="${alt}">
+      </picture>`;
+  });
 
   eleventyConfig.addLiquidShortcode("button", function(title,url) {
     return '<a class="button" href="'+url+'">'+title+'</a>';
@@ -144,6 +173,7 @@ module.exports = function(eleventyConfig) {
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/img");
+  eleventyConfig.addPassthroughCopy("images/")
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
 
