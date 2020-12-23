@@ -18,5 +18,5 @@
   "enableComments": false,
   "enableEncryption": false,
   "enablePageNavigation": true,
-  "navigationStyle": "horizontal"
+  "navigationStyle": "vertical"
 }
