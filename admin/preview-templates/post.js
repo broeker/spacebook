@@ -34,7 +34,7 @@ const Post = createClass({
               entry.getIn(["data", "tags"], []).map(
                 tag =>
                   html`
-                    <a href="#" rel="tag">${tag}</a>
+                    <a class="text-xs px-3 py-2 text-gray-600 bg-gray-200 no-underline rounded" href="#" rel="tag">${tag}</a>
                   `
               )
             }
