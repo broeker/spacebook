@@ -14,11 +14,11 @@ const Post = createClass({
           <h1>${entry.getIn(["data", "title"], null)}</h1>
           <p>
             <small>
-              <time
+              Updated: <time
                 >${
                   format(
                     entry.getIn(["data", "date"], new Date()),
-                    "dd MMM, yyyy"
+                    "MMM dd, yyyy"
                   )
                 }</time
               >
@@ -34,7 +34,7 @@ const Post = createClass({
               entry.getIn(["data", "tags"], []).map(
                 tag =>
                   html`
-                    <a class="text-xs px-3 py-2 text-gray-600 bg-gray-200 no-underline rounded" href="#" rel="tag">${tag}</a>
+                    <a class="text-xs mr-2 px-3 py-2 text-gray-600 bg-gray-200 no-underline rounded" href="#" rel="tag">${tag}</a>
                   `
               )
             }
