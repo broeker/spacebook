@@ -44,8 +44,8 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 100 }
-          - { label: "Parent", name: "parent", widget: "string", required: false, hint: "Optional: enter a matching parent key to set this a nested or child page" }
-          - { label: "Title", name: "title", widget: "string", hint: "Optional: enter alternate text for navigation link" }
+          - { label: "Parent", name: "parent", widget: "string", required: false, hint: "(Optional) Enter a matching parent key to set this a nested or child page" }
+          - { label: "Title", name: "title", widget: "string",  required: false, hint: "(Optional) Enter alternate text for navigation link" }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Globals"
     name: "globals"
