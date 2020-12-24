@@ -9,7 +9,7 @@ const Post = createClass({
     const entry = this.props.entry;
 
     return html`
-      <main>
+      <main class="prose p-4">
         <article>
           <h1>${entry.getIn(["data", "title"], null)}</h1>
           <p>
@@ -25,10 +25,10 @@ const Post = createClass({
               ${" by Author"}
             </small>
           </p>
-
           <p>${entry.getIn(["data", "summary"], "")}</p>
-
+          <div class="adjust">
           ${this.props.widgetFor("body")}
+          </div>
           <p>
             ${
               entry.getIn(["data", "tags"], []).map(
