@@ -5,5 +5,5 @@ date: 2020-12-21
 permalink: /blog/index.html
 eleventyNavigation:
   key: Spacelog
-  order: 2
+  order: 200
 ---

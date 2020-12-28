@@ -1,10 +1,11 @@
 ---
-title: Errata and To-dos
+title: Errata
 date: 2020-11-20
 permalink: /errata/index.html
 eleventyNavigation:
-  order: 95 
-  key: Errata and To-dos
+  order: 100
+  key: Errata
+  parent: More info
 ---
 This is a small page to track known errors, to-dos, and other small things I wish worked differently. [Pull requests ](https://github.com/broeker/spacebook) and [issue reports](https://github.com/broeker/spacebook/issues) are happily accepted. 😇
 

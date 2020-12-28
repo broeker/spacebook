@@ -1,11 +1,11 @@
 ---
 title: Credits 🙌 
-date: 2020-11-20
+date: 2020-12-27
 permalink: /credits/index.html
 eleventyNavigation:
-  order: 100 
+  order: 105 
   key: Credits
-  title: Credits
+  parent: More info
 ---
 Spacebook was inspired by my search for the simplest possible way to spin up a modern website in the least amount of time, with the freedom to extend as needed, zero cost, no maintenance burden, and virtually zero effort. 
 

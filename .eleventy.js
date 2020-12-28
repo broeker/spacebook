@@ -2,12 +2,13 @@ const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const Image = require("@11ty/eleventy-img");
 const svgContents = require("eleventy-plugin-svg-contents");
 const mdIterator = require('markdown-it-for-inline')
 const embedEverything = require("eleventy-plugin-embed-everything");
 const pluginTOC = require('eleventy-plugin-nesting-toc');
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const Image = require("@11ty/eleventy-img");
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginTOC);
   eleventyConfig.addPlugin(svgContents); 
@@ -16,8 +17,7 @@ module.exports = function(eleventyConfig) {
     return String(Date.now());
   });
 
-
-
+  // Responsive image shortcode
   eleventyConfig.addLiquidShortcode("image", async function(src, alt, sizes = "100vw") {
     if(alt === undefined) {
       // You bet we throw an error on missing alt (alt="" works okay)
@@ -25,7 +25,7 @@ module.exports = function(eleventyConfig) {
     }
     src = './images/'+src
     let metadata = await Image(src, {
-      widths: [300, 600, null],
+      widths: [400, 600, 800, 1000, null],
       formats: ['webp', 'jpeg', 'png'],
       urlPath: "./images",
       outputDir: "./_site/images"
@@ -37,7 +37,7 @@ module.exports = function(eleventyConfig) {
       ${Object.values(metadata).map(imageFormat => {
         return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
       }).join("\n")}
-        <img
+      <img
           src="${lowsrc.url}"
           width="${lowsrc.width}"
           height="${lowsrc.height}"
@@ -45,21 +45,24 @@ module.exports = function(eleventyConfig) {
       </picture>`;
   });
 
-  eleventyConfig.addLiquidShortcode("button", function(title,url) {
-    return '<a class="button" href="'+url+'">'+title+'</a>';
-  });
-
   eleventyConfig.addLiquidShortcode("icon", function(title,url) {
     return '<img class="icon" src="'+url+'" alt="'+title+'" />';
   });
 
+  // Button shortcode -- experimental
+  // eleventyConfig.addLiquidShortcode("button", function(title,url) {
+  //   return '<a class="button" href="'+url+'">'+title+'</a>';
+  // });
+
+
+  // Tailwind pass through and watch target
+  eleventyConfig.addWatchTarget("./_tmp/style.css");
+  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
+
+  // Alpine.js pass through
   eleventyConfig.addPassthroughCopy({
     "./node_modules/alpinejs/dist/alpine.js": "./js/alpine.js",
   });
-
-  eleventyConfig.addWatchTarget("./_tmp/style.css");
-
-  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
 
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -113,13 +116,14 @@ module.exports = function(eleventyConfig) {
   });
     
 
-   // Search collection
+   // Creates custom collection "results" for search
    const searchFilter = require("./filters/searchFilter");
    eleventyConfig.addFilter("search", searchFilter);
    eleventyConfig.addCollection("results", collection => {
     return [...collection.getFilteredByGlob("**/*.md")];
    });
   
+   // Creates custom collection "menuItems"
    eleventyConfig.addCollection("menuItems", collection =>
     collection
       .getAll()
@@ -130,7 +134,6 @@ module.exports = function(eleventyConfig) {
         return (a.data.eleventyNavigation.order || 0) - (b.data.eleventyNavigation.order || 0);
       })
   );
-
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -236,7 +239,6 @@ module.exports = function(eleventyConfig) {
     // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
     // This is only used for URLs (it does not affect your file structure)
     pathPrefix: "/",
-
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",

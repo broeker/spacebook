@@ -25,7 +25,7 @@ module.exports = {
             a: {
               color: '#1D4ED8',
               '&:hover': {
-                color: '#1E3A8A',
+              color: '#1E3A8A',
               },
             },
             '.prose a.edit, .tag a': {
