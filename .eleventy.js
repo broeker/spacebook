@@ -11,7 +11,7 @@ const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minif
 const Image = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
+  // eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
   eleventyConfig.addPlugin(pluginTOC);
   eleventyConfig.addPlugin(svgContents); 
   eleventyConfig.addPlugin(embedEverything);
