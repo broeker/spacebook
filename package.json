@@ -55,7 +55,6 @@
     "markdown-it-table-of-contents": "^0.5.0",
     "markdown-it-task-lists": "^2.1.1",
     "postcss": "^8.1.8",
-    "postcss-clean": "^1.1.0",
     "qs": "^6.9.4",
     "quicklink": "^2.0.0",
     "remove": "^0.1.5",
