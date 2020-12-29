@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A simple site generator based on Eleventy, Tailwind 2.0, and Alpine.js",
   "scripts": {
-    "start": "eleventy --serve & postcss styles/tailwind.css --o _tmp/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss styles/tailwind.css --o _site/style.css &&  NODE_ENV=production cleancss -o _site/style.css _site/style.css",
+    "start": "eleventy --serve & postcss styles/tailwind.css -o _tmp/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss styles/tailwind.css --o _site/style.css &&  NODE_ENV=production  ./node_modules/.bin/cleancss --o _site/style.css _site/style.css",
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=* npx eleventy"
   },
@@ -39,6 +39,7 @@
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^10.0.2",
     "clean-css": "^4.2.1",
+    "clean-css-cli": "^4.3.0",
     "elasticlunr": "^0.9.5",
     "eleventy-plugin-embed-everything": "^1.9.4",
     "eleventy-plugin-nesting-toc": "^1.2.0",
