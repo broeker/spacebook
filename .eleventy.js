@@ -7,9 +7,11 @@ const mdIterator = require('markdown-it-for-inline')
 const embedEverything = require("eleventy-plugin-embed-everything");
 const pluginTOC = require('eleventy-plugin-nesting-toc');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const Image = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
   eleventyConfig.addPlugin(pluginTOC);
   eleventyConfig.addPlugin(svgContents); 
   eleventyConfig.addPlugin(embedEverything);
