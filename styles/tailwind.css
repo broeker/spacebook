@@ -106,12 +106,12 @@
   }
 
 /* Utilities and misc */
-  /* .adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet {
+  .adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet {
     @apply shadow-md ml-auto mr-auto  p-2 !important
   }
   .adjust  p img:hover, .adjust img:hover {
     @apply shadow-xl  
-  } */
+  }
   .text-align-center {
     @apply flex justify-center; 
   }

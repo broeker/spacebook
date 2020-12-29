@@ -7,7 +7,8 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: {
-    content: ["_site/**/*.html"],
+    enabled: true,
+    content: ["_site/**/*.html","_site/**/*.njk"],
     options: {
       safelist: [],
     },
