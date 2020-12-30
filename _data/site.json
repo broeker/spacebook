@@ -14,7 +14,7 @@
   "enableGithubLink": true,
   "enableContact": false,
   "enableTOC": false,
-  "enableNetlifyCMS": true,
+  "enableNetlifyCMS": false,
   "enableComments": false,
   "enableEncryption": false,
   "enablePageNavigation": true,
