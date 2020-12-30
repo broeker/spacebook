@@ -20,13 +20,15 @@ Spacebooks are modern notebooks you can use to create documentation, sketch out 
 
 ---
 
+{% image "sagan.jpg", "foo", "400px" %}
+
 ## Quick launch 👩🏽‍🚀🚀
 
 Keep reading to learn more, but if you're the adventurous type, you can launch your own spacebook right now with the click of a button. You'll need an existing [Github account](https://github.com/) and a [Netlify account](https://www.netlify.com/) (which you can create during this process if you wish): 
 
 
 <div class="flex width-full justify-center pt-4 pb-4">
-<a class="bg-green-700 hover:bg-blue-600 text-white no-underline mb-4 px-4 py-2 rounded" href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/spacebook">Deploy to Netlify</a>
+<a class="bg-blue-600 hover:bg-blue-600 text-white no-underline mb-4 px-4 py-2 rounded" href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/spacebook">Deploy to Netlify!</a>
 </div>
 
 If you click that button and follow the steps, the Netlify robots will copy the spacebook repository to your own personal Github account. Once complete, your new spacebook will be automatically deployed to the cloud with its own URL and ready for customization. 👍
@@ -53,13 +55,9 @@ A spacebook is a simple website generator that will help you create your own pro
 
 Never fear! You don't need to know or understand any of this to launch a spacebook but it results in a speedy, easy-to-use, and accessible website that typically scores 100s across the board on Google Lighthouse metrics for mobile and desktop.
 
-{% image "sagan.jpg", "sagan" %}
-
 ::: callout
 **Did you know?** If you enable the optional Netlify CMS or add an analytics script, you may lose 1-3 performance points but this is a pretty swell starting point. 👍
 :::
-
-{% image "space.jpg", "performance", "400px" %}
 
 If you wish, you may customize your spacebook or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](/credits).
 

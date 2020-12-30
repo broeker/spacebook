@@ -1628,11 +1628,6 @@ nav.toc ol li a:hover {
   background-color: rgba(5, 150, 105, var(--tw-bg-opacity)) !important;
 }
 
-.bg-green-700 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(4, 120, 87, var(--tw-bg-opacity)) !important;
-}
-
 .bg-blue-50 {
   --tw-bg-opacity: 1 !important;
   background-color: rgba(239, 246, 255, var(--tw-bg-opacity)) !important;
@@ -1646,6 +1641,11 @@ nav.toc ol li a:hover {
 .bg-blue-200 {
   --tw-bg-opacity: 1 !important;
   background-color: rgba(191, 219, 254, var(--tw-bg-opacity)) !important;
+}
+
+.bg-blue-600 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(37, 99, 235, var(--tw-bg-opacity)) !important;
 }
 
 .bg-pink-400 {

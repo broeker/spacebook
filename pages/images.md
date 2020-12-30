@@ -19,6 +19,7 @@ You can drop images, diagrams, or illustrations anywhere in your content. Images
 ![Space](/static/img/space.jpg)
 ```
 
+
 ![My image](/static/img/space.jpg)
 
 ## External images 
@@ -39,6 +40,8 @@ Your images are centered by default, and there is a special syntax to add a capt
 ```
 
 ![Space](https://source.unsplash.com/random/300x300)
+
+{% image "sagan.jpg", "foo", "400px" %}
 
 -> _A random Unsplashed image at 300x300_ <-
 
