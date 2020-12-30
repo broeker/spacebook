@@ -7,4 +7,3 @@ eleventyNavigation:
   key: Spacelog
   order: 200
 ---
-{% image "foo.jpg", "foox", "400px" %}

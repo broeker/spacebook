@@ -8,7 +8,6 @@ const embedEverything = require("eleventy-plugin-embed-everything");
 const pluginTOC = require('eleventy-plugin-nesting-toc');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const Image = require("@11ty/eleventy-img");
-
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginTOC);
   eleventyConfig.addPlugin(svgContents); 
@@ -27,8 +26,8 @@ module.exports = function(eleventyConfig) {
     let metadata = await Image(src, {
       widths: [400, 600, 800, 1000, null],
       formats: ['webp', 'jpeg', 'jpg', 'png'],
-      urlPath: "./images",
-      outputDir: "./_site/images"
+      urlPath: "/images/",
+      outputDir: "./_site/images/"
     });
 
     let lowsrc = metadata.jpeg[0];
@@ -38,10 +37,11 @@ module.exports = function(eleventyConfig) {
         return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
       }).join("\n")}
       <img
-          src="${lowsrc.url}"
+          data-src="${lowsrc.url}"
           width="${lowsrc.width}"
           height="${lowsrc.height}"
-          alt="${alt}">
+          alt="${alt}"
+          class="lazyload">
       </picture>`;
   });
 

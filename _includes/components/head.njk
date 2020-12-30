@@ -9,6 +9,7 @@
   {% set js %}
     {% include "assets/js/inline.js" %}
     {% include "assets/js/search.js" %}
+    {% include "assets/js/lazysizes.min.js" %}
   {% endset %}
   
   <script defer>{{ js | jsmin | safe }}</script>
