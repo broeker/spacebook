@@ -71,6 +71,6 @@ collections:
           - {label: "Enable Github link", name: "enableGithubLink", widget: "boolean"}
           - {label: "Enable contact form", name: "enableContact", widget: "boolean"}
           - {label: "Enable Netlify CMS", name: "enableNetlifyCMS", widget: "boolean", default: false}
-          - {label: "Enable commments", name: "enableComments", widget: "boolean", default: false}
+          - {label: "Enable comments", name: "enableComments", widget: "boolean", default: false}
           - {label: "Enable encryption", name: "enableEncryption", widget: "boolean", default: false}
           - {label: "Enable page navigation", name: "enablePageNavigation", widget: "boolean", default: false}
