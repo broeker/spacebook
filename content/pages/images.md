@@ -47,8 +47,6 @@ You can also refer to any external image via URL including sized Unsplashed imag
 
 ![Random image](https://source.unsplash.com/random/300x300)
 
--> _A random Unsplashed image at 300x300_ <
-
 ## Image captions
 
 Images are centered by default, and there is a special syntax to add a caption directly below your image with centered text.The matching arrows will center your caption, and the underscores will italicize the caption.:
@@ -72,7 +70,7 @@ You can also take advantage of the [Eleventy Image](https://www.11ty.dev/docs/pl
 
 <iframe width="100%" height="80" src="/_includes/assets/utils/image.txt"></iframe>
 
-{% image "sagan.jpg" "Carl Sagan" %}</a>
+{% image "sagan.jpg" "Carl Sagan" %}
 
 This syntax will generate 8 different sizes of your image, in 3 different formats (webp, jpeg, png) resulting in 24 different versions. The browser will automatically serve the best and smallest version of the image based on the users current screen resolution and browser support.
 

@@ -1,6 +1,6 @@
 ---
 title: 'Configure your site' 
-date: 2020-11-20
+date: Last Modified 
 permalink: /getting-started/configure/index.html
 toc: true
 eleventyNavigation:

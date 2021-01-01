@@ -6,7 +6,7 @@
   "url": "https://spacebook.app",
   "githubUrl": "https://github.com/broeker/spacebook",
   "githubBranch": "main",
-  "navigationStyle": "horizontal",
+  "navigationStyle": "vertical",
   "emoji": "💥",
   "enableSearch": true,
   "enableDarkMode": true,
@@ -14,7 +14,7 @@
   "enableDatestamp": true,
   "enableGithubLink": true,
   "enableContact": false,
-  "enableNetlifyCMS": true,
+  "enableNetlifyCMS": false,
   "enableComments": false,
   "enableEncryption": false,
   "enablePageNavigation": true

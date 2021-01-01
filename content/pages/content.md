@@ -1,6 +1,6 @@
 ---
 title: 'Set up your content' 
-date: 2020-11-20
+date: 2021-01-01 
 permalink: /getting-started/content/index.htm
 toc: true
 eleventyNavigation:

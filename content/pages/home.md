@@ -1,6 +1,6 @@
 ---
 title: Getting started
-date: 2020-12-18
+date: Last Modified 
 permalink: /
 eleventyNavigation:
   key: Getting started 
@@ -54,7 +54,18 @@ Never fear! You don't need to know or understand any of this to launch a spacebo
 **Did you know?** If you wish, you may customize the design of your spacebook, or even use it as the basis for your creating your own starter. It was built on the [shoulders of giants](/credits). 👍
 :::
 
+## Features
 
+Almost all features are optional, and can be toggled in your configuration file:
+
+* Horizontal or vertical navigation
+* In-page navigation
+* Keyword search
+* Dark mode
+* Datestamp
+* Edit on Github
+* Contact form
+* Netlify CMS
 
 ---
 
@@ -68,7 +79,7 @@ A spacebook is for anybody who believes in the [#indieweb](https://indieweb.org/
 - Project managers
 - Teachers and students
 
-Anybody who is willing to learn a few simple things can create as many spacebooks as they'd like for any reason in the world.
+Anyone who is willing to learn a few simple things can create as many spacebooks as they'd like for any reason in the world.
 
 ---
 

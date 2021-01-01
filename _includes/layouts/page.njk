@@ -7,7 +7,7 @@ section: page
     {% if site.enableEditButton == true or site.enableDatestamp == true %}
     <div class="flex mt-4 justify-end mr-1">
         {% if site.enableDatestamp == true %}
-        <div class="inline-block w-auto text-xs text-gray-500 pt-1 pb-1 pl-3 mr-2 rounded ">Updated <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time></div>
+        <div class="inline-block w-auto text-xs text-gray-500 pt-1 pb-1 pl-3 mr-2 rounded ">Updated <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time></div>
         {% endif %}
         {% if site.enableEditButton == true %}
         <div class="inline-block w-auto text-xs  text-gray-500 hover:bg-gray-200 pt-1 pr-4 pb-1 pl-3 rounded "><a href="{{ site.githubUrl }}/edit/{{ site.githubBranch }}/{{ page.inputPath }}">Edit</a></div>
