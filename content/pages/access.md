@@ -1,22 +1,14 @@
 ---
 title: 'Review your privacy settings' 
-date: 2020-11-20
+date: Last Modified 
 permalink: /getting-started/step-four/index.html
 toc: true
 eleventyNavigation:
   order: 18  
   parent: Getting started 
   key: Review privacy settings 
-tags:
-  - page
-  - tech
-  - environment
-  - politics
-  - sport
 ---
-By default, spacebook sites are set up so they will **NOT** get indexed by Google or other search engines. They do not send referrer links to outside sites and cannot be tracked in analytics. There are no ad trackers, tracking cookies, or other nonsense installed. 
-
-If you want to open your site to the public eye, [jump down for easy instructions](#make-your-site-searchable!) on how to share your spacebook with Google and the rest of the world.
+By default, spacebook sites are set up so they will **NOT** get indexed by Google or other search engines. They do not send referrer links to outside sites and cannot be tracked in analytics. There are no ad trackers, tracking cookies, or other nonsense installed. If you want to open your site to the public eye, [jump down for easy instructions](#make-your-site-searchable!) on how to share your spacebook with Google and the rest of the world.
 
 
 ## Security through obscurity

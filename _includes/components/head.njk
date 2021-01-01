@@ -13,16 +13,12 @@
   
   <script defer>{{ js | jsmin | safe }}</script>
 
-
  {% if site.enableNetlifyCMS == 1 %}
   <link rel="dns-prefetch" href="https://identity.netlify.com">
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
  {% endif %}
- 
-  
 
   {% if site.enableSearch == 1 %}
-  {# <script type="text/javascript" src="/_includes/assets/js/search.js" defer></script> #}
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js" defer></script>
   {% endif %}
 

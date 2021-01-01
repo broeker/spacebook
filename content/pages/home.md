@@ -32,7 +32,7 @@ If you click that button and follow the steps, the Netlify robots will copy the 
 --- 
 
 ::: callout-blue
-**Did you know?** You can host your project anywhere, but we currently assume [Netlify](https://www.netlify.com/), and various features may be Netlify dependent (e.g. contact forms, Netlify Identity).  They provide a generous free tier, and are pioneers in a new breed of web hosting that make it very simple to push some files to a speedy, global CDN that will serve your files faster than you can blink.
+**Did you know?** You can host your project anywhere, but we currently assume [Netlify](https://www.netlify.com/), and various features may be Netlify dependent (e.g. contact forms, Netlify Identity).  They provide a generous free tier, and are pioneers in a new breed of web hosting that makes it simple to push some files to a speedy, global CDN that will serve your files faster than you can blink.
 :::
 
 ---
