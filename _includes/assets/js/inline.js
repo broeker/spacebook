@@ -7,7 +7,6 @@ if (window.netlifyIdentity) {
     }
   });
 }
-;
 
 document.addEventListener("DOMContentLoaded", function() {
   
@@ -46,4 +45,21 @@ function activateDarkMode() {
     localStorage.setItem('darkmode', 'true')
     document.body.classList.add("dark");
   }
+}
+
+function toggleLayout(state) {
+  if (localStorage.getItem('layout') === "horizontal") {
+    localStorage.setItem('layout', 'vertical')
+  } else if (localStorage.getItem('layout') === "vertical") {
+    localStorage.setItem('layout', "horizontal")
+  } else if (!localStorage.getItem('layout')) {
+    if (state === "horizontal") {
+      localStorage.setItem('layout', 'vertical')
+    } else {
+      localStorage.setItem('layout', 'horizontal')
+    }
+  } 
+  
+ 
+  console.log(localStorage.getItem('layout'))
 }

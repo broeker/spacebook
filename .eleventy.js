@@ -2,13 +2,12 @@ const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const svgContents = require("eleventy-plugin-svg-contents");
 const mdIterator = require('markdown-it-for-inline')
 const embedEverything = require("eleventy-plugin-embed-everything");
-//const pluginTOC = require('eleventy-plugin-nesting-toc');
-//const pluginTOC = require('eleventy-plugin-toc')
 const pluginTOC = require('eleventy-plugin-nesting-toc');
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const Image = require("@11ty/eleventy-img");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginTOC);
   eleventyConfig.addPlugin(svgContents); 
@@ -17,22 +16,55 @@ module.exports = function(eleventyConfig) {
     return String(Date.now());
   });
 
+  // Responsive image shortcode
+  eleventyConfig.addLiquidShortcode("image", async function(src, alt, sizes = "100vw") {
+    if(alt === undefined) {
+      // You bet we throw an error on missing alt (alt="" works okay)
+      throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+    }
+    src = './content/images/'+src
+    let metadata = await Image(src, {
+      widths: [400, 600, 800, 1000, 1200, 1400, 1600, 1900],
+      formats: ['webp', 'jpeg', 'png'],
+      urlPath: "/images/",
+      outputDir: "./_site/images/"
+    });
 
-  eleventyConfig.addLiquidShortcode("button", function(title,url) {
-    return '<a class="button" href="'+url+'">'+title+'</a>';
+    let lowsrc = metadata.jpeg[0];
+
+    let picture = `<picture>
+      ${Object.values(metadata).map(imageFormat => {
+        return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+      }).join("\n")}
+        <img
+          data-src="${lowsrc.url}"
+          width="${lowsrc.width}"
+          height="${lowsrc.height}"
+          alt="${alt}">
+      </picture>`;
+
+      return `${picture}`;
+
   });
 
   eleventyConfig.addLiquidShortcode("icon", function(title,url) {
     return '<img class="icon" src="'+url+'" alt="'+title+'" />';
   });
 
+  // Button shortcode -- experimental
+  // eleventyConfig.addLiquidShortcode("button", function(title,url) {
+  //   return '<a class="button" href="'+url+'">'+title+'</a>';
+  // });
+
+
+  // Tailwind pass through and watch target
+  eleventyConfig.addWatchTarget("./_tmp/style.css");
+  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
+
+  // Alpine.js pass through
   eleventyConfig.addPassthroughCopy({
     "./node_modules/alpinejs/dist/alpine.js": "./js/alpine.js",
   });
-
-  eleventyConfig.addWatchTarget("./_tmp/style.css");
-
-  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
 
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -70,13 +102,30 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob("pages/*.md");
    });
 
-   // Search collection
+   // Creates custom collection "posts"
+  //  eleventyConfig.addCollection("posts", function(collection) {
+  //   const coll = collection.getFilteredByGlob("posts/*.md");
+  
+  //   for(let i = 0; i < coll.length ; i++) {
+  //     const prevPost = coll[i-1];
+  //     const nextPost = coll[i + 1];
+  
+  //     coll[i].data["prevPost"] = prevPost;
+  //     coll[i].data["nextPost"] = nextPost;
+  //   }
+  
+  //   return coll;
+  // });
+    
+
+   // Creates custom collection "results" for search
    const searchFilter = require("./filters/searchFilter");
    eleventyConfig.addFilter("search", searchFilter);
    eleventyConfig.addCollection("results", collection => {
-    return [...collection.getFilteredByGlob("pages/*.md")];
+    return [...collection.getFilteredByGlob("**/*.md")];
    });
   
+   // Creates custom collection "menuItems"
    eleventyConfig.addCollection("menuItems", collection =>
     collection
       .getAll()
@@ -88,7 +137,6 @@ module.exports = function(eleventyConfig) {
       })
   );
 
-
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("LLL dd, yyyy");
@@ -96,6 +144,7 @@ module.exports = function(eleventyConfig) {
 
   // Date formatting (machine readable)
   eleventyConfig.addFilter("machineDate", dateObj => {
+
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
@@ -129,9 +178,10 @@ module.exports = function(eleventyConfig) {
 
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
-  eleventyConfig.addPassthroughCopy("static/img");
+  eleventyConfig.addPassthroughCopy("images/")
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
+  eleventyConfig.addPassthroughCopy("_includes/experimental/");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
@@ -167,7 +217,6 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAnchor, opts)
     .use(markdownItEmoji)
     .use(markdownItFootnote)
-    .use(markdownToc)
     .use(markdownItContainer, 'callout')
     .use(markdownItContainer, 'callout-blue')
     .use(markdownItContainer, 'callout-pink')
@@ -192,7 +241,6 @@ module.exports = function(eleventyConfig) {
     // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
     // This is only used for URLs (it does not affect your file structure)
     pathPrefix: "/",
-
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",

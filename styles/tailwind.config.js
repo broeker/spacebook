@@ -7,6 +7,7 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: {
+    enabled: true,
     content: ["_site/**/*.html"],
     options: {
       safelist: [],
@@ -25,7 +26,7 @@ module.exports = {
             a: {
               color: '#1D4ED8',
               '&:hover': {
-                color: '#1E3A8A',
+              color: '#1E3A8A',
               },
             },
             '.prose a.edit, .tag a': {
@@ -39,6 +40,11 @@ module.exports = {
               }
             },
             'ul.contains-task-list': {
+              '::before': {
+                display: 'none',
+              }
+            },
+            'ul.spacelog': {
               '::before': {
                 display: 'none',
               }

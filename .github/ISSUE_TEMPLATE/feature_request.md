@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Enhancements. e.g. “I wish this template did this.” Suggest an idea!
+about: Enhancements. e.g. “I wish spacebook did this.” Suggest an idea!
 title: ''
 labels: ''
 assignees: ''

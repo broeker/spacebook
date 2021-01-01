@@ -1,11 +1,11 @@
 ---
 title: 'Configure your site' 
-date: 2020-11-20
+date: Last Modified 
 permalink: /getting-started/configure/index.html
 toc: true
 eleventyNavigation:
   order: 5 
-  parent: Home
+  parent: Getting started 
   key: Configure your site 
   title: 'Configure your site'
 ---
@@ -16,41 +16,41 @@ If you have a local copy of your site installed you can edit this file directly,
 ```
 {
   "name": "Spacebook",
-  "subtitle": "Fast and simple documentation to explain almost anything",
-  "description": "A simple document generator based on Eleventy, Tailwind 2.0, and Alpine.js",
-  "emoji": "💥",
-  "footer": "Made with ❤️️ by Electric Citizen",
+  "subtitle": "Create a modern notebook to document or explain almost anything.",
+  "description": "Create a modern notebook to document or explain almost anything with spacebook.app",
+  "footer": "<a href='https://spacebook.app'>Made with ❤ in Minneapolis</a>",
   "url": "https://spacebook.app",
   "githubUrl": "https://github.com/broeker/spacebook",
   "githubBranch": "main",
+  "navigationStyle": "horizontal",
+  "emoji": "💥",
   "enableSearch": true,
-  "enableContact": true,
   "enableDarkMode": true,
   "enableEditButton": true,
+  "enableDatestamp": true,
   "enableGithubLink": true,
-  "enableTOC": false,
+  "enableContact": false,
   "enableNetlifyCMS": false,
   "enableComments": false,
-  "enableEncryption": false
+  "enableEncryption": false,
+  "enablePageNavigation": true
 }
 ```
-
-::: callout
-**Did you know?** If you enable the optional Netlify CMS integration, all of these settings can also be changed via the CMS.
-:::
 
 ## Basic settings
 
 When you make changes to this file and deploy them, your site will automically update to reflect your new settings:
 
-* **Name** -- this is the name or title of your site as it appears in the header
-* **Subtitle** -- this is the short subtitle that appears directly below your site name (optional)
-* **Description** -- this is used as your default metadata page description and can be overridden on a page-by-page basis as needed
-* **Footer** -- this is the plain text that appears in the bottom footer (optional)
-* **Emoji** -- this is the emoji used for your favicon 
-* **URL** -- this is the main URL to your site on Netlify
+* **name** -- this is the name or title of your site as it appears in the header
+* **subtitle** *(optional)* -- this is the short subtitle that appears directly below your site name
+* **description** -- this is used as your default metadata page description, and can be overridden on a page-by-page basis as needed
+* **footer** *(optional)* -- this is the plain text that appears in the bottom footer
 * **githubUrl** -- this is the address to your Github repository, used to generate edit links
 * **githubBranch** -- this is the main of your primary Github branch (set to "main" by default)
+* **navigationStyle** -- you can set your navigation to **horizontal** *(default)*, or **vertical** if you prefer a top navigation bar
+* **emoji** *(optional)*  -- this is the emoji used for your favicon 
+* **url** -- this is the main URL to your site on Netlify (this is not currently used but seems wise to track in config)
+
 
 ## Enable or disable features
 
@@ -58,10 +58,18 @@ When you make changes to this file and deploy them, your site will automically u
 * **enableContact** -- enable or disable the Netlify contact form
 * **enableDarkMode** -- enable or disable darkmode functionality
 * **enableEditButton** -- enable or disable the "edit on Github button"
-* **enableTOC** -- enable or disable isable the link to your Github repo in the footer
+* **enableDatestamp** -- enable or disable the date stamp that appears on the top of each page
+* **enableGithubLink** -- enable or disable the Github link and icon that appears in the footer
 * **enableNetlifyCMS** -- enable or disable Netlify CMS (false by default)
 * **enableEncryption** -- enable the logout button if you are using encryption (false by default)
+* **enablePageNavigation** -- enable or disable the built-in navigation that appears on the bottom of each page
+---
 
+::: callout
+**Did you know?** If you enable the optional [Netlify CMS integration](/advanced/netlifycms/), all of these settings can also be changed via the CMS.
+:::
+
+---
 
 ## Basic Netlify configuration
 

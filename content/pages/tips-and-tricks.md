@@ -1,6 +1,6 @@
 ---
 title: Tips and tricks
-date: 2020-11-20
+date: Last Modified
 permalink: /tips-and-tricks/index.html
 comments: 0
 eleventyNavigation:

@@ -5,8 +5,14 @@ permalink: /getting-started/step-four/index.html
 toc: true
 eleventyNavigation:
   order: 18  
-  parent: Home
+  parent: Getting started 
   key: Review privacy settings 
+tags:
+  - page
+  - tech
+  - environment
+  - politics
+  - sport
 ---
 By default, spacebook sites are set up so they will **NOT** get indexed by Google or other search engines. They do not send referrer links to outside sites and cannot be tracked in analytics. There are no ad trackers, tracking cookies, or other nonsense installed. 
 
