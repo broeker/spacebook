@@ -82,20 +82,20 @@ module.exports = function(eleventyConfig) {
   // Add support for maintenance-free post authors
   // Adds an authors collection using the author key in our post frontmatter
   // Thanks to @pdehaan: https://github.com/pdehaan
-  eleventyConfig.addCollection("authors", collection => {
-    const blogs = collection.getFilteredByGlob("posts/*.md");
-    return blogs.reduce((coll, post) => {
-      const author = post.data.author;
-      if (!author) {
-        return coll;
-      }
-      if (!coll.hasOwnProperty(author)) {
-        coll[author] = [];
-      }
-      coll[author].push(post.data);
-      return coll;
-    }, {});
-  });
+  // eleventyConfig.addCollection("authors", collection => {
+  //   const blogs = collection.getFilteredByGlob("posts/*.md");
+  //   return blogs.reduce((coll, post) => {
+  //     const author = post.data.author;
+  //     if (!author) {
+  //       return coll;
+  //     }
+  //     if (!coll.hasOwnProperty(author)) {
+  //       coll[author] = [];
+  //     }
+  //     coll[author].push(post.data);
+  //     return coll;
+  //   }, {});
+  // });
 
    // Creates custom collection "pages"
    eleventyConfig.addCollection("pages", function(collection) {
@@ -103,19 +103,19 @@ module.exports = function(eleventyConfig) {
    });
 
    // Creates custom collection "posts"
-   eleventyConfig.addCollection("posts", function(collection) {
-    const coll = collection.getFilteredByGlob("posts/*.md");
+  //  eleventyConfig.addCollection("posts", function(collection) {
+  //   const coll = collection.getFilteredByGlob("posts/*.md");
   
-    for(let i = 0; i < coll.length ; i++) {
-      const prevPost = coll[i-1];
-      const nextPost = coll[i + 1];
+  //   for(let i = 0; i < coll.length ; i++) {
+  //     const prevPost = coll[i-1];
+  //     const nextPost = coll[i + 1];
   
-      coll[i].data["prevPost"] = prevPost;
-      coll[i].data["nextPost"] = nextPost;
-    }
+  //     coll[i].data["prevPost"] = prevPost;
+  //     coll[i].data["nextPost"] = nextPost;
+  //   }
   
-    return coll;
-  });
+  //   return coll;
+  // });
     
 
    // Creates custom collection "results" for search
@@ -177,10 +177,10 @@ module.exports = function(eleventyConfig) {
 
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
-  eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("images/")
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
+  eleventyConfig.addPassthroughCopy("_includes/experimental/");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");

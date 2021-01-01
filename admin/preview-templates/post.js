@@ -12,19 +12,7 @@ const Post = createClass({
       <main class="prose p-4">
         <article>
           <h1>${entry.getIn(["data", "title"], null)}</h1>
-          <p>
-            <small>
-              Updated: <time
-                >${
-                  format(
-                    entry.getIn(["data", "date"], new Date()),
-                    "MMM dd, yyyy"
-                  )
-                }</time
-              >
-              ${" by Author"}
-            </small>
-          </p>
+          <div class="inline-block w-auto text-xs text-gray-500 pt-1 pb-1 pl-3 mr-2 rounded ">Updated <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time></div>
           <p>${entry.getIn(["data", "summary"], "")}</p>
           <div class="adjust">
           ${this.props.widgetFor("body")}
