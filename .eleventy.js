@@ -9,7 +9,7 @@ const pluginTOC = require('eleventy-plugin-nesting-toc');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const Image = require("@11ty/eleventy-img");
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(pluginTOC);
+  // eleventyConfig.addPlugin(pluginTOC);
   eleventyConfig.addPlugin(svgContents); 
   eleventyConfig.addPlugin(embedEverything);
   eleventyConfig.addShortcode("version", function () {
@@ -26,8 +26,8 @@ module.exports = function(eleventyConfig) {
     let metadata = await Image(src, {
       widths: [400, 600, 800, 1000, 1200, 1400, 1600, 1900],
       formats: ['webp', 'jpeg', 'png'],
-      urlPath: "/images/",
-      outputDir: "./_site/images/"
+      urlPath: "/content/images/",
+      outputDir: "./_site/content/images/"
     });
 
     let lowsrc = metadata.jpeg[0];
@@ -179,6 +179,7 @@ module.exports = function(eleventyConfig) {
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("images/")
+  eleventyConfig.addPassthroughCopy("content/images/")
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
   eleventyConfig.addPassthroughCopy("_includes/experimental/");
