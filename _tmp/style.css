@@ -947,6 +947,12 @@ nav.toc ol li a:hover {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
 }
 
+.adjust img.button {
+  --tw-shadow: 0 0 #0000 !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+  width: auto !important
+}
+
 .text-align-center {
   display: flex;
   justify-content: center;
@@ -1641,11 +1647,6 @@ nav.toc ol li a:hover {
 .bg-blue-200 {
   --tw-bg-opacity: 1 !important;
   background-color: rgba(191, 219, 254, var(--tw-bg-opacity)) !important;
-}
-
-.bg-blue-600 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(37, 99, 235, var(--tw-bg-opacity)) !important;
 }
 
 .bg-pink-400 {

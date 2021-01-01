@@ -22,27 +22,29 @@ module.exports = function(eleventyConfig) {
       // You bet we throw an error on missing alt (alt="" works okay)
       throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
     }
-    src = './images/'+src
+    src = './content/images/'+src
     let metadata = await Image(src, {
-      widths: [400, 600, 800, 1000, null],
-      formats: ['webp', 'jpeg', 'jpg', 'png'],
+      widths: [400, 600, 800, 1000, 1200, 1400, 1600, 1900],
+      formats: ['webp', 'jpeg', 'png'],
       urlPath: "/images/",
       outputDir: "./_site/images/"
     });
 
     let lowsrc = metadata.jpeg[0];
 
-    return `<picture>
+    let picture = `<picture>
       ${Object.values(metadata).map(imageFormat => {
         return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
       }).join("\n")}
-      <img
+        <img
           data-src="${lowsrc.url}"
           width="${lowsrc.width}"
           height="${lowsrc.height}"
-          alt="${alt}"
-          class="lazyload">
+          alt="${alt}">
       </picture>`;
+
+      return `${picture}`;
+
   });
 
   eleventyConfig.addLiquidShortcode("icon", function(title,url) {

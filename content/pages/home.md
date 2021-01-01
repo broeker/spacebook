@@ -2,7 +2,6 @@
 title: Getting started
 date: 2020-12-18
 permalink: /
-toc: true
 eleventyNavigation:
   key: Getting started 
   title: Getting started
@@ -16,19 +15,16 @@ Create your own spacebook exactly like this one and customize it to your needs. 
 - **Privacy first** 🔒 -- User-agent: \* Disallow: / is set by default with noreferrer set on all links; encrypt your full site with a password if desired
 - **Flexible** 💪 -- disable features you don't need, add advanced features with serverless functions or Alpine.js
 
-Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy. 
+Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, plan a new project, or whatever suits your fancy. 
 
 ---
 
-{% image "sagan.jpg", "foo", "400px" %}
+## Quick launch 👩🏽‍🚀
 
-## Quick launch 👩🏽‍🚀🚀
+If you're the adventurous type, you can launch your own spacebook right now with the click of a button. You'll need an existing [Github account](https://github.com/), and a [Netlify account](https://www.netlify.com/) (which you can create during this process if you wish): 
 
-Keep reading to learn more, but if you're the adventurous type, you can launch your own spacebook right now with the click of a button. You'll need an existing [Github account](https://github.com/) and a [Netlify account](https://www.netlify.com/) (which you can create during this process if you wish): 
-
-
-<div class="flex width-full justify-center pt-4 pb-4">
-<a class="bg-blue-600 hover:bg-blue-600 text-white no-underline mb-4 px-4 py-2 rounded" href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/spacebook">Deploy to Netlify!</a>
+<div class="flex width-full justify-center">
+<a href="https://github.com/broeker/spacebook"><img class="button" src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 </div>
 
 If you click that button and follow the steps, the Netlify robots will copy the spacebook repository to your own personal Github account. Once complete, your new spacebook will be automatically deployed to the cloud with its own URL and ready for customization. 👍
@@ -36,7 +32,7 @@ If you click that button and follow the steps, the Netlify robots will copy the 
 --- 
 
 ::: callout-blue
-**Did you know?** You can host your spacebook anywhere in the world but we currently assume [Netlify hosting](https://www.netlify.com/), and various features may be Netlify dependent (e.g. contact forms, Netlify Identity).  They provide a generous free tier, and are true pioneers in a new breed of web hosting that make it very simple to push some files to a speedy, global CDN that will serve your files faster than you can blink.
+**Did you know?** You can host your project anywhere, but we currently assume [Netlify](https://www.netlify.com/), and various features may be Netlify dependent (e.g. contact forms, Netlify Identity).  They provide a generous free tier, and are pioneers in a new breed of web hosting that make it very simple to push some files to a speedy, global CDN that will serve your files faster than you can blink.
 :::
 
 ---
@@ -50,16 +46,15 @@ A spacebook is a simple website generator that will help you create your own pro
 - [Alpine.js](https://github.com/alpinejs/alpine) a minimal utility-first framework for simple or advanced JavaScript 🕹️
 - [Elasticlunr](http://elasticlunr.com/) a lightweight full-text search engine 🔍
 - [Advanced Markdown-it support](https://github.com/markdown-it/markdown-it) with footnotes, custom containers, emoji support, tables, task lists, and auto-linked images ✏️
-- [Netlify](https://www.netlify.com/) for cloud hosting and one-click installs, easy form support, and an automated [Github](https://github.com/) deployment pipepline 🤖
-- [Netlify CMS](https://www.netlify.com/) (optional) to provide an easy Markdown editor for creating and changing content. 💻
+- [Netlify CMS](https://www.netlify.com/) *(optional)* to provide an easy Markdown editor for creating and changing content. 💻
 
-Never fear! You don't need to know or understand any of this to launch a spacebook but it results in a speedy, easy-to-use, and accessible website that typically scores 100s across the board on Google Lighthouse metrics for mobile and desktop.
+Never fear! You don't need to know or understand any of this to launch a spacebook, but it results in a speedy, easy-to-use, and accessible website that typically scores 100s across the board on Google Lighthouse metrics for mobile and desktop.
 
 ::: callout
-**Did you know?** If you enable the optional Netlify CMS or add an analytics script, you may lose 1-3 performance points but this is a pretty swell starting point. 👍
+**Did you know?** If you wish, you may customize the design of your spacebook, or even use it as the basis for your creating your own starter. It was built on the [shoulders of giants](/credits). 👍
 :::
 
-If you wish, you may customize your spacebook or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](/credits).
+
 
 ---
 
@@ -77,11 +72,9 @@ Anybody who is willing to learn a few simple things can create as many spacebook
 
 ---
 
-## Install spacebook
+## Installing spacebook
 
-In theory, you can launch a spacebook without ever downloading the code or running your site locally. Just click that big green button and edit your files directly on Github! (The Github UI is fairly mobile friendly, and it is entirely possible to launch and manage a spacebook entirely via your phone :))  
-
-But if you want to customize your codebase or write your Markdown files in a local editor, you'll want to download and install your site locally.
+In theory, you can launch a spacebook without ever downloading the code or running your site locally. Just click the green Netlify button above and edit your files directly on Github! (The Github UI is fairly mobile friendly, and it is entirely possible to launch and manage a spacebook entirely via your phone :)) But if you want to customize your codebase or write your Markdown files in a local editor, you'll want to download and install your site locally.
 
 ### Requirements
 
@@ -98,7 +91,7 @@ node --version
 
 ### Step one
 
-If already have a Github repository from a Netlify install, simply clone a copy of your new repository:
+If already have a Github repository from an automated Netlify install, simply clone a copy of your repository:
 
 ```
 git clone https://github.com/<your-username>/<your-repository>
@@ -124,11 +117,11 @@ npm install
 npm run build (only necessary the first time!)
 ```
 
-_If you get errors here, double check your node version!_
+_If you get errors here, double check your node version_
 
 ### Step three
 
-Now spin up your local server to see your site!
+Now spin up your local server to see your site:
 
 ```
 npm run start

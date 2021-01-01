@@ -20,7 +20,6 @@
   "homepage": "https://github.com/broeker/spacebook",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
-    "@sherby/eleventy-plugin-files-minifier": "^1.1.0",
     "alpinejs": "^2.7.3",
     "eleventy-plugin-lazyimages": "^2.1.0",
     "eslint": "^7.9.0",

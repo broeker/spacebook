@@ -112,6 +112,9 @@
   .adjust  p img:hover, .adjust img:hover {
     @apply shadow-xl  
   }
+  .adjust img.button {
+    @apply w-auto  shadow-none !important
+  }
   .text-align-center {
     @apply flex justify-center; 
   }

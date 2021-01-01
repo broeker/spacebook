@@ -9,7 +9,6 @@
   {% set js %}
     {% include "assets/js/inline.js" %}
     {% include "assets/js/search.js" %}
-    {% include "assets/js/lazysizes.min.js" %}
   {% endset %}
   
   <script defer>{{ js | jsmin | safe }}</script>
@@ -20,6 +19,7 @@
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
  {% endif %}
  
+  
 
   {% if site.enableSearch == 1 %}
   {# <script type="text/javascript" src="/_includes/assets/js/search.js" defer></script> #}
