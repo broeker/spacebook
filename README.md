@@ -11,7 +11,7 @@ Create your own spacebook and customize it to your needs. Spacebooks are speedy 
 </p>
 
 <p align="center">
-👉 https://spacebook.app <br />
+<strong>https://spacebook.app</strong> <br />
 </>
 
 <p align="center">
