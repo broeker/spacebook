@@ -2227,10 +2227,6 @@ nav.toc ol li a:hover {
   color: rgba(156, 163, 175, var(--tw-placeholder-opacity)) !important;
 }
 
-.static {
-  position: static !important;
-}
-
 .fixed {
   position: fixed !important;
 }

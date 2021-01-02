@@ -11,7 +11,7 @@ You have successfully launched your spacebook. If you are new here, you may want
 
 ![Hello, world](/content/images/hello.jpg)
 
-->*Onward!*<-
+->*Onward...*<-
 
 
 
