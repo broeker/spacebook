@@ -22,4 +22,4 @@ build:
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npx @11ty/eleventy
+  instant_preview_command: npx @11ty/eleventy --serve
