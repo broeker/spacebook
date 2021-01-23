@@ -910,6 +910,11 @@ nav ul li a:hover {
   color: rgba(17, 24, 39, var(--tw-text-opacity));
 }
 
+.dark nav ul li a:hover {
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
 nav ul li a.active {
   font-weight: 600;
 }

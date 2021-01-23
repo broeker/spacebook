@@ -87,7 +87,7 @@
     @apply mb-1 pt-2 pr-4 pb-1 pl-2 w-full block text-gray-500 dark:text-gray-500;
   }
   nav ul li a:hover {
-    @apply text-gray-900;
+    @apply text-gray-900 dark:text-gray-400;
   }
   nav ul li a.active {
     @apply font-semibold;
