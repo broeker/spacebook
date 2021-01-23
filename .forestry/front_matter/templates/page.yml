@@ -1,0 +1,26 @@
+---
+label: Page
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: date
+  label: date
+- type: text
+  name: permalink
+  label: permalink
+- type: field_group
+  name: eleventyNavigation
+  label: eleventyNavigation
+  fields:
+  - type: text
+    name: key
+    label: key
+  - type: number
+    name: order
+    label: order
+  - type: text
+    name: title
+    label: title
