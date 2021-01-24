@@ -104,6 +104,9 @@
   nav.toc ol li a:hover {
     @apply text-gray-900
   }
+  .prose .footer-nav a:hover {
+    @apply dark:text-gray-400 !important
+  }
 
 /* Utilities and misc */
   .adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet {
@@ -120,5 +123,8 @@
   }
   .icon-spacer {
     width: "24px";
+  }
+  input {
+   @apply dark:text-gray-400
   }
 }

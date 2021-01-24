@@ -938,6 +938,11 @@ nav.toc ol li a:hover {
   color: rgba(17, 24, 39, var(--tw-text-opacity))
 }
 
+.dark .prose .footer-nav a:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgba(156, 163, 175, var(--tw-text-opacity)) !important;
+}
+
 /* Utilities and misc */
 
 .adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet {
@@ -962,6 +967,11 @@ nav.toc ol li a:hover {
 .text-align-center {
   display: flex;
   justify-content: center;
+}
+
+.dark input {
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
 }
 
 .container {
