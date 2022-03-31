@@ -5,12 +5,16 @@
   <meta name="description" content="{{ metaDescription or renderData.metaDescription or site.description }}">
   <link rel="stylesheet" href="/style.css?v={% version %}"/>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.emoji }}</text></svg>">
-  
+
   {% set js %}
     {% include "assets/js/inline.js" %}
     {% include "assets/js/search.js" %}
   {% endset %}
-  
+  {% set darkmode %}
+    {% include "assets/js/darkmode.js" %}
+  {% endset %}
+
+  <script>{{ darkmode | jsmin | safe }}</script>
   <script defer>{{ js | jsmin | safe }}</script>
 
  {% if site.enableNetlifyCMS == 1 %}
@@ -25,5 +29,5 @@
   {% if site.navigationStyle == 'horizontal' %}
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
   {% endif %}
- 
+
 </head>
