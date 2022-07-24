@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -212,6 +212,11 @@ button,
 Remove the inner border and padding in Firefox.
 */
 
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
 /**
 Restore the focus styles unset by the previous rule.
 */
@@ -241,6 +246,11 @@ progress {
 Correct the cursor style of increment and decrement buttons in Safari.
 */
 
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
 /**
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
@@ -255,10 +265,19 @@ Correct the cursor style of increment and decrement buttons in Safari.
 Remove the inner padding in Chrome and Safari on macOS.
 */
 
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
 /**
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Change font properties to 'inherit' in Safari.
 */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
 
 /*
 Interactive
@@ -408,11 +427,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   color: #9ca3af;
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -422,6 +436,14 @@ textarea::placeholder {
 button {
   cursor: pointer;
 }
+
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
 
 table {
   border-collapse: collapse;
@@ -576,14 +598,17 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input::placeholder, textarea::placeholder {
   color: #6b7280;
   opacity: 1;
 }
 
-input::placeholder, textarea::placeholder {
-  color: #6b7280;
-  opacity: 1;
+::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+::-webkit-date-and-time-value {
+  min-height: 1.5em;
 }
 
 select {
@@ -624,7 +649,7 @@ img:hover {
   color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
 
-.dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4, .dark .prose h5, .dark .prose h6 .prose hr, .dark .prose strong {
+.dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4, .dark .prose h5, .dark .prose h6 .prose hr, .dark .prose strong, .dark .prose code {
   --tw-text-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-text-opacity));
 }
@@ -1336,6 +1361,7 @@ nav ul li a.active {
 }
 
 .sticky {
+  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -1971,11 +1997,6 @@ nav ul li a.active {
 }
 
 .placeholder-gray-300::-moz-placeholder {
-  --tw-placeholder-opacity: 1 !important;
-  color: rgba(209, 213, 219, var(--tw-placeholder-opacity)) !important;
-}
-
-.placeholder-gray-300:-ms-input-placeholder {
   --tw-placeholder-opacity: 1 !important;
   color: rgba(209, 213, 219, var(--tw-placeholder-opacity)) !important;
 }

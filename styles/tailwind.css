@@ -18,7 +18,7 @@
   .prose a:hover {
     @apply dark:text-gray-500
   }
-  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 .prose hr, .prose strong {
+  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 .prose hr, .prose strong, .prose code {
     @apply dark:text-gray-400
   }
   .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
