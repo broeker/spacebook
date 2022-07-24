@@ -13,5 +13,11 @@ You have successfully launched your spacebook. If you are new here, you may want
 
 ->*Onward...*<-
 
+## Code Example
 
+This is `code` example
+
+```javascript
+console.log("Hello, world!");
+```
 
