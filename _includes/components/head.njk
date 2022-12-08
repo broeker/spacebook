@@ -29,5 +29,11 @@
   {% if site.navigationStyle == 'horizontal' %}
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
   {% endif %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js"></script>
+  <script>
+  window.addEventListener('load', () => {
+  quicklink.listen();
+  });
+</script>
 
 </head>
