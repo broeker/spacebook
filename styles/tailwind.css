@@ -34,11 +34,12 @@
   .prose ul.spacelog  {
     @apply list-none -ml-6 !important;
   }
-  .prose ul.contains-task-list .task-list-item,
+  .prose ul.contains-task-list .task-list-item::before {
+      @apply hidden !important;
+    }
   .prose ul.spacelog::before {
       @apply hidden !important;
     }
-
   /* Define blockquotes and some standard callout blocks */
   blockquote {
     @apply rounded-lg p-4 bg-gray-100 dark:bg-gray-500 border-gray-200 border-l-8 dark:border-gray-700;
