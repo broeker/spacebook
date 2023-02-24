@@ -18,14 +18,17 @@
   .prose a:hover {
     @apply dark:text-gray-500
   }
-  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 .prose hr, .prose strong, .prose code {
+  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 .prose hr, .prose strong, .prose thead {
     @apply dark:text-gray-400
   }
   .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
     scroll-margin-top: 3.5em;
   }
-  .prose pre code {
-    @apply overflow-x-auto !important 
+  .prose pre {
+    @apply overflow-x-auto !important;
+  }
+  .prose code {
+    @apply dark:text-gray-400 overflow-x-auto !important;
   }
   .prose .footer-nav a {
     @apply no-underline !important
