@@ -18,14 +18,17 @@
   .prose a:hover {
     @apply dark:text-gray-500
   }
-  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 .prose hr, .prose strong {
+  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 .prose hr, .prose strong, .prose thead {
     @apply dark:text-gray-400
   }
   .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
     scroll-margin-top: 3.5em;
   }
-  .prose pre code {
-    @apply overflow-x-auto !important 
+  .prose pre {
+    @apply overflow-x-auto !important;
+  }
+  .prose code {
+    @apply dark:text-gray-400 overflow-x-auto !important;
   }
   .prose .footer-nav a {
     @apply no-underline !important
@@ -34,13 +37,12 @@
   .prose ul.spacelog  {
     @apply list-none -ml-6 !important;
   }
-  .prose ul.contains-task-list .task-list-item,
-  .prose ul.spacelog {
-    ::before {
+  .prose ul.contains-task-list .task-list-item::before {
       @apply hidden !important;
     }
-  }
-
+  .prose ul.spacelog::before {
+      @apply hidden !important;
+    }
   /* Define blockquotes and some standard callout blocks */
   blockquote {
     @apply rounded-lg p-4 bg-gray-100 dark:bg-gray-500 border-gray-200 border-l-8 dark:border-gray-700;
@@ -49,7 +51,7 @@
     @apply px-8 py-4 mb-4 rounded-lg bg-yellow-50;
   }
   .callout, .callout strong, .callout em {
-    @apply dark:bg-gray-400 dark:text-gray-900;
+    @apply dark:bg-yellow-400 dark:text-gray-900;
   }
   .callout-blue {
     @apply px-8 py-4 mb-4 rounded-lg bg-blue-50;
