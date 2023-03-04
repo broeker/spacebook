@@ -139,13 +139,13 @@ module.exports = function(eleventyConfig) {
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toFormat("LLL dd, yyyy");
+    return DateTime.fromJSDate(dateObj).setZone("utc").toFormat("LLL dd, yyyy");
   });
 
   // Date formatting (machine readable)
   eleventyConfig.addFilter("machineDate", dateObj => {
 
-    return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
+    return DateTime.fromJSDate(dateObj).setZone("utc").toFormat("yyyy-MM-dd");
   });
 
   // Minify CSS
