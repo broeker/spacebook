@@ -4,14 +4,12 @@ const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const svgContents = require("eleventy-plugin-svg-contents");
 const mdIterator = require('markdown-it-for-inline')
-const embedEverything = require("eleventy-plugin-embed-everything");
 const pluginTOC = require('eleventy-plugin-nesting-toc');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const Image = require("@11ty/eleventy-img");
+const Jimp = require("jimp");
 module.exports = function(eleventyConfig) {
   // eleventyConfig.addPlugin(pluginTOC);
   eleventyConfig.addPlugin(svgContents); 
-  eleventyConfig.addPlugin(embedEverything);
   eleventyConfig.addShortcode("version", function () {
     return String(Date.now());
   });
@@ -23,12 +21,23 @@ module.exports = function(eleventyConfig) {
       throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
     }
     src = './content/images/'+src
-    let metadata = await Image(src, {
-      widths: [400, 600, 800, 1000, 1200, 1400, 1600, 1900],
-      formats: ['webp', 'jpeg', 'png'],
-      urlPath: "/content/images/",
-      outputDir: "./_site/content/images/"
-    });
+    const widths = [400, 600, 800, 1000, 1200, 1400, 1600, 1900];
+    const formats = ['jpeg', 'png', 'webp'];
+    const metadata = {};
+
+    for (const format of formats) {
+      metadata[format] = [];
+      for (const width of widths) {
+        const image = await Jimp.read(src);
+        const outputPath = `./_site/content/images/${width}.${format}`;
+        await image.resize(width, Jimp.AUTO).writeAsync(outputPath);
+        metadata[format].push({
+          format,
+          width,
+          srcset: `/content/images/${width}.${format}`
+        });
+      }
+    }
 
     let lowsrc = metadata.jpeg[0];
 
@@ -37,10 +46,10 @@ module.exports = function(eleventyConfig) {
         return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
       }).join("\n")}
         <img
-          data-src="${lowsrc.url}"
-          width="${lowsrc.width}"
-          height="${lowsrc.height}"
-          alt="${alt}">
+          data-src="${lowsrc.srcset}"
+          alt="${alt}"
+          loading="lazy"
+          decoding="async">
       </picture>`;
 
       return `${picture}`;
@@ -229,7 +238,7 @@ module.exports = function(eleventyConfig) {
       imgClass: "p-4",
     })
     .use(markdownItAttrs, {
-      includeLevel: [2,3],
+      includeLevel: [2, 3],
       listType: "ol"
     })
   );
